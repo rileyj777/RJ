@@ -1,0 +1,14 @@
+# Treat proposal assets and other binaries as binary — never apply line-ending
+# (CRLF/LF) conversion or textual diffing to these.
+*.pdf   binary
+*.docx  binary
+*.doc   binary
+*.xlsx  binary
+*.xls   binary
+*.pptx  binary
+*.ppt   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.zip   binary
