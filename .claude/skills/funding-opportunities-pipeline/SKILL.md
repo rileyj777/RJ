@@ -12,7 +12,10 @@ Workflow 11 (grant-pursuit brief, `wf-grant-pursuit.md`, v4.1). v4.2 is a
 quality-hardening pass across all 11 workflows: idempotent reads-before-writes
 on the shared CRM, coverage-honesty carried into the emitted digests,
 compliance defense-in-depth at every send/export escape hatch, deterministic
-matching/scoring, and internal spec-vs-spec contradictions reconciled._
+matching/scoring, and internal spec-vs-spec contradictions reconciled.
+v4.2.1: clarified the re-bucket rule so dated items in the thematic Lab-tech /
+State groups stay in their group and are surfaced in the digest rather than
+moved to a date bucket._
 
 Operating playbook for a sales engineer in Business Development at Johnston
 Engineering (JE). JE's mission: "Propel the commercialization of
@@ -69,7 +72,11 @@ schema, scoring, and sources are shared.
   the buying influences; they want JE's solution). Titles can suggest
   Economic/Technical/User buyers; a Coach is earned — the operator sets it.
 - **Re-bucket by close date on every touch.** Deadline groups: <2 weeks,
-  2–6 weeks, 6 weeks–3 months, Watchlist.
+  2–6 weeks, 6 weeks–3 months, Watchlist. Exception: dated items that live in
+  the thematic groups (🧪 Lab tech, 🏛️ State programs) stay in their group and
+  get surfaced in the deadline digest rather than moved to a date bucket, so
+  their thematic grouping is preserved (e.g. INL BA-1678 closing inside 2 weeks
+  stays in Lab tech and is still called out under <2-week deadlines).
 - **End every workflow with a short digest** (5–8 lines): what changed, what's
   due inside 2 weeks, what still carries a "verify" flag, and what the run
   didn't cover.

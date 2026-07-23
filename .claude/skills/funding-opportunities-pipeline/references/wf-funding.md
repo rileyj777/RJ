@@ -21,7 +21,9 @@ target `MY_FUNDING_BOARD` (Step 0) — the operator's own funding board.
    named here, so vehicles WF8 added actually get swept. Add new items with
    Source, Mechanism, Solicitation #, Closes, Fit, Link, Notes, and Related
    accounts filled.
-3. Re-bucket everything by close date. Dedupe against existing items before
+3. Re-bucket everything by close date — except dated items in the thematic
+   groups (🧪 Lab tech, 🏛️ State programs), which stay in their group and are
+   surfaced in the deadline digest rather than moved to a date bucket. Dedupe against existing items before
    creating (search the board by solicitation number first; for the many
    opportunities with no number yet — waves, standard due dates, prizes —
    match on source + mechanism + close date instead, so step 2 doesn't
