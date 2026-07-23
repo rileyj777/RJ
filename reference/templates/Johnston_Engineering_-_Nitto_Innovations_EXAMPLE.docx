@@ -1,0 +1,451 @@
+|  |  | Johnston Engineering Proposal: Mobile Demonstration Unit |
+| --- | --- | --- |
+
+**Proposal: ****Mobile Demonstration Unit**
+
+**DATE:**			December 29, 2025 
+
+**SUBMITTED TO**:	Nitto Innovations
+
+**PROJECT****:**		Mobile Demonstration Unit
+
+**SUBMITTED BY**:		Andy Johnston P.E.
+
+			Johnston Engineering, PLLC
+
+# Introduction
+
+Johnston Engineering (JE) is pleased to submit this proposal for a Mobile Demonstration Unit intended to demonstrate the performance and effectiveness of Nitto Denko Corporation’s proprietary spiral-wound CO₂ separation membrane technology.
+
+This document provides a cost proposal for the design, analysis, procurement, fabrication and assembly tasks required for the Mobile Demonstration Unit. Johnston Engineering has conducted multiple Scope of Work (SOW) Review meetings with Nitto Innovations and quoted Nitto-provided Piping and Instrumentation Diagram (P&ID) to establish the estimates in this proposal. 
+
+A notional system schematic was provided by Nitto Innovations and is shown in Figure 1.   Yellow ink indicates hardware that is not priced in this phase of the estimate at Nitto’s request. 
+
+Figure 1 Notional system layout. Yellow highlight indicates hardware components intentionally not included in pricing. 
+
+# Introduction to Johnston Engineering
+
+Johnston Engineering (JE) is a mechanical engineering firm located in Spokane, Washington **specializing in the design, analysis, integration, ****build****, and testing of first-of-a-kind systems**. In operation since 2015, JE brings over 250 years of combined engineering experience across a team of 22, with deep expertise in system integration and advanced engineering solutions. Our work spans critical material recovery systems, industrial machinery, and biotechnology, as well as clean technology sectors including **carbon capture**, hydrogen, nuclear systems, and long-duration energy storage. 
+
+A defining advantage of Johnston Engineering is our **Analysis-Driven Design** approach. At JE, the engineers who are designing our client’s systems are also performing physics-based simulations in thermal, structural, and fluid-flow to optimize and validate designs before we build systems. This close coupling of design and analysis ensures performance is validated before fabrication begins, preventing costly part failures and accelerating overall development timelines. We use SolidWorks to design the 3D Computer Aided Design (CAD) of our systems and ANSYS Finite Element Analysis (FEA) & Computational Fluid Dynamics (CFD) to simulate forces, pressures, torques, heat transfer and fluid interactions. We iterate through design and analysis cycles until the system has appropriate performance, modularity, reliability, serviceability and manufacturability. This helps us develop the system faster and with less risk**.** 
+
+A second core strength is that **our ****engineers and ****designers are also ****the assemblers of ****your ****system**. The same engineers who model and analyze the system are in charge of fabrication oversight, procurement, assembly, and testing. This design and build approach is unique in the engineering world and provides our customer with two distinct advantages at the design and build phase. Our engineers and designers have developed intuitive understanding of ideal system layout, design for manufacturability & serviceability through direct hands-on experience, which provides our clients with an advantage at the design phase. At the build phase, this team continuity improves your system build because the assemblers have a deep understanding of the system layout, design intent, and system behavior. This results in faster builds and quicker issue resolution commonly occurring in first-of-a-kind systems. 
+
+Third, we focus specifically on **first-of-a-kind (FOAK) development**. Johnston Engineering works alongside clients who are experts in their core technology but require support in transitioning systems from concept to larger implementation. Scaling a system is not a linear extension of early development as each seemingly independent decision is actually interdependent and shapes the overall system architecture. Early design choices influence cost, schedule, performance, and risk, often in compounding ways. Without informed guidance and experienced experts focused on FOAK developments, well-intentioned decisions can create downstream challenges that are expensive and time-consuming to correct.
+
+Our niche is system scale-up and we do it every day.  This focus on FOAK systems has resulted in a team with an intuitive understanding of the implications of component and system architecture decisions that affect the cost, complexity, and schedule of projects.  We support technologies across TRL 3 to 9 and regularly help clients move from promising concepts to integrated subsystems, to pilot-scale systems, and finally field-deployable hardware.
+
+These three strengths of Analysis Driven design, hands on experience, and focus on FOAK systems make up Johnston Engineering’s design-analysis-build-test approach.
+
+JE President, Andy Johnston, P.E., leads the team at JE and provides subject-matter expertise in structural, thermal, and fluid flow analysis, with over 20 years of experience in advanced thermal-management systems, energy technologies, aerospace and defense. Before founding Johnston Engineering, Andy spent 11 years at Parker Aerospace Thermal Management Systems designing liquid heating, cooling, and environmental control systems for military and aerospace platforms. 
+
+To date, JE has completed more than 190 FOAK engineering projects including 25 projects for the U.S. Department of Energy, and balance in private industry.** JE has ****successfully ****completed 1****4**** ****Carbon Capture Utilization and Storage (CCUS) ****projects,**** and our design-analysis-build-test approach makes us an ideal partner to develop Nitto’s Mobile Demonstration Unit**
+
+The following sections of the proposal will first provide examples of Johnston Engineering’s previous work then provide information specific to Nitto’s Mobile Demonstration Unit including Scope, Deliverables, pricing and timing.  
+
+# Johnston Engineering Project Examples
+
+Five of Johnston Engineering’s previous project examples have been included in this Section.
+
+##  Industrial-Scale Electrolyzer Pilot Plant
+
+Johnston Engineering partnered with OCOchem to support the scale-up and deployment of their industrial-scale CO₂ electrolyzer technology. The project has now culminated in the successful commissioning of the world’s first pilot plant using multiple industrial-scale cells to directly convert CO₂ and water into organic molecules.
+
+**Project ****Goal:** Scale up the CO2 electrolyzer cell size by 10x
+
+**Johnston Engineering Provided Services: **Johnston Engineering provides comprehensive mechanical design, analysis, building, and test services to ensure the successful development and testing of the industrial-scale CO2 electrolyzer cell.
+
+- Mechanical Design:
+
+- Development of flow visualization models to optimize the internal flow dynamics.
+
+- Design of mounting and work platforms to support the electrolyzer and ensure safe operation.
+
+- Custom hardware design for power supply systems to meet the unique requirements of the scaled-up electrolyzer.
+
+- Computational Fluid Dynamics (CFD):
+
+- Pressure drop analysis to ensure efficient fluid flow and minimize energy losses.
+
+- Flow distribution analysis to achieve uniform flow and optimal performance across the electrolyzer cell.
+
+- Structural Analysis
+
+- Stress analysis of the electrolyzer mounting frame and work platforms. 
+
+- Hazardous Material Control Area:
+
+- Design and build of a dedicated hazardous material control area for safe hydrogen testing.
+
+- Implementation of ventilation, containment, and operational safety measures for H₂ handling and testing
+
+## Containerized Electrochemical System Design
+
+Johnston Engineering is supporting Lectrolyst in the development and commercialization of its modular electrochemical system designed to convert CO₂ and renewable electricity into sustainable chemicals. Lectrolyst’s technology leverages advanced catalyst and cell designs to achieve high-efficiency electrochemical conversion, and the current project focuses on validating, optimizing, and preparing the system for containerized pilot deployment. With modeling, analysis, and containerized system design completed, the project is now prepared to move into **fabrication and full system build**. Johnston Engineering is ready to support Lectrolyst through the build phase, including procurement support, mechanical build services, assembly oversight, and commissioning support.
+
+**Project Goals:**
+
+- Evaluate and optimize the performance of Lectrolyst’s electrolyzer stack architecture.
+
+- Perform mechanical and structural validation of cell compression, sealing, and operational loads.
+
+- Package the full system into a 40-ft containerized pilot-scale platform suitable for fabrication and field deployment.
+
+- Identify and cost the bill of materials (BOM) for the first build unit, enabling Lectrolyst to move directly into construction.
+
+**Johnston Engineering Provided Services: **
+
+- CFD Modeling & Electrolyzer Performance Analysis
+
+- Conducted CFD modeling of the electrolyzer cell and full-stack flow pathways.
+
+- Analyzed flow distribution, pressure gradients, and reactant delivery uniformity to identify opportunities for improved efficiency and reduced parasitic losses.
+
+- Performed one to two optimized geometry iterations to refine internal flow features and enhance performance at the stack level.
+
+- Structural Analysis
+
+- Performed structural and compression analysis of the electrolyzer stack assembly.
+
+- Evaluated clamping forces, gasket behavior, and mechanical tolerances to ensure proper sealing, structural integrity, and safe long-duration operation.
+
+- System Packaging & Mechanical Integration
+
+- Developed the complete system packaging layout within a standard 40-ft shipping container, including:
+
+- Equipment arrangement and envelope management
+
+- Maintenance access, operator pathways, and safety clearances
+
+- Integration of auxiliary systems, power components, and balance-of-plant hardware
+
+- Ensured the design supports modular, field-deployable operation.
+
+- 4. Bill of Materials (BOM) Development & Costing
+
+- Identified the required components and subsystems for the first full build.
+
+- Developed and priced a detailed BOM, enabling Lectrolyst to budget, schedule procurement, and prepare for fabrication.
+
+## Containerized Power Generation Racking System
+
+Figure 2 Containerized power generation racking system deployed September 2024
+
+Johnston Engineering collaborated with our client to develop a containerized power generation system equipped with a custom racking system. This project involves customizing shipping containers, equipped with a custom racking system to secure power generation equipment in transportation and in use once on-site as shown in 
+
+Figure 2. The system was designed to ensure robust structural integrity, particularly under transportation loads, while maintaining efficient and compact packaging, as the complete system will utilize hundreds of containers stacked vertically and back-to-back.  
+
+**Client Goal:**
+
+- Develop a scalable containerized system for power generation.
+
+- Ensure structural integrity and durability during transportation and operation.
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided comprehensive design, analysis, fabrication and integration services for the containerized power generation system, ensuring the successful execution of the project and the client's objectives.
+
+- Design:
+
+- Mechanical design of the racking system, including custom components to secure power generation equipment within the container.
+
+- Mechanical design of the electrical devices that reside in the racking system.  
+
+- Development of detailed 3D CAD models and assembly drawings for precise fabrication and integration.
+
+- Structural Analysis:
+
+- Analysis of structural frames to ensure stability and integrity during transportation and operation.
+
+- Detailed stress and load analysis to verify the strength and durability of the frames and components, ensuring they could withstand the transportation acceleration loads.
+
+- Build and Assembly:
+
+- Fabrication and assembly of the entire system inside a 20ft shipping container, ensuring compact and efficient packaging on-site at Johnston Engineering.
+
+- Quoting, purchasing, and inspection of all externally fabricated components from vendors to meet project specifications.
+
+- Coordination of all fabrication and subcontractor activities to ensure the project was completed on time and within budget.
+
+This project was completed in September 2024. The above picture showcases the initial assembly stage inside the 20ft container.
+
+##  Containerized CO2 DAC Pilot Plant
+
+*The following images provide a glimpse into the project:*
+
+- *Image 1: Taken on **deployment** day in May** 2024. T**his picture capture**s the crane lift of the final product just before loading on a Semi truck heading **to Colorado.*
+
+- *Images 2-3: These images show the custom modifications made to a 40ft ISO shipping container to accommodate the customer's system.** Including air inlet and outlet locations which would be needed for** the DAC fan in the Capture6 unit**.*
+
+| **1** | **2** |
+| --- | --- |
+| **3** |  |
+
+Johnston Engineering collaborated with our client to develop a containerized direct air capture (DAC) pilot plant designed for accelerated lifetime testing of absorbent media. This pilot plant was created to validate the long-term performance of the absorbent media under various operating conditions, ensuring its effectiveness and durability for commercial deployment. The DAC pilot plant was designed to handle various stressors and simulate long-term operational conditions to accelerate the testing process. This enabled the client to quickly gather critical data on the absorbent media's performance and make informed decisions for future development and deployment.
+
+This project was deployed in May of 2024 and is successfully operating in Colorado. 
+
+**Client Goal:**
+
+- Validate long-term performance of absorbent media
+
+- Conduct accelerated lifetime testing
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided the complete design, analysis, and construction of the DAC pilot plant, which included approximately 5,000 custom and off-the-shelf parts. Our comprehensive services ensured the project's success and the client's objectives were met.
+
+- Design:
+
+- Mechanical design of ~5,000 parts, including machined components, sheet metal, weldments, and 80/20 frames.
+
+- Development of detailed 3D CAD models and assembly drawings.
+
+- Structural Analysis:
+
+- Analysis of structural frames to ensure stability and integrity under pressure and vacuum conditions.
+
+- Detailed stress and load analysis to verify the strength and durability of the frames and components.
+
+- Thermal Analysis:
+
+- Steady-state and transient thermal analysis to optimize the thermal performance of the system.
+
+- Custom cold plate design for rapid changes in temperature needed for temperature swing absorption cycle.
+
+- Computational Fluid Dynamics (CFD):
+
+- Fluid distribution analysis to ensure uniform flow over the absorption media of the DAC system.
+
+- Build and Assembly:
+
+- Fabrication and assembly of the entire system inside a 40ft shipping container, ensuring compact and efficient packaging on-site at Johnston Engineering. 
+
+- Quoting, purchasing, and inspection of all external vendor fabricated components. 
+
+- Coordination of all fabrication and subcontractor activities to meet project timelines and budget.
+
+##  Point Source CO2 Capture – Test Fixture Design & Build for Media Characterization Study
+
+Johnston Engineering assisted with the research, commercialization, design, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) to successfully develop a decarbonization device meant for use in commercial buildings, for our client Carbon Quest. This project was deployed in 2022 and the product is now installed in a High Rise in Times Square, NY. 
+
+CarbonQuest has developed a modular system that allows for the capture and liquefaction of CO2 on-site. "This recycled CO2 is then made available to off-takers who can use it in a variety of environmentally beneficial ways, such as in the production of concrete or as a replacement for petroleum in jet fuel and chemical processes. By implementing this innovative system, building owners and operators can now enjoy a new revenue stream while simultaneously ensuring compliance with emissions guidelines" - Carbon Quest.
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided mechanical engineering design, thermal analysis, two-phase pressure drop analysis, component sourcing, build and testing services. We provided design, modifications, operation, and data processing of a research and development test fixture to characterize CO2 absorbent performance in a pressure swing absorption cycle. 
+
+- Mechanical Design
+
+- Mechanical Engineering
+
+- Convection Thermal Analysis
+
+- Two-phase pressure drop analysis
+
+- Material Sourcing
+
+- Material Ordering
+
+- Product Assembly
+
+- Product Test
+
+The purpose of the CO2 absorbent performance R&D test fixture was to characterize the performance of various candidate absorbents for use in a pressure-swing absorption cycle to concentrate CO2 gas. A P&ID diagram of the test fixture was created to identify all components in the system.  Characteristic equations were developed to quantify system and key component uncertainties such as mass flow of CO2 in mixed gas flow, and total mass flow of CO2 leaving the system. 3D CAD files were generated in SOLIDWORKS and reviewed with the customer to ensure the proper design intent was met. Pressure, flow and temperature sensors were selected, then we built the system and wrote the LabVIEW data acquisition code. We performed tests, data reduction, and data analysis on several absorbents. The test result was highly improved CO2 concentration performance.
+
+In another portion of the development, Johnston Engineering worked with CarbonQuest on the two-phase pressure drop in a line containing flowing liquid CO2 and noncondensable gas.  CarbonQuest needed to know the pressure drop in this line to ensure proper system operation. Calculation during two-phase flow requires additional work compared to single-phase flow. REFPROPS data was used for fluid properties and the Martinelli Nelson parameter was used for Turbulent vapor Turbulent liquid flows assuming the separated flow model.  The Chisholm and Laird two-phase multiplier was used in the calculation to relate the frictional component of a two-phase pressure drop to a single-phase pressure drop at the same mass flow rate to calculate the overall line pressure drop.  All engineering efforts were made on behalf of Carbon Quest and their new patented, ground-breaking technology.
+
+# Nitto Mobile Demonstration Unit Scope of Work
+
+Johnston Engineering will provide complete design, analysis, build and test services for a mobile, containerized demonstration unit intended to demonstrate the performance and effectiveness of Nitto Denko Corporation’s proprietary spiral-wound CO₂ separation membrane technology. The scope of work includes the design, fabrication, assembly, and testing of a single-stage membrane-based carbon capture system with an inlet flow from a flue gas stream.
+
+The system will be designed for mobile deployment at customer sites and will incorporate thermal management, moisture control and instrumentation as indicated in the Nitto provided P&ID. While only a single-stage system is included in this scope, the system layout, structure, piping, electrical, and controls architecture will be intentionally designed to allow a future second-stage membrane system to be integrated without requiring redesign of the base system.
+
+Johnston Engineering will execute this effort as a complete design, analysis, build and test project, converting client-provided 2D drawings and process information into a fully fabricated, tested mobile demonstration unit suitable for repeated deployment.
+
+## Assumptions 
+
+- Fluid properties calculated using NIST REFPROP 9 using CO2, H2O, O2 and N2 concentrations at appropriate temperatures and pressure when possible. Viscosity and thermal conductivity calculated using air at appropriate 
+
+- Notes in VP1 indicate 0C and 1 ATM are “normal conditions” for calculating flow rates  
+
+- During Questions and Answer period, we understand that Johnston Engineering should propose sensors with slightly lower accuracy with the benefit of cost savings.  We propose pressure sensors combined linearity, hysteresis and repeatability +/-  0.08%, and flow sensors with 0.4% reading +0.2% full scale. 
+
+- Testing will occur at Johnston Engineering’s facilities and is intended to confirm the signal of sensors and valves operation with the control system, and is not intended to be connected to a flue gas stream or include gas analysis equipment. 
+
+## SOW: Key Tasks
+
+**Communications**
+
+- Project coordination and scheduling
+
+- Technical meetings and correspondence with the Client
+
+- Vendor and supplier communications as required to support design and fabrication
+
+**Systems Engineering**
+
+- System-level definition of the single-stage CO₂ capture demonstration unit
+
+- Development of overall system architecture and process flow
+
+- Integration planning for client-supplied membrane modules
+
+- Definition of system interfaces and operating requirements
+
+- Design considerations to allow future second-stage integration without significant redesign
+
+**Design Engineering**
+
+- Mechanical design of piping, equipment layout, supports, and interfaces
+
+- Container layout and equipment mounting design
+
+- Structural design related to transport, mounting, and access
+
+- Development of 3D CAD models and fabrication drawings
+
+- Coordination of mechanical design with electrical and controls requirements
+
+**Software**
+
+- PLC software development
+
+- HMI configuration and process visualization
+
+- Data logging configuration and verification
+
+- Support for controls integration and functional testing
+
+**Electrical**
+
+- Electrical system architecture and power distribution design
+
+- Instrumentation specification and I/O definition
+
+- Control panel design and documentation
+
+- Coordination with certified control panel fabricator
+
+- Electrical integration and verification
+
+**Analysis**
+
+- Pressure drop and flow analysis for sizing piping
+
+- Structural assessments related to transportation loads 
+
+**Publish**
+
+- Preparation of fabrication and assembly drawings
+
+- As-built drawings and documentation
+
+- Basic Operations and Maintenance manual
+
+- Bill of Materials 
+
+**Fabrication**
+
+- Procurement of equipment, materials, and instrumentation
+
+- Container modifications including access panels, insulation, and ventilation
+
+- Pipe cutting, welding, and mechanical fabrication
+
+- Installation of mechanical equipment and instrumentation
+
+- Electrical wiring, conduit installation, and panel integration
+
+- Quality control inspections and pressure testing
+
+**Realization**
+
+- System assembly and integration
+
+- Testing at Johnston Engineering’s facility
+
+- Preparation for shipment and delivery
+
+## Deliverables
+
+**Design Documentation**
+
+- 3D CAD models
+
+- Fabrication and assembly drawings
+
+- Updated P&ID
+
+- Electrical schematics and control panel drawings
+
+- Design calculations and equipment sizing documentation
+
+- Bill of Materials
+
+**Physical Deliverable**
+
+- Fully assembled, containerized mobile single-stage CO₂ capture demonstration unit
+
+**Final Documentation**
+
+- As-built drawings
+
+- Basic Operations and Maintenance manual
+
+- Initial System Testing
+
+## Exclusions
+
+- On-site installation and commissioning at deployment locations (Excluded but can be done at our T&M Rate)
+
+- Long-term maintenance or service agreements (Excluded but can be done at our T&M Rate)
+
+- Site permitting, regulatory approvals, or authority having jurisdiction review.  (We can provide assistance as desired at our T&M Rate)
+
+- NOx or SOx pretreatment systems
+
+- CO₂ compression, liquefaction, or storage equipment
+
+- Membrane modules supplied by Nitto Denko Corporation
+
+- Any services not expressly described in this Exhibit 
+
+## Price Proposal 
+
+Johnston Engineering offers the Mobile Demonstration Unit design, fabrication and assembly for an estimate of **$****465****,****500**** on a ****Time ****&**** Materials (****T****&****M****)**** basis**** ****or ****$581,****800**** on a Fixed Fee**** basis****.**
+
+Our T&M hourly rate is $205 and a 25% markup for expenses. Costs will be incurred only for hours worked and materials purchased. The following estimates are provided for budgeting purposes. **Historically, our estimates ****are accurate to +/- 20%, assuming no change in project scope. ****We suggest planning for an additional 20% safety factor for your internal budgeting**** if T****&****M is selected****. **
+
+## Project Timeline
+
+The complete project duration is 173 labor days. Assuming 1 staff per labor category and standard lead times, if the project kicks off at the beginning of January 2026, **the project ****can be completed by ****end of Q2**** ****or early Q3 ****2026.**** ****  **
+
+Johnston Engineering has the capacity to increase staffing if an accelerated schedule is desired. While adding personnel can shorten the overall timeline, increasing team size means more engineers must review and digest the same information, attend meetings, etc. resulting in natural duplication of some effort. For this reason, an expedited timeline may increase labor costs by approximately 5%-10% for approximately a 25% increase in delivery speed. 
+
+## Pricing and Billing Process
+
+This proposal is based on a time and material (T&M) hourly rate of $205 for time and a 25% markup for materials. 
+
+Johnston Engineering works from a retainer payment agreement. All services are pre-paid in monthly reserved hours. Unused hours do not expire and will roll over to the following month. At every invoice cycle, Johnston Engineering provides the Client with its current positive or negative balance and makes recommendations for future hourly purchases. All invoices are due on receipt. Upon project completion, any remaining hours can be used for future projects or refunded at the sole discretion of the client.
+
+Our billing process is broken down into detailed categories allowing Nitto to see exactly how much time was spent on each task. For each labor charge, invoices will detail the date, labor category, description of work performed, and hours used. For materials charges, invoices will detail the date, description of the hardware, and cost.
+
+# Intellectual Property Rights
+
+Johnston Engineering will assign all intellectual property related to this project to Client. Johnston Engineering is willing to assist Client and patent attorneys with IP-related communications such as in transferring IP, generating patent figures, etc. to be billed at our normal T&M rates.  We have not budgeted any IP tasks in this proposal.
+
+# Proposal Conclusion
+
+Johnston Engineering is committed to delivering exceptional engineering services and high-quality results for Nitto Innovations. Our engineering capabilities, combined with our past project experience, ensure that we are well suited to meet the requirements of this system. 
+
+**Johnston Engineering offers**** ****the ****Mobile Demonstration Unit ****for** **$****465,****500**** on a T****&****M Basis ****or**** $581,****800**** on ****a ****Fixed fee ****basis.**** **
+
+Our commitment is to deliver our services in the capacity that best supports Nitto Innovations. Please do not hesitate to reach out with any questions or for further clarification on any aspects of this proposal. 
+
+We look forward to the opportunity!
+
+**Andy Johnston, P.E.**** **Principal Engineer Johnston Engineering, PLLC 1815 E. Trent Ave.  Spokane, WA 99202
+[Andy@JohnstonPE.com](mailto:Andy@JohnstonPE.com) (509) 290-1034
+
+Confidential and Proprietary to Johnston Engineering, PLLC1

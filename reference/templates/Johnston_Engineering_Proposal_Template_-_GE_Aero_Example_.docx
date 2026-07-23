@@ -1,0 +1,190 @@
+|  |  | Johnston Engineering Proposal: Stoddard Pump System |
+| --- | --- | --- |
+
+**Proposal: ****Stoddard Pump System**
+
+**DATE:**			December 22, 2025 
+
+**SUBMITTED TO**:	GE Aerospace
+
+**PROJECT:**		Stoddard Pump System
+
+**SUBMITTED BY**:		Andy Johnston P.E.
+
+			Johnston Engineering, PLLC
+
+# Introduction
+
+Johnston Engineering (JE) is pleased to submit this proposal for a heated and cooled Stoddard Pump System to provide Stoddard fluid to the Test Unit at the desired conditions.
+
+This document provides a cost proposal for the design, procurement, and build tasks required for the Stoddard Pump System. Pricing milestones are divided into two phases: Phase 1 – Full System Design, and Phase 2 - Fabrication, Assembly and Delivery.  
+
+The figures below are intended to convey a notional system layout. JE is happy to modify the system layout as needed to meet GE’s preferences.  Figures 1-5 show Isometric, front, rear, left, and right views of the unit.  
+
+Figure 1 Notional system layout
+
+Figure 2 Notional system layout – Front View
+
+Figure 3 Notional system layout – Rear View
+
+Figure 4 Notional system layout – Left View
+
+Figure 5 Notional system layout – Right View
+
+An isometric view of the system with a semi-transparent green box representing the maximum dimensional envelope is shown in Figure 6.  The system fits within the maximum dimensional envelope.  
+
+Figure 6 Notional system layout within maximum dimensional envelope shown (Green Box)
+
+An isometric view of the system with a few key components labeled is shown in Figure 7. 
+
+Figure 7 Isometric view with a few key components labeled 
+
+ A Piping and Instrumentation Diagram (P&ID) is shown in Figure 8.  Fluid is stored in the reservoir, then flows through a filter and into a variable speed gear pump which increases the fluid pressure.  Next, the fluid temperature is measured using a sealed thermocouple before fluid travels to a heater where the temperature of the fluid is increased.  The heater is a bent tube wrapped in joule heated tape.  Under the heated tape is a thermocouple to prevent overheating.  At the discharge of the heater, a flow controller regulates the flow rate of fluid traveling to the PMA.  Downstream of the flow controller, a pressure relieving valve is located to prevent system overpressure.  A sealed thermocouple and pressure transducer sense the fluid temperature and pressure at the final point on the discharge side of the pump before fluid travels out to the PMA through customer furnished hoses.  On the return side of the pump, a liquid-cooled heat exchanger reduces the temperature of the Stoddard fluid which flows into the hot side of the liquid-cooled heat exchanger.  A customer furnished building cooling water loop provides flow to the cold side of the liquid-cooled heat exchanger.  Sealed thermocouples measuring the temperature of the Stoddard fluid are located before and after the heat exchanger. An electrically controlled needle valve controls the flow of the cooling water to achieve the desired setpoint temperature at the Stoddard fluid leaving the heat exchanger.  Finally, the fluid is returned to the reservoir to be recycled again.  
+
+JE understands a heat exchanger cooled using an existing cooled water loop is an acceptable alternative to liquid nitrogen cooling.  JE is happy to switch back to liquid nitrogen cooling if directed by GE Aerospace.  
+
+Figure 8 Piping and Instrumentation Diagram 
+
+# Introduction to Johnston Engineering
+
+Johnston Engineering is a mechanical engineering firm located in Spokane, Washington specializing in mechanical design, analysis, integration, build, and testing of first-of-a-kind systems, test fixtures, equipment, and machines. In operation since 2015, JE brings over 250 years of combined experience across 20 employees with specialized expertise in product development and advanced engineering solutions. Our experience spans multiple industries including aerospace, industrial machines, and biotechnology, as well as clean technology industries including carbon, hydrogen, nuclear, and energy storage. 
+
+Our advantage is an “Analysis-Driven Design” approach, meaning that we have closely integrated mechanical design with physics-based simulations of thermal, structural, and fluid-flow analysis to optimize and validate designs before anything gets built – ensuring product performance and avoiding part failures. Utilizing SolidWorks 3D CAD and ANSYS analysis software, we excel in component modeling, analysis, and system integration. Our expertise includes performing Computational Fluid Dynamics (CFD) and Thermal and Structural Finite Element Analysis (FEA) to simulate the performance of mechanical hardware systems, considering forces, pressures, torques, temperature, and flow interactions. We then iterate design and analysis simulations until desired performance outcomes are achieved leading to successful hardware development and testing process.
+
+JE President, Andy Johnston, P.E., leads the team and provides subject matter expertise in structural, thermal, and fluid analysis with over 20 years of experience in thermal management system design, energy, military & aerospace, research, design, analysis, build, and testing of first-of-a-kind systems.  Before starting Johnston Engineering, Andy spent 11 years working for Parker Aerospace Thermal Management Systems designing liquid heating, cooling and management systems for military and aerospace environments.  
+
+JE has completed over 180 projects, designing custom components and full systems. Our clients include the US Department of Energy, National Laboratories and private industry working on research, development, testing and commercialization of their new and innovative technologies.  Our first of a kind development focus makes JE an ideal fit to develop this test system.   
+
+# Scope of Work
+
+Johnston Engineering will deliver a completed Stoddard Pump System that meets the specified performance criteria described in the “Stoddard Pump Requirements SOW” dated 6/2/2025, provided by GE Aerospace and addresses in Section 2.2. 
+
+## SOW: Key Tasks
+
+- **Conceptual Design**
+
+- Translate Stoddard Pump Requirements SOW into system requirements compliance matrix
+
+- Piping and Instrumentation Diagram (P&ID)
+
+- **Engineering Calculations ****&**** Hardware Selection**
+
+- Perform calculations for pressure drop and tube sizing in order to size pump and tubing
+
+- Detailed thermal analysis to design heater and heat exchanger 
+
+- **Detailed System Design**
+
+- Test stand frame CAD design
+
+- Pumping and fluid flow components CAD design and OTS component selection 
+
+- Drawing creation 
+
+- BOM creation
+
+- **Control System Design**
+
+- JE will select, order and install sensors, pump and control valve.   It is understood that GE Aerospace prefers to use existing GE owned National Instruments hardware and write the LabVIEW code.  We will happily provide National Instruments hardware and software services if desired by GE Aerospace, but we have excluded this scope from our current pricing. 
+
+- **Final System Design**
+
+- Refine CAD models and drawings for fabrication readiness
+
+- Confirm materials and suppliers for all components
+
+- **Component Procurement, ****Fabrication ****&**** Assembly ****(Phase 2)**
+
+- Order hardware
+
+- Fabricate and assemble unit
+
+- Validate component fit and build quality
+
+- **System Test**
+
+- JE has scoped minor testing since full system control and LabVIEW VI programming is assumed to be completed by GE Aerospace. The following testing is priced in the proposal. JE can conduct additional system testing at the request of GE Aerospace. 
+
+- System leak check with air
+
+- Verify functionality and signal of all sensors
+
+- Pump flow and pressure performance validation at conditions 1, 2 and 3.  
+
+- Heater capacity verification and max temperature verification 
+
+- Control valve functionality
+
+- **Delivery to GE Aerospace **
+
+## System Requirements Matrix
+
+| **Req****. ****#** | **Requirement** | **Req. Met (Yes/No)** | **Comments** |
+| --- | --- | --- | --- |
+| 1 | **Thermal Requirements: ** Stoddard Pump Outlet Temperature (Test Unit inlet): 216°F to 238°F. | **YES** | Electric heater wound around custom bent tube with insulation on exterior |
+| 2 | **Pressure Requirements:** | **YES** | All components and sensors will meet these conditions |
+| 3 | **Flow Requirements:** | **YES** | Variable speed pump will allow flow rate control in the range between conditions 1-3 with headroom.  Pump sized for 8.5GPM at 70 psid |
+| 4 | **Dimensional Requirements:** The pump system is restricted to fit within an area of 36 high x 25 deep x 19 wide (inches). | **YES** | Device fits inside provided volume and is open for easy access. |
+| 5 | **Power Requirements:** Available power is 208 VAC 3 phase delta connected, 60 Hz. | **YES** | JE understands other voltages are available per discussions with Hunter Ortega.  System will comply with GE available input voltage |
+| 6 | **Control System Requirements:** The system will be required to control the outlet temperature (inlet to test unit) and flow rate within the desired ranges listed above. - Inlet and outlet temperature - Constant Pump Pressure - Flowrate | **YES** | Heating process controller will control electric heater and be addressable via LabVIEW PID control.  Liquid coolant controller will be electrically operated needle valve addressable via LabVIEW.  GE will write LabVIEW code. |
+| 7 | **Safety Requirements:** Pressure relief valves or burst discs. Stoddard supply safety shut off valve. | **YES** | Provided |
+
+# Deliverables
+
+- 3D CAD models and fabrication drawings of all parts and assemblies in completed system
+
+- Bill of Materials (BOM). Specification of OTS equipment and custom hardware: Define all required components for system integration with input from GE Aero on previously used and preferred hardware.
+
+- Initial system testing data
+
+- Assembled, functional Stoddard Pump System shipped to GE Aerospace preferred location. 
+
+# Exclusions
+
+- LabVIEW control hardware or writing LabVIEW code. JE can provide if desired but understand that GE Aero prefers to use existing hardware and staff to complete this scope of work. 
+
+# Price Proposal 
+
+Johnston Engineering offers the Stoddard Pump System design and build for** ****$****9****8****,****6****00**** on a T****&****M basis****. **
+
+The project is offered on a Time and Materials (T&M) hourly rate of $195 for time and a 25% markup for materials. Costs will be incurred only for hours worked and materials purchased. The following estimates are provided for budgeting purposes.  Historically, our estimates are accurate to +/- 20%, assuming no change in project scope. If GE Aerospace prefers a fixed fee arrangement, JE will provide all deliverables for $123,250.
+
+The Pricing Milestones below are divided into two phases: Phase 1 for Fully System Design and Phase 2 for Fabrication, Assembly & Delivery. 
+
+Table 1 Project labor cost summary for **Phase 1: Design** and **Phase 2: Fabrication****, Assembly ****&**** Delivery**
+
+## Phase 1: Full System Design  
+
+Johnston Engineering estimates an engineering design labor cost of $42,600 USD for Phase 1. This phase of the project will solidify requirements, propose, iterate and finalize system design for GE review and approval before moving to Phase 2.
+
+## Phase 2: Fabrication, Verification, and Delivery
+
+Johnston Engineering estimates fabrication and verification labor and hardware and delivery costs to total $56,000 USD for Phase 2**.**** ** This phase of the project will create drawings and the Bill of Materials (BOM), order hardware, fabricate components, inspect hardware, assemble system, perform testing, and ship the system to GE Aerospace. Hardware procurement and fabrication labor and material costs are estimated at $29,900. Assembly labor and delivery costs are estimated at $26,1000 (assuming ~$3,000 in shipping charges). 
+
+# Project Timeline
+
+The complete project duration is 86 workdays assuming one staff per labor category. If the project kicks off in August 2025, **Phase****s 1**** ****&****2**** are ****scheduled**** for completion by ****11****/****30****/2025****.** 
+
+Johnston Engineering has the capacity to add staff to the project to complete the work on a faster timeline if preferred. JE estimates we can complete the work by 10/31/2025 with additional staff and estimates an price increase of ~10% due to additional staff in meetings etc. 
+
+# Proposal Conclusion: 
+
+Johnston Engineering is committed to delivering exceptional engineering services and high-quality results for GE Aerospace and Unison Industries. Our engineering capabilities, combined with our past project experience designing thermal management systems ensure that we are well suited to meet the requirements of this system. 
+
+**Johnston Engineering offers**** the Stoddard Pump System for ****$98,600**** with a completion date of 11/30/2025**. 
+
+Our commitment is to deliver our services in the capacity that best supports GE Aerospace and Unison Industries success. Please do not hesitate to reach out with any questions or for further clarification on any aspects of this proposal. 
+
+We look forward to the opportunity!
+
+**Andy Johnston, P.E.**
+Principal Engineer
+Johnston Engineering, PLLC
+
+1815 E. Trent Ave. 
+
+Spokane, WA 99202
+Andy@JohnstonPE.com
+(509) 290-1034
+
+Confidential and Proprietary to Johnston Engineering, PLLC1

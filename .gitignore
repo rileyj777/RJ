@@ -1,0 +1,7 @@
+# Claude Code — machine-local settings (permissions, MCP tokens, etc.)
+.claude/settings.local.json
+
+# OS / editor / OneDrive cruft
+.DS_Store
+Thumbs.db
+desktop.ini

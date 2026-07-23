@@ -1,0 +1,136 @@
+|  |  | Johnston Engineering Proposal: |
+| --- | --- | --- |
+
+Engineering Proposal: 
+
+**DATE:**			December 12, 2025 
+
+**SUBMITTED TO**:	Sahag Voskian
+
+**PROJECT:**		_
+
+**SUBMITTED BY**:	Andy Johnston P.E.
+
+			Johnston Engineering, PLLC
+
+Johnston Engineering is pleased to submit this proposal for engineering design and build of a _. 
+
+# Intro: 
+
+Johnston Engineering (JE) is a mechanical engineering firm located in Spokane, Washington **specializing in the design, analysis, integration, build, and testing of first-of-a-kind systems**. In operation since 2015, JE brings over 250 years of combined engineering experience across a team of 23, with deep expertise in product development, system integration and advanced engineering solutions. Our work spans material recovery and electrochemical systems, industrial machinery, as well as clean technology sectors including carbon capture, hydrogen, nuclear, and long-duration energy storage.
+
+JE utilizes an “*a**nalysis-**d**riven **d**esign**”* approach, meaning **a****t JE**** y****our designers are also ****your ****analysts****. **Using SolidWorks 3D CAD and ANSYS Finite Element Analysis (FEA)and Computational Fluid Dynamics (CFD), our team excels in component modeling, full system integration, and physics-based simulations of thermal, structural and fluid-flow analysis. This closely integrated coupling of design and analysis ensures that system performance is validated before fabrication begins, reducing risk and accelerating development. 
+
+**At JE ****y****our designers are also your builders**. The same engineers who model and analyze the system are also in charge of fabrication oversight, procurement, assembly, and testing. This continuity produces engineers with a uniquely deep understanding of the design intent, system behavior, and how the system is installed in the real world.
+
+To date, JE has completed over 190 first-of-a-kind engineering projects for various clients and 29 projects with the Department of Energy (DOE). Our focus on FOAK development, combined with our integrated design-analysis-build-test approach, makes Johnston Engineering an ideal partner for scale-up and deployment of the _.
+
+# Scope:
+
+Johnston Engineering is prepared to provide mechanical, electrical and software engineering design, analysis, build and test services to deploy the _. Both systems are intended to _.
+
+Johnston Engineering will deliver the completed system along with all 3D CAD models, 2D fabrication-ready drawings, and accompanying analyses report. All deliverables are targeted for completion in a **4–****6 month**** timeline**. 
+
+# Key Tasks & Pricing Estimate: 
+
+# The table below summarizes key tasks and associated costs estimated to design and build the _ system. 
+
+| **Concept** | **Requested Capability** | **Design Approach/ Additional Notes** |
+| --- | --- | --- |
+| Front Loader | Grippers engage torque tube | Using parallel gripper design |
+|  | Vertical adjustment on both sides for fine adjustment of slope | Using Rotary design to keep grippers in-line with each other and to bring horizontal when one side of loader is lower than other, such as one wheel in a hole |
+|  | Horizontal adjustment from linear hydraulic actuators for N/S fine-tuning | Designing in side-shift similar to fork-lift design – approximately +/- 6” allowance on either side for fine adjustment |
+|  | Independent latera adjustment for E/W tuning | We feel this is redundant and can be done with the front-end loader which simplifies the design and cost |
+|  | Fine adjustment Tile from helical hydraulic actuator | Design will include rotary adjustment from loader attachment to end effector using hydraulic actuator |
+|  | Attach to standard pins on front loader | Understood. – Qcells provides JE with dimensional / pictorial drawing of attachment point to design from |
+| Off Road Construction Cart | Individual legs hydraulically | It may be simpler to have a pinned leg in the up position and pulling the pin allows the leg to go nearly flat on the trailer |
+
+**Phase1: Frontloader Attachment Design**
+
+**Key Tasks:**** **Design of a custom front loader attachment capable of safely and repeatedly lifting pre-assembled solar module, rail, and torque tube sections for utility-scale solar applications. The attachment should support reliable daily use, minimize material damage, and promote operator efficiency.
+
+- Requirements Definition (10 hours)
+
+- Collaborate with QCells to define final interface geometry, lifting tolerances, and operational safety constraints.
+
+- 3D CAD Development (100 hours)
+
+- Design modular frame, attachment interfaces, and adjustable gripping/handling features.
+
+- Concept iteration
+
+- Review meetings with QCells
+
+- Structural Analysis (30 hours)
+
+- Perform static structural FEA to verify safe loading and stress distribution under operational conditions.
+
+- S-N Curve based fatigue analysis on attachment end effector to validate field durability.
+
+- Drafting Detailed Fabrication Drawings (20 hours)
+
+- Generate 2D manufacturing drawings of complete assembly and all subcomponents.
+
+**Phase2: Off-Road Construction Trailer Design**
+
+Key Tasks:  Design of simple, manually operated support leg assembly to bolt to existing trailer 
+
+- Requirements Definition (4 hours)
+
+- Collaborate with QCells to define final interface geometry, lifting tolerances, and operational safety constraints.
+
+- 3D CAD Development (16 hours)
+
+- CAD design of trailer supports to mount to existing trailer
+
+- Structural & Load Analysis (8 Hours)
+
+- Simulate towing vertical, side and forward and aft loads using equivalent g-loading static structural analysis.  Client to identify desired g-loading.  
+
+- Drafting Detailed Fabrication Drawings (8 hours)
+
+- Generate 2D manufacturing drawings of complete assembly and all subcomponents.
+
+**Deliverables: **
+
+- 3D CAD models (SolidWorks and STEP formats) for both equipment systems
+
+- 2D manufacturing drawings (PDF and/or native formats)
+
+- Static structural analysis reports
+
+**Exclusion****s****: **
+
+- Hardware Quoting and Fabrication: This proposal covers design and analysis services only. Fabrication, assembly, or procurement of hardware components is excluded and may be scoped separately following design approval.
+
+- Front-End Loader pin interface definition: QCells is responsible for providing the exact front-end loader pin interface specifications. Johnston Engineering will design the attachment interface based on the data provided.
+
+# Cost: 
+
+This proposal is based on a time and material (T&M) hourly rate of $205/hr. Johnston Engineering estimates 160 hours (**$32,800**) needed to complete the design and analysis of the Frontloader Attachment and 36 hours (**$7,380**) needed to complete the design and analysis of the Off-Road Construction Trailer Design. Costs will be incurred only for hours worked and materials purchased. The above estimates are provided for budgeting purposes. Historically, our estimates are accurate to +/- 20%, assuming no change in project scope. 
+
+If QCells prefers a fixed fee arrangement, JE will provide all deliverables for **$48,216**. 
+
+Our commitment is to deliver our services in the capacity that best supports the success of this project. Please do not hesitate to reach out with any questions or for further clarification on any aspects of this proposal. 
+
+**Andy Johnston, P.E.**
+Principal Engineer
+Johnston Engineering, PLLC
+
+1815 E. Trent Ave. 
+
+Spokane, WA 99202
+Andy@JohnstonPE.com
+(509) 290-1034
+
+Customer Acceptance of Proposal: 
+
+X__________________________
+
+Accepted by: 
+
+Date: 
+
+		1
+
+Proprietary and Confidential to Johnston Engineering PLLC

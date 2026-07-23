@@ -1,0 +1,463 @@
+|  |  | Johnston Engineering Proposal: Foundation Series – Solid State Generator |
+| --- | --- | --- |
+
+**Proposal: ****Foundation Series – Solid State Generator**
+
+**DATE:**			May 8, 2026 
+
+**SUBMITTED TO**:	Petra Power
+
+**PROJECT:**		Foundation Series – Solid State Generator
+
+**SUBMITTED BY**:		Johnston Engineering, PLLC
+
+# Introduction
+
+Johnston Engineering (JE) is pleased to submit this proposal for a Dual Trailer Vacuum Membrane Distillation (VMD) System to KMX Technologies.
+
+This document provides a cost proposal for the design, analysis, procurement, fabrication and assembly tasks required for the Dual Trailer VMD System. Pricing milestones are divided into two phases: **Phase 1 ****–**** Full System Design and Analysis**, and **Phase 2 – ****Procurement****, ****Fabrication, and ****Assembly**. Johnston Engineering has conducted multiple SOW Review meetings with KMX and quoted KMX-provided hardware cost sheets and CAD files to drive the estimates in this proposal. 
+
+The figures below are intended to convey a notional system layout. The images of the system below were originally provided by KMX. 
+
+Figure 1 Notional system layout
+
+Figure 2. Notional System Layout – Hardware quoted by Johnston Engineering is shown in **green**. Components shown in **gray** are either the responsibility of KMX or were not priced at the time of this proposal. Hardware highlighted in **yellow** represents placeholder estimates based on comparable components.
+
+Several potential cost-driving items have not yet been quoted by Johnston Engineering but have been estimated by KMX. These include:
+• Vacuum pumps
+• Blowers
+• Membranes
+
+.  
+
+# Introduction to Johnston Engineering
+
+Johnston Engineering (JE) is a mechanical engineering firm located in Spokane, Washington **specializing in the design, analysis, integration, ****build****, and testing of first-of-a-kind systems**. In operation since 2015, JE brings over 250 years of combined engineering experience across a team of 23, with deep expertise in system integration and advanced engineering solutions. Our work spans critical material recovery systems, industrial machinery, and biotechnology, as well as clean technology sectors including carbon capture, hydrogen, nuclear systems, and long-duration energy storage. 
+
+A defining advantage of Johnston Engineering is our **Analysis-Driven Design** approach. At JE, our designers are also analysts, utilizing physics-based simulations of thermal, structural, and fluid-flow analysis to optimize and validate designs before we build systems. This closely integrated coupling of design and analysis ensures that performance is validated before fabrication begins, preventing part failures and accelerating development. Using SolidWorks 3D CAD and ANSYS Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD), our team excels in component modeling, full system integration, and simulation of forces, pressures, torques, heat transfer, and complex flow interactions. We iterate through design and analysis cycles until the system is fully optimized for performance, modularity, reliability, serviceability and manufacturability. This helps us **develop the system faster and with less risk.** 
+
+A second core strength is that **our designers are also your builders**. The same engineers who model and analyze the system are also in charge of fabrication oversight, procurement, assembly, and testing. This continuity produces engineers with a uniquely deep understanding of the design intent, system behavior, and how the system is installed in the real world. This results in higher-quality, better-engineered hardware with fewer redesign cycles.
+
+Third, we focus specifically on **first-of-a-kind (FOAK) development**. JE exists to reduce risk when scaling technologies. We have deep experience with technologies in the **TRL 3–****9** range and regularly support clients transitioning concepts into integrated subsystems, pilot systems, and field-deployable hardware.
+
+Our team also has experience designing systems for **critical mineral recovery**, including novel absorption and desorption technologies, complex thermal and fluid environments, and rare earth/critical mineral separation processes from benchtop through field-ready units of similar size to the Dual Trailer system. This includes systems operating under tightly controlled temperatures, pressures, flow rates, and reactive conditions essential for high-purity material recovery.
+
+JE President, Andy Johnston, P.E., leads the team at JE and provides subject-matter expertise in structural, thermal, and fluid flow analysis, with over 20 years of experience in advanced thermal-management systems, energy technologies, aerospace, and defense. Before founding Johnston Engineering, Andy spent 11 years at Parker Aerospace Thermal Management Systems designing liquid heating, cooling, and environmental control systems for military and aerospace platforms. 
+
+To date, JE has completed more than 190 first-of-a-kind engineering projects across the U.S. Department of Energy, and private industry. **F****ive**** of Johnston Engnieering’s previous project examples have been included in this proposal ****in**** ****Section 2 below****. **
+
+Our focus on FOAK development, combined with our design-analysis-build-test approach, makes Johnston Engineering an ideal partner to develop KMX’s Dual Trailer system.
+
+# Johnston Engineering Project Examples
+
+##  Industrial-Scale Electrolyzer Pilot Plant
+
+Johnston Engineering partnered with OCOchem to support the scale-up and deployment of their industrial-scale CO₂ electrolyzer technology. The project has now culminated in the successful commissioning of the world’s first pilot plant using multiple industrial-scale cells to directly convert CO₂ and water into organic molecules.
+
+**Project ****Goal:** Scale up the CO2 electrolyzer cell size by 10x
+
+**Johnston Engineering Provided Services: **Johnston Engineering provides comprehensive mechanical design, analysis, building, and test services to ensure the successful development and testing of the industrial-scale CO2 electrolyzer cell.
+
+- Mechanical Design:
+
+- Development of flow visualization models to optimize the internal flow dynamics.
+
+- Design of mounting and work platforms to support the electrolyzer and ensure safe operation.
+
+- Custom hardware design for power supply systems to meet the unique requirements of the scaled-up electrolyzer.
+
+- Computational Fluid Dynamics (CFD):
+
+- **Pressure drop analysis** to ensure efficient fluid flow and minimize energy losses.
+
+- **Flow distribution analysis** to achieve uniform flow and optimal performance across the electrolyzer cell.
+
+- Structural Analysis
+
+- Stress analysis of the electrolyzer mounting frame and work platforms. 
+
+- Hazardous Material Control Area:
+
+- **Design and build of a dedicated hazardous material control area** for safe hydrogen testing.
+
+- Implementation of ventilation, containment, and operational safety measures for H₂ handling and testing
+
+## Containerized Electrochemical System Design
+
+Johnston Engineering is supporting Lectrolyst in the development and commercialization of its modular electrochemical system designed to convert CO₂ and renewable electricity into sustainable chemicals. Lectrolyst’s technology leverages advanced catalyst and cell designs to achieve high-efficiency electrochemical conversion, and the current project focuses on validating, optimizing, and preparing the system for containerized pilot deployment. With modeling, analysis, and containerized system design completed, the project is now prepared to move into **fabrication and full system build**. Johnston Engineering is ready to support Lectrolyst through the build phase, including procurement support, mechanical build services, assembly oversight, and commissioning support.
+
+**Project Goals:**
+
+- Evaluate and optimize the performance of Lectrolyst’s electrolyzer stack architecture.
+
+- Perform mechanical and structural validation of cell compression, sealing, and operational loads.
+
+- Package the full system into a 40-ft containerized pilot-scale platform suitable for fabrication and field deployment.
+
+- Identify and cost the bill of materials (BOM) for the first build unit, enabling Lectrolyst to move directly into construction.
+
+**Johnston Engineering Provided Services: **
+
+- CFD Modeling & Electrolyzer Performance Analysis
+
+- Conducted CFD modeling of the electrolyzer cell and full-stack flow pathways.
+
+- Analyzed flow distribution, pressure gradients, and reactant delivery uniformity to identify opportunities for improved efficiency and reduced parasitic losses.
+
+- Performed one to two optimized geometry iterations to refine internal flow features and enhance performance at the stack level.
+
+- Structural Analysis
+
+- Performed structural and compression analysis of the electrolyzer stack assembly.
+
+- Evaluated clamping forces, gasket behavior, and mechanical tolerances to ensure proper sealing, structural integrity, and safe long-duration operation.
+
+- System Packaging & Mechanical Integration
+
+- Developed the complete system packaging layout within a standard 40-ft shipping container, including:
+
+- Equipment arrangement and envelope management
+
+- Maintenance access, operator pathways, and safety clearances
+
+- Integration of auxiliary systems, power components, and balance-of-plant hardware
+
+- Ensured the design supports modular, field-deployable operation.
+
+- 4. Bill of Materials (BOM) Development & Costing
+
+- Identified the required components and subsystems for the first full build.
+
+- Developed and priced a detailed BOM, enabling Lectrolyst to budget, schedule procurement, and prepare for fabrication.
+
+## Containerized Power Generation Racking System
+
+Figure 1 Containerized power generation racking system deployed September 2024
+
+Johnston Engineering collaborated with our client to develop a containerized power generation system equipped with a custom racking system. This project involves customizing shipping containers, equipped with a custom racking system to secure power generation equipment in transportation and in use once on-site as shown in Figure 1. The system was designed to ensure robust structural integrity, particularly under transportation loads, while maintaining efficient and compact packaging, as the complete system will utilize hundreds of containers stacked vertically and back-to-back.  
+
+**Client Goal:**
+
+- Develop a scalable containerized system for power generation.
+
+- Ensure structural integrity and durability during transportation and operation.
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided comprehensive design, analysis, fabrication and integration services for the containerized power generation system, ensuring the successful execution of the project and the client's objectives.
+
+- Design:
+
+- Mechanical design of the racking system, including custom components to secure power generation equipment within the container.
+
+- Mechanical design of the electrical devices that reside in the racking system.  
+
+- Development of detailed 3D CAD models and assembly drawings for precise fabrication and integration.
+
+- Structural Analysis:
+
+- Analysis of structural frames to ensure stability and integrity during transportation and operation.
+
+- Detailed stress and load analysis to verify the strength and durability of the frames and components, ensuring they could withstand the transportation acceleration loads.
+
+- Build and Assembly:
+
+- Fabrication and assembly of the entire system inside a 20ft shipping container, ensuring compact and efficient packaging on-site at Johnston Engineering.
+
+- Quoting, purchasing, and inspection of all externally fabricated components from vendors to meet project specifications.
+
+- Coordination of all fabrication and subcontractor activities to ensure the project was completed on time and within budget.
+
+This project was completed in September 2024. The above picture showcases the initial assembly stage inside the 20ft container.
+
+##  Containerized CO2 DAC Pilot Plant
+
+*The following images provide a glimpse into the project:*
+
+- *Image 1: Taken on **deployment** day in May** 2024. T**his picture capture**s the crane lift of the final product just before loading on a Semi truck heading **to Colorado.*
+
+- *Images 2-3: These images show the custom modifications made to a 40ft ISO shipping container to accommodate the customer's system.** Including air inlet and outlet locations which would be needed for** the DAC fan in the Capture6 unit**.*
+
+| **1** | **2** |
+| --- | --- |
+| **3** |  |
+
+Johnston Engineering collaborated with our client to develop a containerized direct air capture (DAC) pilot plant designed for accelerated lifetime testing of absorbent media. This pilot plant was created to validate the long-term performance of the absorbent media under various operating conditions, ensuring its effectiveness and durability for commercial deployment. The DAC pilot plant was designed to handle various stressors and simulate long-term operational conditions to accelerate the testing process. This enabled the client to quickly gather critical data on the absorbent media's performance and make informed decisions for future development and deployment.
+
+This project was deployed in May of 2024 and is successfully operating in Colorado. 
+
+**Client Goal:**
+
+- Validate long-term performance of absorbent media
+
+- Conduct accelerated lifetime testing
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided the complete design, analysis, and construction of the DAC pilot plant, which included approximately 5,000 custom and off-the-shelf parts. Our comprehensive services ensured the project's success and the client's objectives were met.
+
+- Design:
+
+- Mechanical design of ~5,000 parts, including machined components, sheet metal, weldments, and 80/20 frames.
+
+- Development of detailed 3D CAD models and assembly drawings.
+
+- Structural Analysis:
+
+- Analysis of structural frames to ensure stability and integrity under pressure and vacuum conditions.
+
+- Detailed stress and load analysis to verify the strength and durability of the frames and components.
+
+- Thermal Analysis:
+
+- Steady-state and transient thermal analysis to optimize the thermal performance of the system.
+
+- Custom cold plate design for rapid changes in temperature needed for temperature swing absorption cycle.
+
+- Computational Fluid Dynamics (CFD):
+
+- Fluid distribution analysis to ensure uniform flow over the absorption media of the DAC system.
+
+- Build and Assembly:
+
+- Fabrication and assembly of the entire system inside a 40ft shipping container, ensuring compact and efficient packaging on-site at Johnston Engineering. 
+
+- Quoting, purchasing, and inspection of all external vendor fabricated components. 
+
+- Coordination of all fabrication and subcontractor activities to meet project timelines and budget.
+
+##  Point Source CO2 Capture – Test Fixture Design & Build for Media Characterization Study
+
+Johnston Engineering assisted with the research commercialization, design, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) to successfully develop a decarbonization device meant for use in commercial buildings, for our client Carbon Quest. This project was deployed in 2022 and the product is now installed in a High Rise in Times Square, NY. 
+
+CarbonQuest has developed a modular system that allows for the capture and liquefaction of CO2 on-site. "This recycled CO2 is then made available to off-takers who can use it in a variety of environmentally beneficial ways, such as in the production of concrete or as a replacement for petroleum in jet fuel and chemical processes. By implementing this innovative system, building owners and operators can now enjoy a new revenue stream while simultaneously ensuring compliance with emissions guidelines" - Carbon Quest.
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided mechanical engineering design, thermal analysis, two-phase pressure drop analysis, component sourcing, build and testing services. We provided design, modifications, operation, and data processing of a research and development test fixture to characterize CO2 absorbent performance in a pressure swing absorption cycle. 
+
+- Mechanical Design
+
+- Mechanical Engineering
+
+- Convection Thermal Analysis
+
+- Two-phase pressure drop analysis
+
+- Material Sourcing
+
+- Material Ordering
+
+- Product Assembly
+
+- Product Test
+
+The purpose of the CO2 absorbent performance R&D test fixture was to characterize the performance of various candidate absorbents for use in a pressure-swing absorption cycle to concentrate CO2 gas. A P&ID diagram of the test fixture was created to identify all components in the system.  Characteristic equations were developed to quantify system and key component uncertainties such as mass flow of CO2 in mixed gas flow, and total mass flow of CO2 leaving the system. 3D CAD files were generated in SOLIDWORKS and reviewed with the customer to ensure the proper design intent was met. Pressure, flow and temperature sensors were selected, then we built the system and wrote the LabVIEW data acquisition code. We performed test, data reduction and data analysis on a number of absorbents. The test result was highly improved CO2 concentration performance.
+
+In another portion of the development, Johnston Engineering worked with CarbonQuest on the two-phase pressure drop in a line containing flowing liquid CO2 and noncondensable gas.  CarbonQuest needed to know the pressure drop in this line to ensure proper system operation. Calculation during two-phase flow requires additional work compared to single-phase flow.   REFPROPS data was used for fluid properties and the Martinelli Nelson parameter was used for Turbulent vapor Turbulent liquid flows assuming the separated flow model.  The Chisholm and Laird two-phase multiplier was used in the calculation to relate the frictional component of a two-phase pressure drop to a single-phase pressure drop at the same mass flow rate to calculate the overall line pressure drop.  All engineering efforts were made on behalf of Carbon Quest and their new patented, ground-breaking technology.
+
+# Dual Trailer System Scope of Work
+
+Johnston Engineering will complete the design, analysis, fabrication, assembly, and verification of a mobile Dual Trailer Vacuum Membrane Distillation (VMD) system. This effort will proceed in two phases. The **Total ****P****roject ****C****ost**** ****of**** $2,4****50****,****575**** is**** shown in Section 6**. Section 3 provides detailed descriptions of each phase along with their associated costs.
+
+- **Phase 1 – ****Full System ****Design and ****Analysis**: The project will begin by advancing KMX’s existing CAD into a fully detailed, fabrication-ready design. Johnston will design all incomplete system elements and perform engineering analyses to validate performance, including pressure drop and thermal behavior across the system. Structural and transportation load analyses will be conducted to ensure the system remains stable during both operation and transit. The final design will prioritize manufacturability, serviceability, and field integration.
+
+- **Phase 2 –**** ****Procurement, ****Fabrication and ****Assembly**: Once design efforts are complete, Johnston will proceed with procurement, fabrication, and full mechanical and electrical assembly, followed by verification testing and delivery readiness.
+
+## SOW: Phase 1 – Full System Design and Analysis
+
+- **System Operations and Function Review**
+
+- Review current state of the system from KMX-provided CAD and documentation. This includes current system functions, operations, and pre-selected hardware. KMX has provided (4) lists of preselected hardware which will be rereviewed and quoted. Some of this work has already been completed in preparation of this proposal. 
+
+- **Advance Current System Design to Fabrication Readiness**
+
+- Johnston Engineering will finalize the existing system design by addressing the remaining mechanical and structural requirements necessary for fabrication. These design tasks have been jointly identified by KMX and Johnston Engineering during SOW review meetings. These design tasks include securing multiple sections of the dual trailer for transportation loads and relocating/ packaging of sections of the system. This task includes refining system details to ensure compliance with operational needs, transportation loading requirements, and fabrication feasibility. 
+
+-  Key tasks driving to advance the current system design to fabrication readiness which drive most of the cost in this phase have been identified in the table below. A 10% buffer has been added to the Labor Estimate for program management: 
+
+**Table 1**
+
+| **Task** | **Task Description** | **Labor Estimate (in Days)** | **Cost Estimate ($195/hr * Labor Days)** |
+| --- | --- | --- | --- |
+|  | Modify and design piping supports and bracketry across both trailers | 12.5 | $22,550 |
+|  | Design support frame for base of large tanks (QTY 2) and structural analysis | 10 | $18,040 |
+|  | Secondary containment skid: Design 3 seepage vessels and perform structural analysis Design trailer mounting brackets Design pump support Update plumbing to locate pump in the secondary containment skid area | 12.5 | $22,550 |
+|  | Design and structural analysis of the heat exchanger frame (Qty. 2) | 7.5 | $13,530 |
+|  | Structural analysis of the VMD skid for transportation loading | 7.5 | $13,530 |
+|  | Structural analysis of pump frame | 3.75 | $6,765 |
+|  | Redesign and structural analysis to strengthen main condenser frame | 10 | $18,040 |
+|  | Integration of vibration isolators for compressor operation | 2.5 | $4,510 |
+|  | Develop transportation storage solutions for: Disassembled membrane elements Interconnecting hose | 5 | $9,020 |
+
+- **Full System Pressure Drop Analysis**
+
+-   Perform full-system pressure drop analysis using computational fluid dynamics (CFD) to verify flow performance, identify flow restrictions, and ensure system components are properly sized for operational conditions.
+
+- **Creation of System Level Fabrication Drawings**
+
+- Produce detailed 2D fabrication drawings ready for fabrication quotes
+
+## SOW: Phase 2 – Procurement, Fabrication, and Assembly  
+
+- **Procurement of off-the-shelf (OTS) equipment**
+
+- KMX has identified four (4) Excel sheets containing OTS hardware components. Approximately 95% of all items listed across these sheets have been quoted by Johnston Engineering and are included in this proposal. File names are associated hardware estimates are listed Table 2 below, and detailed pricing screenshots are provided in Section 11 of this proposal. 
+
+- Johnston Engineering has also identified additional OTS hardware from the KMX-provided CAD files through a SolidWorks part export. These components have been organized under the name “SW Export”. These components have also been reviewed and quoted as part of this proposal.
+
+- Johnston Engineering will review and verify the specifications of all KMX-provided OTS hardware and define any additional components required for full system integration.
+
+- Johnston Engineering will procure all necessary OTS components to support complete system fabrication and assembly.
+
+**Table 2**
+
+| **Task** | **OTS Hardware List** | **Estimate** |
+| --- | --- | --- |
+|  | TDT_System_**Equipment_list**_4000_2013-04.00 | $505,653 |
+|  | TDT_System_**Pipe_list**_40000-2013-4.00 | $329,689 |
+|  | TDT_System_**Valve_list**_40000-2013-4.00 | $317,518 |
+|  | TDT_System_**Instrument_list**_40000-2013-4.00 | $225,439 |
+|  | **SW**** Export** | $133,280 |
+
+- **Fabrication of non-OTS ****Equipment and Hardware**
+
+- Fabricate all required frames, skids, brackets, and supporting component. 
+
+- Johnston Engineering and KMX have identified additional hardware described in Phase 1 needed to advance current system design to fabrication readiness. Associated hardware estimates are listed in the table below. 
+
+- **Table 3**
+
+| **Task** | **OTS Hardware List** | **Estimate** |
+| --- | --- | --- |
+|  | Secondary Containment Skid | $2,044 |
+|  | VMD Frame 9000 | $47,688 |
+|  | Main Condenser Frame | $16,691 |
+|  | FRP Tank Frame | $16,350 |
+|  | Plate Heat Exchange Frame | $6,813 |
+|  | Permeate Vessel Frame | $3,406 |
+|  | Seepage Vessel Frame | $3,406 |
+|  | Bag Filter Frame | $2,725 |
+|  | General Fasteners | $10,000 |
+
+- **System ****Assembly****, ****Integration****, ****Initial Testing, and Delivery to KMX**
+
+- Receive components and perform hardware Quality Assurance (QA)
+
+- Integrate components and assemble system 
+
+- Integrate Siemens Programmable Logic Controller (PLC). Validate PLC operation and basic component operation 
+
+- Leak check and initial system testing
+
+# Deliverables
+
+- 3D CAD models and 2D fabrication drawings of all parts and assemblies in completed system
+
+- Bill of Materials (BOM). Specification of OTS equipment and custom hardware: Define all required components for system integration with input from KMX on previously selected and preferred hardware.
+
+- Pressure drop and structural analysis reports
+
+- PLC logic and Human-Machine Interface (HMI) for system control (Siemens)
+
+- Assembled, functional Dual Trailer Vacuum Membrane Distillation (VMD) System
+
+- System shipped to KMX preferred location. 
+
+# Exclusions
+
+- Onsite installation, commissioning, or operator training (unless separately scoped)
+
+- Membrane performance testing beyond mechanical and control verification
+
+# Price Proposal 
+
+Johnston Engineering offers the Dual Trailer VMD System design, fabrication and assembly for **$2,****4****50,575**** on a ****Time ****&**** Materials (****T****&****M****)**** basis.**** **
+
+The project is offered at a T&M hourly rate of $205 for time and a 25% markup for materials. Costs will be incurred only for hours worked and materials purchased. The following estimates are provided for budgeting purposes. **Historically, our estimates are accurate to +/- 20%, assuming no change in project scope. ****We suggest planning for an additional 20% safety factor for your internal budgeting. **
+
+The Pricing Milestones below are divided into two phases: Phase 1 for Full System Design and Analysis and Phase 2 for Fabrication, Assembly & Delivery. 
+
+## Phase 1: Full System Design and Analysis 
+
+Johnston Engineering estimates an engineering design labor cost of **$3****79****,****2****25**** USD for Phase 1**. This phase of the project will solidify requirements, propose, iterate and finalize system design for KMX review and approval before moving to Phase 2.
+
+## Phase 2: Procurement, Fabrication, and Assembly
+
+Johnston Engineering estimates fabrication and verification labor and hardware and delivery costs to total **$2,****0****71****,****350**** USD for Phase 2****. ** This phase of the project will order hardware, fabricate components, inspect hardware, assemble system, perform testing, and ship the system to KMX. Hardware procurement and fabrication costs are estimated at $1,620,702. Assembly labor and delivery costs are estimated at $450,648. Material markup and taxes have been applied to the material estimates below. 
+
+**Table ****4** Project labor cost summary for **Phase 1: Design** and **Phase 2: Fabrication****, Assembly ****&**** Delivery**
+
+| **Phase** | **Task** | **Estimate** |
+| --- | --- | --- |
+| **1** | System Operations and Function Review | $9,020 |
+| 1 | Advance Current System Design to Fabrication Readiness. ***Refer to Table 1 for Detailed Pricing*** Modify and design piping supports and bracketry across both trailers Design support frame for base of large tanks (QTY 2) and structural analysis Secondary containment skid: Design 3 seepage vessels and perform structural analysis Design trailer mounting brackets Design pump support Update plumbing to locate pump in the secondary containment skid area  Design and structural analysis of the heat exchanger frame (Qty. 2) Structural analysis of the VMD skid for transportation loading Structural analysis of pump frame Redesign and structural analysis to strengthen main condenser frame Integration of vibration isolators for compressor operation Develop transportation storage solutions for: Disassembled membrane elements Interconnecting hose | $128,535 |
+| 1 | Full System Pressure Drop Analysis | $22,550 |
+| 1 | Creation of System Level Fabrication Drawings. Quote hardware. | $54,120 |
+| 1 | PLC programing – software and hardware | $165,000 |
+| **Phase 1 - ****Design and Engineering**** Total** |  | **$****379,225** |
+| **2** | Procurement of off-the-shelf (OTS) equipment. ***Refer to Table 2 for Detailed Pricing*** TDT_System_Equipment_list_4000_2013-04.00 TDT_System_Pipe_list_40000-2013-4.00 TDT_System_Valve_list_40000-2013-4.00 TDT_System_Instrument_list_40000-2013-4.00 SW Export | $1,511,580 |
+| 2 | Fabrication of non-OTS Equipment and Hardware. ***Refer to Table 3 for Detailed Pricing.*** Secondary Containment Skid VMD Frame 9000 Main Condenser Frame FRP Tank Frame Plate Heat Exchange Frame Permeate Vessel Frame Seepage Vessel Frame Bag Filter Frame General Fasteners | $109,122 |
+| 2 | System Assembly, Integration, Initial Testing, and Delivery to KMX | $450,648 |
+| **Phase ****2**** -**** Procurement, Fabrication and Assembly**** Total:** |  | **$2,****071****,****350** |
+| **Project Total:** |  | **$2,****450,575** |
+
+# Project Timeline
+
+The complete project duration is 210 labor days, assuming four staff per labor category. If the project kicks off in January 2026, **Phase****s 1**** ****&**** ****2**** can be completed ****by ****end of Q2**** 2026.**** **
+
+Johnston Engineering has the capacity to increase staffing if an accelerated schedule is desired. While adding personnel can shorten the overall timeline, increasing team size means more engineers must review and digest the same information, resulting in natural duplication of some effort. For this reason, an expedited timeline may increase labor costs by approximately 5%.
+
+# Pricing and Billing Process
+
+This proposal is based on a time and material (T&M) hourly rate of $205 for time and a 25% markup for materials. Labor is billed at a rate of $205 per hour, hardware purchased, and subcontractors are billed on a cost-plus structure of cost +25%. 95% of material and equipment expenses have been estimated at this stage of the proposal. Johnston Engineering has provided a detailed costing of materials under Exhibit A of this proposal.
+
+Johnston Engineering works from a retainer payment agreement. All services are pre-paid in monthly reserved hours. Unused hours do not expire and will roll over to the following month. At every invoice cycle, Johnston Engineering provides the Client with its current positive or negative balance and makes recommendations for future hourly purchases. All invoices are due on receipt. Upon project completion, any remaining hours can be used for future KMX projects or refunded at the sole discretion of KMX.
+
+Our billing process is broken down into detailed categories allowing KMX to see exactly how much time was spent on each task. For each labor charge, invoices will detail the date, labor category, description of work performed, and hours used. For materials charges, invoices will detail the date, description of the hardware, and cost.
+
+# Intellectual Property Rights
+
+Johnston Engineering will assign all intellectual property related to this project to KMX Technologies. Johnston Engineering is willing to assist KMX and patent attorneys with IP-related communications such as in transferring IP, generating patent figures, etc. We have not budgeted any IP transfer time in this proposal.
+
+# Proposal Conclusion
+
+Johnston Engineering is committed to delivering exceptional engineering services and high-quality results for KMX Technologies. Our engineering capabilities, combined with our past project experience, ensure that we are well suited to meet the requirements of this system. 
+
+**Johnston Engineering offers**** **the Dual Trailer Vacuum Membrane Distillation (VMD) System for **$****2,****4****50****,****575****.**
+
+Our commitment is to deliver our services in the capacity that best supports KMX Technologies. Please do not hesitate to reach out with any questions or for further clarification on any aspects of this proposal. 
+
+We look forward to the opportunity!
+
+**Andy Johnston, P.E.**
+Principal Engineer
+Johnston Engineering, PLLC
+
+1815 E. Trent Ave. 
+
+Spokane, WA 99202
+Andy@JohnstonPE.com
+(509) 290-1034
+
+# Appendix A – Hardware Estimates
+
+##  TDT_System_Valve_list_40000-2013-4.00
+
+##  TDT_System_Equipment_list_4000_2013-04.00
+
+	
+
+##  TDT_System_Pipe_list_40000-2013-4.00
+
+	
+
+##  TDT_System_Instrument_list_40000-2013-4.00
+
+	
+
+##  SW Export
+
+	
+
+Confidential and Proprietary to Johnston Engineering, PLLC1

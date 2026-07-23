@@ -1,0 +1,440 @@
+|  |  | Johnston Engineering Proposal: Capture6 Containerized Pilot |
+| --- | --- | --- |
+
+**Proposal****: Capture****6 Containerized Pilot**
+
+**DATE:**			December 1, 2025 
+
+**SUBMITTED TO**:	Capture6
+
+**PROJECT:**		Capture6 Containerized Pilot
+
+			Project Tortuga	 
+
+**SUBMITTED BY**:	Andy Johnston P.E.
+
+			Johnston Engineering, PLLC
+
+Johnston Engineering is pleased to submit this proposal in response to Capture6's Request for Proposal (RFP) for a Containerized Pilot system to capture Carbon Dioxide (CO2). Johnston Engineering has specific, relevant, and recent design, build, and test experience in containerized carbon capture and electrolytic processes.  We have expertise in systems integration and packaging, and a proven track record of collaboration with customer chemical engineering teams to accurately design and build systems for complex chemical processes that make us a strong fit for this project.
+
+Johnston Engineering is proposing to lead the project with support from our control systems and software engineering subcontractor, InfoTech North Star (ITNS). Johnston Engineering will handle all mechanical engineering, procurement and commissioning tasks outlined in the budgetary cost proposal, as well as manage the overall project. ITNS will be responsible for all software engineering tasks, including software development and system controls, as detailed in the budgetary cost proposal.
+
+This proposal document will provide a budgetary cost proposal of the design, build, test, and required documentation for the containerized pilot. Additionally, it highlights Johnston Engineering and InfoTech NorthStar’s qualifications, credentials, relevant project experience, and references to complete the work successfully. Please also review the accompanying “Johnston Engineering– Capture6: Tortuga Proposal” PowerPoint attached to this proposal, which further describes our relevant capabilities, expertise, and desire to undertake this project.  
+
+This proposal is split into two main sections. Section 1 – Project Team, Capabilities and References and Section 2- Scope, Deliverables and budgetary pricing.  
+
+Contents
+
+1.	Project Team, Capabilities, Projects and References	3
+
+		1.1.	Introduction to Johnston Engineering	3
+
+		1.2.	Introduction to InfoTech NorthStar (ITNS)	3
+
+		1.3.	Johnston Engineering Capabilities Most Relevant to Project Tortuga	4
+
+		1.4.	Johnston Engineering Capabilities Line Card	5
+
+		1.5.	InfoTech NorthStar Line Card	6
+
+		1.6.	Johnston Engineering Project Examples	8
+
+		1.6.1.	Project Example 1: Containerized CO2 DAC Pilot Plant	8
+
+		1.6.2.	Project Example 2: Boiler Exhaust CO2 Capture - Media Characterization Study	10
+
+		1.6.3.	Project Example 3: Industrial-Scale CO2 Electrolyzer Cell Development	12
+
+2.	Scope, Deliverables and Budgetary Pricing	14
+
+		2.1.	Scope of Work	14
+
+		2.2.	Deliverables	14
+
+		2.2.1.	System Integration	14
+
+		2.2.2.	Comprehensive Documentation	14
+
+		2.3.	Budgetary Price Proposal	15
+
+		2.3.1.	Equipment	15
+
+		2.3.2.	Engineering, fabrication and verification testing labor	15
+
+		2.3.3.	Pricing and Billing Process	16
+
+		2.3.4.	Pricing	16
+
+		2.3.5.	Billing	16
+
+		2.3.6.	Project Management	17
+
+		2.3.7.	Intellectual Property (IP) Rights	18
+
+3.	Proposal Conclusion:	19
+
+4.	Appendix A detailed labor costing and assumptions	20
+
+5.	Appendix B: Tank Sizing assumptions	21
+
+6.	Appendix C Detailed Project Schedule	22
+
+# Project Team, Capabilities, Projects and References
+
+## Introduction to Johnston Engineering
+
+Johnston Engineering (JE) is a mechanical engineering firm located in Spokane, Washington specializing in mechanical design, analysis, integration, build, and testing of first-of-a-kind systems, equipment, and machines. JE focuses on clean technology industries with over 80% of our revenue coming from carbon, hydrogen, nuclear, and energy storage technologies. 
+
+Johnston Engineering's unique advantage is that we use an “Analysis-Driven Design” approach, meaning that we have a closely integrated mechanical design with physics-based simulations of thermal, structural, and fluid-flow analysis to optimize and validate designs before anything gets built – ensuring product performance and avoiding part failures. Utilizing SolidWorks 3D CAD and ANSYS analysis software, we excel in component modeling, analysis, and system integration. Our expertise includes performing Computational Fluid Dynamics (CFD) and Thermal and Structural Finite Element Analysis (FEA) to simulate the performance of mechanical hardware systems, considering forces, pressures, torques, temperature, and flow geometry. We then iterate design and analysis simulations until desired performance outcomes are achieved.
+
+Johnston Engineering President, Andy Johnston, P.E., provides subject matter expertise in structural, thermal, and fluid analysis with over 20 years of experience in clean energy, military, and aerospace research, design, analysis, build, and test of first-of-a-kind systems. Johnston Engineering has completed over 150 projects, designing custom components and full systems, including Direct Air Capture (DAC) and Boiler Exhaust Carbon Capture systems, hydrogen systems, scaling up and testing electrolyzers and reformers, pulsed power demonstration units, advanced nuclear, and multiple LDES demonstration units. Our clients include National Labs, Start-Ups, and larger companies working on research & development of their innovative technologies. 
+
+Johnston Engineering is headquartered in Washington State with over 160 years of combined engineering experience. In operation for 9 years, our total team is 29 individuals which includes 13 full-time technical staff of mechanical engineers and designers plus (3) support and fabrication staff, and (14) engineering contractors used for software and electrical engineering. 
+
+## Introduction to InfoTech NorthStar (ITNS)
+
+InfoTech NorthStar, LLC (ITNS) is a turnkey control system software engineering services company based in Richland, Washington. ITNS specializes in managing and executing complex projects with tight timelines, ensuring they are delivered on budget and within schedule while maintaining high-quality standards. ITNS’s expertise in systems control and monitoring has enabled the development and operation of over 30 active applications and control systems for commercial and government clients including within the DOE complex and its contractors. ITNS has extensive experience providing complex systems and collaborating with various engineering disciplines to integrate system components for testing and demonstration purposes
+
+## Johnston Engineering Capabilities Most Relevant to Project Tortuga
+
+Johnston Engineering has specific, relevant, and recent design, build, and test experience in containerized carbon capture and electrolytic processes, as well as expertise in systems integration and packaging, and a proven track record of collaboration with our client’s chemical engineering teams to accurately model and build systems for complex chemical processes.
+
+Our core competencies that make us the ideal partner for this project include:
+
+- Custom Containerized System and Component Design
+
+- Custom mechanical hardware and component design, system layout, and packaging for containerized systems. 
+
+- Proficiency in ANSYS structural Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD).
+
+- Structural Analysis
+
+- Johnston Engineering’s team excels in conducting structural analysis ensuring components are properly mounted and capable of withstanding transportation acceleration loads. 
+
+- Capable of conducting structural analysis for all components in Tortuga containerized system including tanks, BEPD, direct air contactor units, CSTR, and RO systems.
+
+- Fluid Analysis
+
+- Fluid distribution
+
+- Vapor and liquid pressure drop
+
+- Fabrication:
+
+- We rely on a network of trusted local fabrication vendors for metal, plastic, and composite material fabrication. These relationships enable us to obtain parts quickly and at competitive prices. Additionally, we own a fully equipped fabrication shop with mills, lathes, sheet metal tools, and welding equipment, allowing us to expedite fabrication or make adjustments to delivered parts quickly. 
+
+- Testing/ Commissioning:
+
+- Design of custom test fixtures and data acquisition systems tailored to the specific requirements of experiments. This includes integrating sensors, instrumentation, and control systems.
+
+- Conducting testing, data reduction, correlation development, and uncertainty analysis.
+
+Please also review the accompanying Johnston Engineering Proposal – Capture6, which further describes our relevant capabilities, expertise, and desire to undertake this project. Links to further capability information regarding structural and fluid analysis can be found here - [https://www.johnstonpe.com/analysis-services](https://www.johnstonpe.com/analysis-services). 
+
+## Johnston Engineering Capabilities Line Card 
+
+## InfoTech NorthStar Line Card
+
+## Johnston Engineering Project Examples
+
+### Project Example 1: Containerized CO2 DAC Pilot Plant
+
+*The following images provide a glimpse into the project:*
+
+- *Image 1: Taken on shipping day in May** 2024. T**his picture capture**s the crane lift of the final product just before loading on a Semi truck heading **to Colorado.*
+
+- *Images 2-3: These images show the custom modifications made to a 40ft ISO shipping container to accommodate the customer's system.** Including air inlet and outlet locations which would be needed for** the DAC fan in the Capture6 unit**.*
+
+| **1** | **2** |
+| --- | --- |
+| **3** |  |
+
+Johnston Engineering collaborated with our client to develop a containerized direct air capture (DAC) pilot plant designed for accelerated lifetime testing of absorbent media. This pilot plant was created to validate the long-term performance of the absorbent media under various operating conditions, ensuring its effectiveness and durability for commercial deployment. The DAC pilot plant was designed to handle various stressors and simulate long-term operational conditions to accelerate the testing process. This enabled the client to quickly gather critical data on the absorbent media's performance and make informed decisions for future development and deployment.
+
+This project was deployed in May of 2024 and is successfully operating in Colorado. 
+
+**Client Goal:**
+
+- Validate long-term performance of absorbent media
+
+- Conduct accelerated lifetime testing
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided the complete design, analysis, and construction of the DAC pilot plant, which included approximately 5,000 custom and off-the-shelf parts. Our comprehensive services ensured the project's success and the client's objectives were met.
+
+- Design:
+
+- Mechanical design of ~5,000 parts, including machined components, sheet metal, weldments, and 80/20 frames.
+
+- Development of detailed 3D CAD models and assembly drawings.
+
+- Structural Analysis:
+
+- Analysis of structural frames to ensure stability and integrity under pressure and vacuum conditions.
+
+- Detailed stress and load analysis to verify the strength and durability of the frames and components.
+
+- Thermal Analysis:
+
+- Steady-state and transient thermal analysis to optimize the thermal performance of the system.
+
+- Custom cold plate design for rapid changes in temperature needed for temperature swing absorption cycle.
+
+- Computational Fluid Dynamics (CFD):
+
+- Fluid distribution analysis to ensure uniform flow over the absorption media of the DAC system.
+
+- Build and Assembly:
+
+- Fabrication and assembly of the entire system inside a 40ft shipping container, ensuring compact and efficient packaging on-site at Johnston Engineering. 
+
+- Quoting, purchasing, and inspection of all external vendor fabricated components. 
+
+- Coordination of all fabrication and subcontractor activities to meet project timelines and budget.
+
+**Project References:**
+
+Unable to provide at this time due to the recent deployment of the project and the client's pending intellectual property rights. 
+
+### Project Example 2: Boiler Exhaust CO2 Capture - Media Characterization Study
+
+Johnston Engineering assisted with the research commercialization, design, Finite Element Analysis (FEA), and Computational Fluid Dynamics (CFD) to successfully develop a decarbonization device meant for use in commercial buildings, for our client Carbon Quest. This project was deployed in 2022 and the product is now installed in a High Rise in Times Square, NY. 
+
+CarbonQuest has developed a modular system that allows for the capture and liquefaction of CO2 on-site. "This recycled CO2 is then made available to off-takers who can use it in a variety of environmentally beneficial ways, such as in the production of concrete or as a replacement for petroleum in jet fuel and chemical processes. By implementing this innovative system, building owners and operators can now enjoy a new revenue stream while simultaneously ensuring compliance with emissions guidelines" - Carbon Quest.
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provided mechanical engineering design, thermal analysis, two-phase pressure drop analysis, component sourcing, build and testing services. We provided design, modifications, operation, and data processing of a research and development test fixture to characterize CO2 absorbent performance in a pressure swing absorption cycle. 
+
+- Mechanical Design
+
+- Mechanical Engineering
+
+- Convection Thermal Analysis
+
+- Two-phase pressure drop analysis
+
+- Material Sourcing
+
+- Material Ordering
+
+- Product Assembly
+
+- Product Test
+
+The purpose of the CO2 absorbent performance R&D test fixture was to characterize the performance of various candidate absorbents for use in a pressure-swing absorption cycle to concentrate CO2 gas. A P&ID diagram of the test fixture was created to identify all components in the system.  Characteristic equations were developed to quantify system and key component uncertainties such as mass flow of CO2 in mixed gas flow, and total mass flow of CO2 leaving the system. 3D CAD files were generated in SOLIDWORKS and reviewed with the customer to ensure the proper design intent was met. Pressure, flow and temperature sensors were selected, then we built the system and wrote the LabVIEW data acquisition code. We performed test, data reduction and data analysis on a number of absorbents. The test result was highly improved CO2 concentration performance.
+
+In another portion of the development, Johnston Engineering worked with CarbonQuest on the two-phase pressure drop in a line containing flowing liquid CO2 and noncondensable gas.  CarbonQuest needed to know the pressure drop in this line to ensure proper system operation. Calculation during two-phase flow requires additional work compared to single-phase flow.   REFPROPS data was used for fluid properties and the Martinelli Nelson parameter was used for Turbulent vapor Turbulent liquid flows assuming the separated flow model.  The Chisholm and Laird two-phase multiplier was used in the calculation to relate the frictional component of a two-phase pressure drop to a single-phase pressure drop at the same mass flow rate to calculate the overall line pressure drop.  All engineering efforts were made on behalf of Carbon Quest and their new patented, ground-breaking technology.
+
+**Project References:**
+
+CarbonQuest
+
+Shane Johnson
+
+President | CEO
+
+[shane@carbonquest.com](mailto:shane@carbonquest.com)
+
+(509) 270-1227
+
+www.CarbonQuest.com
+
+### Project Example 3: Industrial-Scale CO2 Electrolyzer Cell Development
+
+Johnston Engineering is currently partnering with OCOchem to advance the development of an industrial-scale CO2 electrolyzer cell. This project focuses on achieving a tenfold increase in the size of the CO2 electrolyzer cell, significantly enhancing its capacity and efficiency for commercial applications. Johnston Engineering's contribution in mechanical design, fluid dynamics, and safety engineering is driving the successful scale-up of the CO2 electrolyzer cell. The project is currently under development. 
+
+**Client Goal:**
+
+- Scale up the CO2 electrolyzer cell size by 10x
+
+**Johnston Engineering Services Provided:**
+
+Johnston Engineering provides comprehensive mechanical design, analysis, build, and test services to ensure the successful development and testing of the industrial-scale CO2 electrolyzer cell.
+
+- Mechanical Design:
+
+- Development of flow visualization models to optimize the internal flow dynamics.
+
+- Design of mounting and work platforms to support the electrolyzer and ensure safe operation.
+
+- Custom hardware design for power supply systems to meet the unique requirements of the scaled-up electrolyzer.
+
+- Computational Fluid Dynamics (CFD):
+
+- Pressure drop analysis to ensure efficient fluid flow and minimize energy losses.
+
+- Flow distribution analysis to achieve uniform flow and optimal performance across the electrolyzer cell.
+
+- Structural Analysis
+
+- Stress analysis of the electrolyzer mounting frame and work platforms. 
+
+- Hazardous Material Control Area:
+
+- Design and build of a dedicated hazardous material control area for safe hydrogen testing.
+
+- Implementation of safety measures and protocols to manage the risks associated with hydrogen handling and testing.
+
+**Project References:**
+
+OCO CHEM
+
+Arun S. Agarwal, Ph.D.
+
+VP Engineering
+
+[arun@ocochem.com](mailto:arun@ocochem.com)
+
+(+1) 614-401-7453
+
+www.ocochem.com
+
+# Scope, Deliverables and Budgetary Pricing
+
+## Scope of Work
+
+Johnston Engineering will provide mechanical engineering design, software control system design, mechanical engineering analysis, component fabrication and procurement, commissioning, and delivery of a completed, containerized system that meets the specified performance criteria described in the “Capture6 Project Tortuga RFP” and “Project Tortuga – Process Design Details” documents provided by Capture6. 
+
+Johnston Engineering is targeting fitting the four subsystems into two 40’ shipping containers connected by piping, power and communications cabling.  
+
+## Deliverables
+
+### System Integration
+
+- **Specification of OTS Equipment and Hardware:** Define all required components for system integration.
+
+- **Design of custom components:**** **Custom mechanical hardware and component design, system layout, and packaging for containerized system.
+
+- **Procurement:**
+
+- Key equipment procurement with assistance from Capture6.
+
+- Procurement of all necessary components for system fabrication.
+
+- **Fabrication and Commissioning:** Fabricate and commission the system.
+
+- **System Testing:** Conduct testing to meet performance criteria developed by Capture6.
+
+- **Documentation:** Produce comprehensive documentation to convey all engineering work and learnings to Capture6 and potential third-party operators.
+
+- **Optional Operation Support:** Provide housing and operation support for the system between deployments, including maintenance, modification, and testing to ensure continuous process improvement.
+
+### Comprehensive Documentation
+
+- **Operating Manual/Instructions:** Including procedures for interconnections, startup, and shutdown.
+
+- **Piping and Instrumentation Diagrams (P****&****IDs):** Detailed diagrams of the system's piping and instrumentation.
+
+- **Layout Drawings:** Complete layout drawings of the system.
+
+- **Bill of Materials:** A detailed bill of materials with components mapped to their installation locations.
+
+- **Design Documentation:** Documentation of calculations and key design choices in a memo format.
+
+- **CAD Models:** All CAD models used in the project in SolidWorks, STEP, or IGES format.
+
+- **Technical Configuration Guide:** A guide outlining all components of the system and their configuration parameters.
+
+## Budgetary Price Proposal 
+
+Johnston Engineering estimates a total engineering labor cost of **$9****22****,000**** USD**** **to deliver the Capture6 containerized demonstration system. Johnston Engineering proposes a time and materials (T&M) arrangement. Labor is billed at a rate of $195 per hour, and subcontractors and hardware purchased are billed on a cost-plus structure of cost +25%.  Our pricing assumptions for task level of complexity drive our labor pricing and we are very open to guidance from Capture6 to accomplish tasks easier, faster and for less cost. Detailed costing information is outlined below.
+
+Please note, this proposal does not include hardware costs. Material and equipment expenses have not been estimated at this stage. Johnston Engineering will provide a detailed costing of materials and quote options for Capture6 approval once the project progresses further into the detailed design phase. 
+
+### Equipment 
+
+Equipment in general has not been quoted, but Johnston Engineering would like to share pricing obtained on a few key items.  Equipment prices include markup, but not tax or shipping. 
+
+- Tanks: 
+
+Johnston Engineering was unable to obtain pricing for the requested tank material (concrete, rubber lined concrete, glass reinforced epoxy) to meet the proposal submission deadline.  We have received order of magnitude costing on polymer tanks (polypropylene and polyethylene) that show good compatibility with NaCl, NAH, HCL, NaCO3.  If alternative materials are approved by Capture6, these tanks provide a less expensive and lighter option.  Johnston Engineering calculated tank size based on provided flow rate, 4 hours batch time, 80% tank fill as shown in Appendix B.  We received a polymer tank **budgetary cost: $3****6****,00****0** excluding the rectangular T-0301 under the DAC unit which could not be quoted in time to meet proposal deadline. 
+
+- CSTR: 
+
+Johnston Engineering was unable to obtain pricing for the requested CSTR material (Teflon lined steel) to meet the proposal submission deadline.  We have received order of magnitude costing on a polymer CSTR (High Density polyethylene) that show good compatibility with HCL and NaCO3.  If alternative materials are approved by Capture6, a polymer CSTR provides a less expensive and lighter option. Polymer tank and polymer mixer: **budgetary cost: $1****5****,****5****00.**  
+
+- UL508 Panel 
+
+Two UL508 panels are assumed necessary to house the Programmable Logic Controller, switching and cabling and one panel is needed for each of the two containers. Each panel cost is estimated at $6,500 for a total **budgetary ****cost for the two panels of $13,000**
+
+### Engineering, fabrication and verification testing labor
+
+Engineering, fabrication and verification testing labor cost is estimated at $922,000 and is summarized in the table below.  The largest single category is mechanical design and requires 109 person-days at $195/hour.   The second largest category is mechanical engineering requiring 145 person-days at $195/hour.  The largest mechanical design and engineering tasks are design and structural analysis of structural frames to house and support tanks and equipment. Our assumption is that these frames must withstand transportation acceleration loads and structural Finite Element Analysis (FEA) will be required.  
+
+Program management is calculated at 5% of mechanical engineering which is historically accurate at Johnston Engineering.   These three categories represent 85% of project labor cost and will be completed by Johnston Engineering.   
+
+Electrical engineering, software engineering, and electrical technician & electrical design work will be completed by subcontractor InfoTech NorthStar.  These electrical and software tasks require 74.5 person-days of work at $200/hour and 13.75 person-days of work at $103.50/hour and subcontractor labor prices are shown marked up and represent the cost to Capture6.  
+
+This table also shows a recommended safety factor of 20% which has been shown historically accurate to cover cost over-runs at Johnston Engineering assuming no increase in project scope.   Detailed project labor pricing categories and assumptions are listed in Appendix A and calculations to size tanks are listed in Appendix B.  
+
+The optional task to "house and operate the System for periods between deployments to project locations, providing part-time technician support for maintenance, modification, and testing, in collaboration with the Capture6 Engineering Team" to be a good fit, and we are interested in providing these services. We have the resources and space to support housing 1-2 full units of 2x containers each and will coordinate storage as necessary for additional units. Our facility includes two buildings, one of which is a 5,000 sq ft shop with an adjacent large, gated parking lot which we have used for a 40ft ISO containerized project. We will support this effort at our standard T&M rate and provide a detailed quote at a later date as details emerge. The cost of this option is not included in the pricing provided in this proposal. 
+
+### Pricing and Billing Process
+
+### Pricing
+
+- This proposal is based on a time and material (T&M) hourly rate of $195 for time and a 25% markup for materials. Labor is billed at a rate of $195 per hour, hardware purchased, and subcontractors are billed on a cost-plus structure of cost +25%. Material and equipment expenses have not been estimated at this stage due to the labor-intensive nature of costing. Johnston Engineering will provide a detailed costing of materials and quote options for Capture6 approval once the project progresses further into the detailed design phase
+
+### Billing
+
+- Johnston Engineering works from a retainer payment agreement. All services are pre-paid in monthly reserved hours. Unused hours do not expire and will roll over to the following month. At every invoice cycle, Johnston Engineering provides Capture6 with its current positive or negative balance and makes recommendations for future hourly purchases. All invoices are due on receipt. Upon project completion, any remaining hours can be used for future Capture6 projects or refunded at the sole discretion of Capture6.
+
+### Project Management 
+
+The project will be led personally by Johnston Engineering President, Andy Johnston, P.E., with support from a dedicated team of 1-3 mechanical engineers and 1-3 mechanical designers depending on the desired project completion speed. 
+
+Johnston Engineering intends to use our subcontractor, InfoTech North Star (ITNS) for electrical and software engineering. Johnston Engineering will handle all mechanical engineering, procurement, and commissioning. tasks outlined in the budgetary cost proposal and manage the overall project. ITNS will be responsible for all software engineering tasks, including software development and system controls, as detailed in the budgetary cost proposal. Johnston Engineering will manage the team and maintain regular communication with Capture6 through 1-2 primary points of contact.
+
+At Johnston Engineering, we pride ourselves on a structured and transparent project management approach. Our methodology ensures that the project remains on schedule and within budget, with clear and consistent communication throughout, which is further outlined below:
+
+- **Schedule and Budget Management**
+
+- We manage the team to adhere to the agreed-upon schedule and budget. Regular check-ins are conducted weekly or biweekly via video meetings to maintain alignment and address any issues promptly.
+
+- A conservative project schedule has been created based on the tasks and task durations identified in Appendix A.  Johnston Engineering has no insight to the level of urgency required by Capture6, so modestly paced project schedule has been presented.  Schedule assumptions include the following: Task durations in Appendix A and in section 2.3.2 have been multiplied by 1.5x those values shown and a single individual was assumed to accomplish work in each labor category (E.G. 1 mechanical engineer, 1 mechanical designer etc.)  The schedule can be easily compressed and likely halved by adding additional staff to the project and improving serialization of tasks with the penalty of a small increase in team duplicative labor such as increasing head count in meetings.  This should be a topic of further discussion to better understand Capture6’s needs and desires.    
+
+- The complete project duration is 514 days assuming one staff per labor category.  By far, the largest task is engineering design at 308 days which covers early communications tasks through Critical Design Review (CDR) and hardware ordering.  The next largest task is fabrication at 165 days which has been very conservatively scheduled as serial tasks with two individuals building the hardware. Testing and validation is scheduled for 18 days which is likely the only task category that can easily take longer than scheduled as unforeseen problems tend to arise during testing. Project close out and documentation is scheduled for 22 days where deliverable documents identified in section 2.2.1 are generated. 
+
+- **Communication: **
+
+- Action items and updates are reviewed in team meetings and communicated via email between meetings to ensure accountability, continuous progress, and clarity. We maintain a rolling meeting PowerPoint presentation that records all current and past engineering progress, notes, questions, budget, action items, and schedule updates providing a comprehensive project timeline and reference that is sent to Capture6 at the end of each team meeting.
+
+- **Billing Transparency: **
+
+- Our billing process is broken down into detailed categories allowing Capture6 to see exactly how much time was spent on each task. For each labor charge, invoices will detail the date, labor category, description of work performed, and hours used. For materials charges, invoices will detail the date, description of the hardware, and cost. 
+
+### Intellectual Property (IP) Rights
+
+Johnston Engineering will assign all intellectual property related to this project to Capture6. Johnston Engineering is willing to assist Capture6 and patent attorneys with IP-related communications such as in transferring IP, generating patent figures, etc. We have not budgeted any IP transfer time in this proposal. 
+
+# Proposal Conclusion: 
+
+Johnston Engineering is committed to delivering exceptional engineering services and high-quality results for Capture6. Our engineering capabilities, combined with our past project experience ensure that we are well-suited to meet the deliverables of this project. We believe our unique qualifications and project experience make Johnston Engineering an excellent fit for this project in multiple ways. We have designed and built complete carbon capture pilot plants in ISO containers in 2024.  We are currently working on other extremely relevant projects including green technologies packaged in ISO containers and electrolytic processes including a ground up design for a hydrogen electrolyzer, a carbon dioxide to formic acid electrolytic process, and green energy storage using a carbon dioxide process. 
+
+At Johnston Engineering, we specialize in first-of-a-kind systems and have experience working through all project phases, from initial concept sketches to prototypes, scale-ups, and pilot plants. We are familiar with navigating the complexities of new systems to make them a reality and function as intended. 
+
+Johnston Engineering and InfoTech NorthStar have served clients both nationally and internationally in Washington, California, Colorado, New York, Florida, Alaska, Canada and Mexico. and We look forward to the opportunity to collaborate with Capture6 and contribute to the success of your demonstration and larger carbon capture initiatives.
+
+Perhaps most importantly, we specifically focus on advancing clean technologies. Our research and development expertise positions us uniquely to work across various emerging markets, but we have actively chosen to focus on clean energy systems to contribute to a better world. Over 80% of our 2023 revenue was in clean technologies and it will be a greater percentage in 2024. Our objective is to play our part by reducing technical risk for our clients, enabling them to achieve business success and drive meaningful change for a cleaner world.  This is what gets us up early every day and keeps us working late.  I can tell you very honestly, we share a common mission, and we very much want to work for you and see your success.  
+
+Please do not hesitate to reach out with any questions or for further clarification on any aspects of this proposal. 
+
+**Andy Johnston, P.E.**
+Principal Engineer
+Johnston Engineering, PLLC
+
+1815 E. Trent Ave. 
+
+Spokane, WA 99202
+Andy@JohnstonPE.com
+(509) 290-1034
+
+# Appendix A detailed labor costing and assumptions 
+
+# Appendix B: Tank Sizing assumptions 
+
+# Appendix C Detailed Project Schedule
+
+Confidential and Proprietary to Johnston Engineering, PLLC1
