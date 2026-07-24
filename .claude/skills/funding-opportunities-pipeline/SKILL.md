@@ -15,7 +15,10 @@ compliance defense-in-depth at every send/export escape hatch, deterministic
 matching/scoring, and internal spec-vs-spec contradictions reconciled.
 v4.2.1: clarified the re-bucket rule so dated items in the thematic Lab-tech /
 State groups stay in their group and are surfaced in the digest rather than
-moved to a date bucket._
+moved to a date bucket. v4.2.2: tuned the ICP scoring model — non-flat default
+criteria weights (Compelling Event 2.0, Access to Economic Buyer 1.5, rest
+1.0, all operator-editable) and a tiered Industry-Fit pre-score where bullseye
+FOAK tags count double, so a lone sweet-spot tag outranks a lone adjacent one._
 
 Operating playbook for a sales engineer in Business Development at Johnston
 Engineering (JE). JE's mission: "Propel the commercialization of

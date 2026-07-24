@@ -176,13 +176,19 @@ angle = {
 }
 
 # ---------- ICP industry-fit prefill from tags ----------
-CORE = ['custom machinery','thermal analysis','battery','electrolyzer','hydrogen','critical mineral','electrochemical','chemical process','energy storage','electronics packaging','dfm','containerized','recycling','fuel cell','bioreactor','robotics','power conversion','semiconductor','aerospace','defense','mining','sensors','cooling','hvac','custom system','nuclear','pyrolysis','solar','manufacturing','structural','fluid analysis','test']
+# STRONG = JE's bullseye FOAK sweet spot (mirrors the tier-5/4 KW terms in
+# funding-sources.md); the rest are adjacent capabilities. A bullseye tag
+# counts double so a lone 'electrolyzer' outscores a lone 'solar' or 'test'.
+STRONG = ['custom machinery','thermal analysis','battery','electrolyzer','hydrogen','critical mineral','electrochemical','chemical process','energy storage','containerized','recycling','fuel cell','bioreactor','power conversion','nuclear','pyrolysis','structural','fluid analysis']
+ADJACENT = ['electronics packaging','dfm','robotics','semiconductor','aerospace','defense','mining','sensors','cooling','hvac','custom system','solar','manufacturing','test']
+CORE = STRONG + ADJACENT
 def industry_fit(fit, ind):
     t = (fit or '').lower()
-    hits = sum(1 for k in CORE if k in t)
-    if hits >= 3: return 5
-    if hits == 2: return 4
-    if hits == 1: return 3
+    strong = sum(1 for k in STRONG if k in t)
+    total = sum(1 for k in CORE if k in t)
+    if strong >= 2 or total >= 3: return 5
+    if strong == 1 or total == 2: return 4
+    if total == 1: return 3
     if (ind or '') in ('Energy','Manufacturing','Hardware','Government and Military','Natural Resources','Science and Engineering','Sustainability','Biotechnology','Transportation'): return 2
     if ind: return 1
     return ''
@@ -397,7 +403,7 @@ rows = [
 ("", 10, False),
 ("HOW THE LIVE SCORING WORKS (Account Scorecard tab)", 11, True),
 ("• The 5 Ideal Customer Criteria from the training: Industry Fit, Company Size Fit, Compelling Event Present, Access to Economic Buyer, Growth/Follow-On Work Potential. Score each 0–5 (5 = best aligned).", 10, False),
-("• Row 2 holds the WEIGHTS (blue cells). Change a weight and every account re-scores and re-ranks instantly. Default = 1.0 each; e.g. set Compelling Event to 2.0 to favor deals with a live funding deadline.", 10, False),
+("• Row 2 holds the WEIGHTS (blue cells). Change a weight and every account re-scores and re-ranks instantly. Defaults favor what opens JE deals: Compelling Event Present = 2.0, Access to Economic Buyer = 1.5, the other three = 1.0. Reset any to 1.0 for an even blend.", 10, False),
 ("• Weighted Score % = SUMPRODUCT(your scores × weights) ÷ max possible. Rank and A–D tier update automatically.", 10, False),
 ("• Industry Fit is pre-scored from your CRM capability tags (blue = my suggestion, edit freely). Yellow cells are yours to fill — blanks count as 0, and the 'Criteria left' column shows how many are unscored.", 10, False),
 ("", 10, False),
@@ -440,8 +446,13 @@ headers = ['Account','Status','Industry','Capability tags','Location','Funding a
 CI = {h: i+1 for i,h in enumerate(headers)}
 for h,i in CI.items():
     c = sc.cell(row=3, column=i, value=h); c.font = HDRF; c.fill = HDR; c.alignment = Alignment(wrap_text=True, vertical='center'); c.border = BORD
+# Default weights operationalize the playbook thesis: a live non-dilutive
+# funding deadline is what opens JE deals, and the line to the money is the
+# decisive Miller-Heiman base. Compelling Event 2.0, Access to Econ Buyer 1.5,
+# rest 1.0. All still operator-editable in the blue cells.
+WEIGHTS = [1.0, 1.0, 2.0, 1.5, 1.0]  # order matches crit[]
 for j in range(len(crit)):
-    w = sc.cell(row=2, column=CI['Industry Fit']+j, value=1.0); w.font = BLUE; w.fill = YEL; w.border = BORD
+    w = sc.cell(row=2, column=CI['Industry Fit']+j, value=WEIGHTS[j]); w.font = BLUE; w.fill = YEL; w.border = BORD
 WT1 = get_column_letter(CI['Industry Fit']); WT2 = get_column_letter(CI['Growth/Follow-On Potential'])
 acct_rows = sorted(book.items(), key=lambda kv: ({'Lead':0,'Prospect':1,'Suspect':2}.get(kv[1]['status'],3), kv[0].lower()))
 r = 4

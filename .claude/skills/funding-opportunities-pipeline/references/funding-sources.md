@@ -1,12 +1,9 @@
 # Funding sources, verify flags & qualification rules
 
-## Deadline snapshot (verified 2026-07-12 — re-verify on every refresh)
+## Deadline snapshot (verified 2026-07-12; near-term rows re-verified 2026-07-23 — re-verify on every refresh)
 
 | Date | What |
 |---|---|
-| 7/22 12:00 PM ET | DARPA SBIR topics: ExCAIPE (air-independent power, Direct-to-Ph-II, >1 kWh/kg — Hybrium bullseye) + MANTRAS |
-| 7/22 | DoD SBIR/STTR wave |
-| 7/23 | DOE Critical Minerals Accelerator (CMMA) TA3 — DLE & separations |
 | 8/6 9:30 AM ET | **HORNIG** (DE-FOA-0003623, TRU fuels) full apps — JE compliance-gated (nuclear fuel-cycle), internal-only / route to Andy. NOT IGNIITE. |
 | TBD (invitee-only) | ARPA-E **IGNIITE 2026** (DE-FOA-0003624) full apps — concept-paper gate closed 5/29, invite/decline notices out 7/14/26; full-app date still TBD on eXCHANGE (VERIFIED 2026-07-20). Non-invitees cannot apply this cycle. |
 | 8/19 | DoD wave ⭐JE-prime candidate + DARPA ExPEDitions full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg) — **verify whether the full app is invitee-only (concept-paper/LOI gate) before treating 8/19 as open** |
@@ -47,7 +44,10 @@ DoD/DoW: dodsbirsttr.mil topic waves · DARPA: darpa.mil/work-with-us (BAAs,
 program solicitations, SBIR topics via DSIP; screen DSO/MTO/BTO) · ARPA-E:
 arpa-e-foa.energy.gov (eXCHANGE; teaming lists signal pending NOFOs) · DOE
 SBIR + program offices · NSF seedfund.nsf.gov · NIH · USDA NIFA · Grants.gov
-alerts · National labs licensing: Ames/CMI (CMIaffiliates@ameslab.gov, Stacy
+alerts · National labs licensing: **VIPS (vips.pnnl.gov — DOE-wide cross-lab
+IP database, all 17 labs incl. INL + PNNL, 14k+ patents / 6.2k+ software,
+filter by lab; every hit "needs click-through" for licensing/TRL. VERIFIED
+2026-07-23)**, Ames/CMI (CMIaffiliates@ameslab.gov, Stacy
 Joiner 515-294-5932), Argonne ACCESS/ReCell, NLR (ex-NREL, nlr.gov), PNNL,
 TechLink (DoD IP) · Corporate: Halliburton Labs, Shell GameChanger · Canada:
 Innovative Solutions Canada.
@@ -78,13 +78,25 @@ electrode leaching, low-temp REE electrorefining.
 
 ## ICP scoring heuristics (workbook pre-score)
 
-Core capability tags (any hit raises Industry Fit): custom machinery, thermal
-analysis, battery, electrolyzer, hydrogen, critical mineral, electrochemical,
-chemical process, energy storage, electronics packaging, DFM, containerized,
-recycling, fuel cell, bioreactor, robotics, power conversion, semiconductor,
-aerospace, defense, mining, sensors, cooling, HVAC, custom system, nuclear,
-pyrolysis, solar, manufacturing, structural, fluid analysis, test.
-≥3 hits → 5 · 2 → 4 · 1 → 3 · relevant industry, no tags → 2 · other → 1.
+Industry Fit is tiered, not flat — a bullseye tag counts double, so a lone
+JE-sweet-spot tag outscores a lone adjacent one (mirrors the KW 5/4 tiers
+used in gap analysis).
+
+**Bullseye (strong) tags:** custom machinery, thermal analysis, battery,
+electrolyzer, hydrogen, critical mineral, electrochemical, chemical process,
+energy storage, containerized, recycling, fuel cell, bioreactor, power
+conversion, nuclear, pyrolysis, structural, fluid analysis.
+
+**Adjacent tags:** electronics packaging, DFM, robotics, semiconductor,
+aerospace, defense, mining, sensors, cooling, HVAC, custom system, solar,
+manufacturing, test.
+
+Score: ≥2 bullseye **or** ≥3 total tags → 5 · 1 bullseye **or** 2 total → 4 ·
+1 tag (adjacent only) → 3 · relevant industry, no tags → 2 · other → 1.
+
+Default criteria weights (row 2, operator-editable): Compelling Event Present
+= 2.0, Access to Economic Buyer = 1.5, the other three = 1.0 — a live
+non-dilutive deadline and a known line to the money are what open JE deals.
 
 ## Gap-analysis rules
 
@@ -160,3 +172,15 @@ Second-order cutoffs: {Q&A, LOI, abstract gates}
 Not covered: {lanes skipped / portals unreachable / pages truncated}
 Still flagged to verify: {list}
 ```
+
+## Archive (passed)
+
+Rows moved out of the live snapshot as their deadlines lapsed.
+
+Archived 2026-07-23:
+
+| Date | What | Outcome |
+|---|---|---|
+| 7/22/26 12:00 PM ET | DARPA SBIR topics ExCAIPE (DPA26BZ03-DV013) + MANTRAS | Closed (noon ET). Verified 2026-07-13. |
+| 7/22/26 | DoD SBIR/STTR FY26 wave (35 topics) | Closed. Verified 2026-07-13. |
+| 7/23/26 5:00 PM ET | DOE CMMA TA3 (DE-FOA-0003589) | Closed. LOI-gated (LOI closed 4/24/26), no new-applicant entry. Re-verified 2026-07-23. |
