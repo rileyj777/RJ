@@ -15,11 +15,21 @@ lab keeps the proprietary chemistry.
 
 1. Pick 1–2 lanes to scout (rotate; favor lanes tied to a live funding item or
    an active account).
-2. Search the portals for available technologies in the lane: cross-lab first
-   (Lab Partnering Service labpartnering.org; FLC Business
-   flcbusiness.federallabs.org), then DoD (TechLink techlinkcenter.org), then
-   per-lab catalogs (INL, PNNL, NREL→NLR, LLNL, LBNL, Sandia, ORNL, Argonne
-   ACCESS/ReCell, Ames/CMI). Cross-check DOE patent releases.
+2. Search the portals for available technologies in the lane: cross-lab first.
+   **VIPS (vips.pnnl.gov)** is the widest net — the DOE Office of Technology
+   Transitions database, PNNL-hosted, federating 14,000+ patents and 6,200+
+   software packages across all 17 DOE national labs (INL, PNNL, ORNL,
+   Argonne, NREL, Sandia, LLNL, LBNL...). Filter by lab/source, so INL and
+   PNNL IP both surface in one search — there is no separate INL portal to
+   hop to. Its content is pulled from USPTO (patents) + OSTI (software), so it
+   lists issued IP without licensing terms or TRL — treat every VIPS hit as
+   "needs click-through" to the owning lab's tech-transfer office to confirm
+   availability. Then Lab Partnering Service labpartnering.org and FLC
+   Business flcbusiness.federallabs.org; then DoD (TechLink
+   techlinkcenter.org); then per-lab catalogs (INL, PNNL, NREL→NLR, LLNL,
+   LBNL, Sandia, ORNL, Argonne ACCESS/ReCell, Ames/CMI) when a lab's own page
+   carries richer licensing/TRL detail than VIPS. Cross-check DOE patent
+   releases.
 3. Score each candidate on the lab-IP fit rubric (keep only if it clears all
    four: hardware/first-of-a-kind equipment; in a JE lane per the keyword
    tiers (tier ≥ 4; a tier-3 lane clears only when the hardware-build case
