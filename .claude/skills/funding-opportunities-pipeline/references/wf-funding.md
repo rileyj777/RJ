@@ -62,14 +62,18 @@ directory — and adds the qualifying ones back into
 1. Load the "Source directory" in `references/funding-sources.md`. Anything
    already there is not "new." (The hunting grounds to sweep are listed in
    step 2 below.)
-2. Sweep the hunting grounds — 2–4 targeted searches, rotating the lanes:
-   new/renamed DoD & service vehicles (OSC, DIU, AFWERX/SpaceWERX, Army xTech,
-   NavalX/ONR TechBridges, SOFWERX, APFIT, component SBIR/STTR offices, DARPA
-   new-program launches); new federal programs (DOE MESC/IEDO/OCED, NSF TIP +
-   Regional Innovation Engines, NASA Tipping Point/ACO, NIST MEP +
-   Manufacturing USA); new state/regional funds and EDA Tech Hubs in JE's
-   account states; new private/foundation/corporate vehicles (prize sponsors,
-   corporate lab/venture programs, prime supplier-innovation programs).
+2. Sweep the hunting grounds — 2–4 targeted searches, rotating the lanes. The
+   major federal vehicles (SBIR.gov, Grants.gov, SAM.gov, FedConnect, the
+   DoD/DoW innovation orgs, DOE offices, and the SBIR sub-agencies) are now
+   tracked in the Source directory, so hunt the layer they don't cover:
+   newly created or renamed offices and programs (use the MITRE AiDA map,
+   aida.mitre.org, to spot DoD offices not yet in the directory); component /
+   service SBIR offices and new DARPA/ARPA-E program launches not individually
+   listed; new state/regional funds and EDA Tech Hubs in JE's account states;
+   and private/foundation/corporate vehicles, which stay thin in the directory
+   (prize sponsors, corporate lab/venture programs, prime supplier-innovation
+   programs). A source already in the directory is a Workflow-1 scan target,
+   not a WF8 find.
 3. Qualify before adding: the source must fund hardware or first-of-a-kind
    equipment in a JE lane, and a JE account (or JE itself) must be able to be
    an applicant or sub. Drop software-only, university-research-only, and

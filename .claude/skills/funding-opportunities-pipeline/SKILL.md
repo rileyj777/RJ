@@ -18,7 +18,13 @@ State groups stay in their group and are surfaced in the digest rather than
 moved to a date bucket. v4.2.2: tuned the ICP scoring model — non-flat default
 criteria weights (Compelling Event 2.0, Access to Economic Buyer 1.5, rest
 1.0, all operator-editable) and a tiered Industry-Fit pre-score where bullseye
-FOAK tags count double, so a lone sweet-spot tag outranks a lone adjacent one._
+FOAK tags count double, so a lone sweet-spot tag outranks a lone adjacent one.
+v4.2.3: rebuilt the `funding-sources.md` Source directory into a structured,
+URL-bearing, agency-grouped list of government data sites (all verified
+2026-07-24) — cross-agency master portals (SBIR.gov, Grants.gov,
+SAM.gov/FPDS, USAspending.gov, FedConnect) plus DoD/DoW, DOE, and every
+federal grant/SBIR sub-agency in a JE lane; also added the SBIR.gov award DB
+and USAspending.gov as structured Workflow-7 suspect sources._
 
 Operating playbook for a sales engineer in Business Development at Johnston
 Engineering (JE). JE's mission: "Propel the commercialization of

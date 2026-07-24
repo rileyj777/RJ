@@ -40,17 +40,116 @@ first calls late 2026; mandatory foreign-risk screening on every application.
 
 ## Source directory (where to look)
 
-DoD/DoW: dodsbirsttr.mil topic waves · DARPA: darpa.mil/work-with-us (BAAs,
-program solicitations, SBIR topics via DSIP; screen DSO/MTO/BTO) · ARPA-E:
-arpa-e-foa.energy.gov (eXCHANGE; teaming lists signal pending NOFOs) · DOE
-SBIR + program offices · NSF seedfund.nsf.gov · NIH · USDA NIFA · Grants.gov
-alerts · National labs licensing: **VIPS (vips.pnnl.gov — DOE-wide cross-lab
-IP database, all 17 labs incl. INL + PNNL, 14k+ patents / 6.2k+ software,
-filter by lab; every hit "needs click-through" for licensing/TRL. VERIFIED
-2026-07-23)**, Ames/CMI (CMIaffiliates@ameslab.gov, Stacy
-Joiner 515-294-5932), Argonne ACCESS/ReCell, NLR (ex-NREL, nlr.gov), PNNL,
-TechLink (DoD IP) · Corporate: Halliburton Labs, Shell GameChanger · Canada:
-Innovative Solutions Canada.
+_Government portals verified 2026-07-24 unless a row says otherwise; each URL is a
+primary program/portal page (the citation), not news coverage. Workflow 1 sweeps
+this whole directory for new opportunities; Workflow 8 adds net-new sources here.
+Register on **SAM.gov** first — entity registration there is the prerequisite for
+any federal grant or contract award._
+
+### Cross-agency master portals (one search covers many agencies — start here)
+
+- **SBIR.gov** (sbir.gov) — SBA-run hub for all 11 SBIR/STTR agencies: open-topic
+  search (sbir.gov/topics), participating-agency links
+  (sbir.gov/participating-agencies), and the full historical **award database**
+  (sbir.gov/awards) — the award DB doubles as a Workflow-7 suspect source (who just
+  won). SBIR reauthorized through 2031 (see snapshot above).
+- **Grants.gov** (grants.gov; newer UI at simpler.grants.gov/search) — all 26
+  federal grant-making agencies; filter applicant-type = small business + JE-lane
+  keywords, save the search, turn on email alerts.
+- **SAM.gov** (sam.gov/opportunities) — federal **contract** opportunities
+  (solicitations, sources-sought, RFIs) across every agency — the vehicle for
+  JE-as-prime/sub and DoD OTAs. Since 2026-02-24 it also carries all contract-award
+  data (absorbed FPDS; sam.gov/fpds).
+- **USAspending.gov** — official federal award open-data (grants + contracts); a
+  Workflow-7 recency signal — find who just received an award in a JE lane, map them
+  as a suspect.
+- **FedConnect** (fedconnect.net) — where DOE (NETL, Fossil Energy, OCED) and other
+  agencies post FOAs, run Q&A, and post awards; complements Grants.gov for DOE.
+
+### DoD / Department of War (DoW)
+
+Site rebranded to **war.gov** per EO 14347 (2025-09-05); "Department of War" is the
+secondary title and SBIR solicitations already read "DoW SBIR."
+
+- **DoW SBIR/STTR via DSIP** (dodsbirsttr.mil) — Defense SBIR/STTR Innovation
+  Portal; topic waves open/pre-release/closed at **12:00 PM ET (noon)**; join the
+  listserv. ⭐ JE-prime lane.
+- **DARPA** (darpa.mil/work-with-us) — office-wide BAAs + program solicitations +
+  SBIR topics via DSIP; screen DSO/MTO/BTO.
+- **DIU** (diu.mil) — Defense Innovation Unit; commercial tech via Commercial
+  Solutions Openings (fast OTA path).
+- **AFWERX / SpaceWERX** (afwerx.com/get-funded, spacewerx.us) — Air/Space Force
+  innovation arms; the largest SBIR/STTR issuer (~$7B awarded).
+- **Army xTech / xTechSearch** (xtech.army.mil) — Army prize competitions + SBIR
+  on-ramps.
+- **ONR / NavalX** (onr.navy.mil) — Navy/Marine BAAs; NavalX Tech Bridges are the
+  regional front doors.
+- **SOFWERX** (sofwerx.org) — USSOCOM rapid-prototyping problem calls.
+- **APFIT** — Accelerate Procurement & Fielding of Innovative Technologies; the
+  transition/production bridge past the "valley of death" (congressionally funded).
+- **Office of Strategic Capital (OSC)** (cto.mil/osc) — DoW **credit/loan** program
+  ($10M–$150M) for critical-tech supply chains. Debt, not a grant — flag the
+  mechanism. OUSW(R&E).
+- **Ecosystem map**: MITRE AiDA (aida.mitre.org/dod-innovation-ecosystem) — the map
+  of every DoD innovation office; use it in Workflow 8 to spot offices not yet
+  tracked here.
+
+### DOE (Department of Energy)
+
+Master FOA list at energy.gov/funding-opportunities.
+
+- **ARPA-E eXCHANGE** (arpa-e-foa.energy.gov) — teaming lists signal pending NOFOs;
+  SCALEUP is separate (see snapshot).
+- **EERE eXCHANGE** (eere-exchange.energy.gov) — EERE reorganized as **CMEI** (Clean
+  Manufacturing, Energy & Infrastructure); markedly fewer FOAs in 2026 than 2023–24.
+- **OCED** (energy.gov/oced) — Office of Clean Energy Demonstrations; large
+  pilot/demo scale.
+- **IE-Exchange** (ie-exchange.energy.gov) — additional DOE infrastructure FOAs.
+- **DOE Office of Science SBIR/STTR** (science.osti.gov/sbir; FOAs at
+  science.osti.gov/grants/FOAs) — the DOE SBIR track (windows ~May–Aug and Sep–Jan).
+- **NETL** (netl.doe.gov/business/solicitations) — energy-tech solicitations (posts
+  to FedConnect + Grants.gov).
+- **MESC** — Office of Manufacturing & Energy Supply Chains — batteries, grid
+  components, critical-minerals processing/recycling, nuclear (bullseye JE lanes).
+- **IEDO** — Industrial Efficiency & Decarbonization Office — applied industrial
+  RD&D + pilot demos.
+- **DOE national-lab IP** — see the "National-lab IP / tech-transfer" block below and
+  Workflow 9.
+
+### Other federal grant / SBIR agencies (sub-agencies) in JE lanes
+
+- **NSF** — America's Seed Fund (seedfund.nsf.gov), submit via Research.gov; also
+  NSF TIP directorate + Regional Innovation Engines. (Project Pitches paused during
+  the late-2025 SBIR reauth lapse; reauthorized Apr 2026 — re-verify the current
+  window.)
+- **NIH** — seed.nih.gov + grants.nih.gov, submit via eRA Commons; standard cycles
+  Jan 5 / Apr 5 / Sep 5 (bioprocess/biotech accounts).
+- **NASA** — sbir.nasa.gov, submit via **ProSAMS** (prosams.nasa.gov; replaced EHB
+  in 2024); general proposals via NSPIRES (nspires.nasaprs.com) — propulsion,
+  thermal, robotics, sensors.
+- **NIST** — SBIR via the Technology Partnerships Office (nist.gov/tpo) + **Manufacturing
+  USA** institutes (manufacturingusa.com; NIST OAM at nist.gov/oam) + MEP —
+  measurement, standards, advanced manufacturing.
+- **EPA** — epa.gov/sbir — air / water / waste / manufacturing environmental tech.
+- **DOT** — transportation SBIR (window ~Feb–Apr).
+- **USDA NIFA** — nifa.usda.gov SBIR; one NOFO/year (still a verify-flag — watch
+  Grants.gov).
+- **DHS + the rest** — reach via the SBIR.gov participating-agency list whenever a JE
+  lane matches.
+
+### National-lab IP / tech-transfer (licensing — full rubric in Workflow 9)
+
+**VIPS** (vips.pnnl.gov — DOE-wide cross-lab IP database, all 17 labs incl. INL +
+PNNL, 14k+ patents / 6.2k+ software, filter by lab; every hit "needs click-through"
+for licensing/TRL; VERIFIED 2026-07-23), Lab Partnering Service (labpartnering.org),
+FLC Business (flcbusiness.federallabs.org), Ames/CMI (CMIaffiliates@ameslab.gov,
+Stacy Joiner 515-294-5932), Argonne ACCESS/ReCell, NLR (ex-NREL, nlr.gov), PNNL,
+TechLink (DoD IP, techlinkcenter.org).
+
+### Corporate / accelerator + international
+
+Corporate: Halliburton Labs, Shell GameChanger. Canada: Innovative Solutions Canada
+(ISC).
 
 **Proven license-then-fund play:** Ames ADR patent 10,648,063 → exclusive to
 TdVib → STTR Ph I ($200K) → Ph II ($1M) → became client-adjacent Critical
@@ -131,6 +230,15 @@ portal scan):
 
 ## ICP scoring heuristics (workbook pre-score)
 
+> **Canonical source:** the machine-readable copy of everything in this
+> section *and* the gap-analysis rules below (keyword tiers, junk filter,
+> bullseye/adjacent tags, ICP weights, normalization) lives in
+> `scripts/scoring_taxonomy.json`, which `scripts/build_workbook.py` reads at
+> build time. The tables here are the human mirror. **If you change scoring,
+> edit `scoring_taxonomy.json` first, then update these tables to match** —
+> they are kept in sync by hand, and the JSON is what the workbook actually
+> scores on.
+
 Industry Fit is tiered, not flat — a bullseye tag counts double, so a lone
 JE-sweet-spot tag outscores a lone adjacent one (mirrors the KW 5/4 tiers
 used in gap analysis).
@@ -157,11 +265,12 @@ non-dilutive deadline and a known line to the money are what open JE deals.
 society, network, news, media, university, college, jobs, magazine,
 coalition, consortium, department, administration, summit, conference, expo,
 journal, academy, council, agency, ministry, foundation, alliance, committee,
-bureau, command, club, festival, press, review, times, weekly, .gov, air
-force, navy, army, advisor(s), partnership, consulting, consultants, capital,
-ventures, fund, investor, recruiting, staffing, marketing. Match these as
-whole words (token boundaries), not substrings — otherwise short tokens kill
-real prospects ('press' inside 'compression', 'fund' inside 'fundamental').
+bureau, command, office of, club, festival, press, review, times, weekly,
+.gov, air force, navy, army, nsin, clearedjobs, advisor(s), partnership,
+consulting, consultants, capital, ventures, fund, investor, millennial,
+recruiting, staffing, marketing. Match these as whole words (token
+boundaries), not substrings — otherwise short tokens kill real prospects
+('press' inside 'compression', 'fund' inside 'fundamental').
 
 **Keyword tiers** (name + description; highest matching tier wins (score =
 the top tier with any match in name or description) — a bullseye term must
@@ -172,9 +281,9 @@ set the score even if a weaker term appears earlier):
   recycl-.
 - **4**: battery, energy storage, hydrogen, geotherm-, nuclear, reactor,
   carbon capture, CO2, electrochem-, recycling, desalin-, water treat-,
-  semiconductor, power electron-, GaN, SiC, mining, heat exchang-, turbine,
-  propulsion, biomanufactur-, bioreactor, pyrolysis, grid-scale, microgrid,
-  long-duration.
+  semiconductor, power electron-, GaN, SiC, mining, critical material,
+  heat exchang-, turbine, propulsion, biomanufactur-, bioreactor, pyrolysis,
+  grid-scale, microgrid, long-duration.
 - **3**: solar, wind, clean energy, renewable, manufactur-, robotic-,
   aerospace, defense, drone, sensor, thermal, cooling, HVAC, materials,
   3d print, additive, EV charg-, electric vehicle, space, satellite,
@@ -193,6 +302,11 @@ Search where money was just announced — recency is the qualifier:
 - **Award announcements**: DoD SBIR/STTR award lists, DOE & NSF SBIR
   selections, ARPA-E newsroom (new program selections, SCALEUP awards),
   DARPA award news in power/materials/manufacturing lanes.
+- **Structured award databases** (query directly, don't wait for news): the
+  **SBIR.gov award database** (sbir.gov/awards — filter by agency/keyword/state
+  for recent SBIR/STTR winners) and **USAspending.gov** (federal grants +
+  contracts by NAICS/keyword/recipient) — both surface who just took federal
+  money in a JE lane; see the Source directory's master-portals block.
 - **Prizes**: American-Made semifinalist/finalist announcements (E-Scrap,
   Re-X, CABLE, Microbattery), NSF prize cohorts.
 - **State awardees**: CalSEED, NYSERDA, CO OEDIT, Launch MN, BFTP award
