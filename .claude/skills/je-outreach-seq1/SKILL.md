@@ -103,17 +103,34 @@ placeholder, backfill needs an empty body) and sendable by hand.
 
 ## Fit and contact checks (per card, before drafting)
 
-- **Fit filter.** The prospect must develop novel hardware in-house. Project
-  developers, IPPs, operators, and procure-and-deploy integrators are non-fits
-  or ecosystem plays only. If a card is a clear non-fit, do not manufacture a
-  fit hypothesis — write `FIT MISS — [reason]` to fit-notes, set `Disposition`
-  to `Fit-miss`, and flag it in the summary instead of drafting. A large,
-  established, EPCM-covered project reduces fit even for a real hardware
-  developer; drop to the supplemental-capacity register (below). An "ecosystem
-  play" is not a Seq. 1 target either: capture the relationship or referral
-  angle in fit-notes and set Fit-miss (or Park if it is worth a later look),
-  rather than manufacturing a fit hypothesis for a developer, IPP, or operator
-  that builds no hardware in-house.
+- **Fit filter (calibrated inclusive — default to drafting).** The bar is a
+  plausible mechanical/hardware hook, not a purity test. If the prospect builds,
+  scales, assembles, integrates, or even just specifies real physical hardware
+  or process equipment, it is a **fit** — draft it, with the register adjusted
+  (see below). Drafts are reviewed before send and never auto-fire, so a
+  marginal draft is cheap while wrongly killing a live prospect is expensive:
+  **when in doubt, draft.** This explicitly includes categories an older,
+  stricter reading wrongly treated as non-fits: procure-and-deploy
+  **integrators** and full-service design-build-operate shops (draft around the
+  skid packaging, enclosure, thermal, and DFM work, not the commodity unit ops);
+  **assemblers** of packaged or containerized systems (draft around enclosure,
+  cooling, structural, and container-level mechanical design); utility-scale and
+  infrastructure **project developers / IPPs** (draft around the mechanical
+  subsystems and pressure/flow/structural hardware they still have to engineer);
+  and **resource / minerals developers** standing up a first-of-a-kind pilot or
+  process plant (draft around process-vessel design, mixing/CFD, and pilot
+  hardware scale-up). A software, biology, or chemistry **core** is likewise a
+  draft, not a miss — acknowledge the core and position JE around the
+  surrounding hardware (the Endolith move). Reserve `Fit-miss` for genuine
+  non-fits only: a pure software / AI / services / branding play with no
+  physical hardware to engineer at all; and `Kill` for a confirmed dead or
+  defunct account or a duplicate card. Never fabricate a hook or a hardware
+  angle that is not there. A large, established, or EPCM-covered player is still
+  a fit but shifts to the supplemental-capacity register (below). Calibration
+  anchors (Riley, 2026-07-23, all confirmed **fit** over a stricter first pass):
+  Epic CleanTec (water-reuse integrator), FENECON USA (BESS assembler), Rocky
+  Mountain Power / RMP (CAES + hydro project developer), Geophysx Jamaica
+  (red-mud REE resource developer building a FOAK pilot).
 - **Contact + salutation.** Resolve the account's contact from the All
   Contacts board (recipe in `references/board-mechanics.md`) and verify the
   current title; never assume it from a prior session. When exec-tier
@@ -207,6 +224,23 @@ heavy. When a prospect will obviously vet whether JE can actually *build*, add
 one named build proof point (see the proof-point bank in the reference file:
 Capture6 pilot; OCOchem CO2-to-formate pilot running ~60 tons/year; 29
 DOE-funded clean-tech projects in two years).
+
+**Funding-partner angle (add when a real funding fit exists).** When the
+prospect's technology plausibly aligns with a current non-dilutive funding
+opportunity (SBIR/STTR, DOE FOA, ARPA-E, a DoD topic, or a relevant state or
+agency grant), name it and offer JE as a proposal partner: JE would join as a
+subcontractor to help them win the award and support the proposal, so the
+engineering is funded by the program rather than out of their pocket. Frame it
+as free, non-dilutive money they are well positioned to capture, backed by JE's
+federal track record (about 30 DOE programs, 29 DOE-funded clean-tech projects
+in two years) as proof JE is a credible proposal teammate. Only raise it when
+the alignment is real and the program plausibly open; never invent a
+solicitation. This also brings the DOE credential back into play for an
+otherwise commercial prospect. Keep it to one or two sentences inside the body,
+never a second full pitch. For defense or ITAR-adjacent programs the
+draft-but-hold gate still applies. (Cross-reference the
+`funding-opportunities-pipeline` skill for live solicitations when scoping the
+fit.)
 
 **Geography.** JE builds and ships hardware domestically and internationally.
 Never position a distant or non-US prospect as remote-analysis-only. Full
