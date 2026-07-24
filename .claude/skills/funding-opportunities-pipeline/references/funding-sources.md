@@ -58,6 +58,59 @@ Materials Recycling (Boone, IA). Open CMI IP for the same play: automated RE
 magnet recovery machinery (custom machinery = JE build), room-temp Li-ion
 electrode leaching, low-temp REE electrorefining.
 
+## INL engagement channels & vendor portal (VERIFIED 2026-07-24)
+
+INL is a two-track counterparty: (a) **license its IP** (WF9 tech scouting), and
+(b) **do business with it directly** as a supplier/teaming partner. Riley is
+registered on the INL vendor portal (2026-07-24). Source: INL "Ways to Do
+Business" + "Licensing Process" one-pagers (Riley-provided 2026-07-24; stash in
+`context/` if kept). Contacts are stable per those docs; re-verify a specific
+name before an outreach.
+
+**Ways to engage (pick the vehicle):**
+- **Commercial License** (patents/copyright) — licensee reimburses patent costs +
+  fees/royalties; fees minimal, revenue back-end loaded. Goal: nonexclusive
+  license executed ≤90 days from term-negotiation start. → **Jason Stolworthy,
+  208-526-3437, TD@inl.gov** (also techdeployment@inl.gov).
+- **CRADA** — INL + non-federal partner co-R&D; 5-yr data protection; participant
+  may negotiate an **exclusive license** to lab inventions; products made
+  substantially in US; participant can fund lab, lab can't fund participant. This
+  is the license-then-fund vehicle. → **Stefanie Johnston, 208-526-5063,
+  Stefanie.Johnston@inl.gov**.
+- **SPP (Work for Others) / ACT** — client pays INL full cost recovery to use INL
+  facilities/expertise; sponsor can elect title to inventions. → Stefanie Johnston.
+- **TAP (Technology Assistance Program)** — 40 free INL staff hours/yr for small
+  cleantech/nuclear/security firms; NOT for R&D or IP creation. Low-friction door
+  opener for JE or a JE client. → Jason Stolworthy / TD@inl.gov.
+- **SBIR/STTR teaming** — INL as the research partner (STTR needs one). → Jason
+  Stolworthy / TD@inl.gov.
+- **Supplier procurement** (engineering/hardware/test services, equipment) →
+  **Chase Egbert, 208-526-8564, chase.egbert@inl.gov**. Portal:
+  **procurement.inl.gov** (register + "express interest" per opportunity).
+- **Grants/partnerships desk** → stephanie.cook@inl.gov, 208-526-1644.
+
+**Commercialization managers by area** (first call to confirm a tech's
+availability/exclusivity/TRL): Energy & Environment S&T (critical materials,
+batteries, electrochem, thermal-energy) = **Ryan Bills, 208-526-1896,
+ryan.bills@inl.gov**; National & Homeland Security = Jonathan Cook,
+208-526-2261; Nuclear S&T = Kala Majeti, 208-526-4503.
+
+Scale context: INL spent ~$1.0B on goods & services in FY24 (+13.4% YoY) —
+procurement is real and growing.
+
+**Current-opportunities snapshot** (procurement.inl.gov, pulled 2026-07-24;
+INL states these are planned and "may or may not be awarded" — re-pull each
+portal scan):
+- **JE-relevant:** *MARVEL End User Application & Utilization* (NAICS 541690;
+  SITE WIDE; INL requesting industry to propose tests/experiments on the MARVEL
+  microreactor demo) — teaming/test-services fit, but microreactor = compliance
+  gate, **route go/no-go to Andy**. *INL Industry Days, Nov 11–12 (in-person)* —
+  BD/relationship event; register.
+- **Not a JE fit** (facilities/building trades, logged so a scan doesn't re-surface
+  them): ATR cooling-system check-valve replacement; SMC lighting-controls, AHU
+  replacement, entrance canopies, roll-up doors, fiber dial-room refurb, crane
+  upgrades; small-business software publishing.
+
 ## Account clusters → opportunity mapping
 
 - **Defense batteries → ExPEDitions/ExCAIPE**: Safire, Mana, 24M, Nugen,

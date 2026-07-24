@@ -75,3 +75,23 @@ lab keeps the proprietary chemistry.
    step, any that map to an existing account or open solicitation, portals
    still unscanned this rotation, and which shortlist rows carry
    "needs click-through" flags.
+
+## Second track — do business with the lab directly (not just license its IP)
+
+INL is a two-track counterparty: license its IP (steps 1–8) AND engage it as a
+supplier/teaming partner. Riley is registered on the INL vendor portal. On each
+INL-lane run (and any month INL is the scouted lab), also:
+
+9. Scan **procurement.inl.gov** current opportunities. Keep JE-fit rows
+   (engineering/hardware/test-services, equipment, teaming/end-user calls like
+   MARVEL); drop facilities/building-trades (HVAC, valves, doors, cranes) — log
+   the dropped ones in the snapshot so the next scan doesn't re-surface them.
+   For any nuclear/microreactor call (MARVEL etc.), flag and route the go/no-go
+   to Andy per the compliance gate; do not commit JE on the portal.
+10. Match each JE-fit opportunity to the right vehicle + verified contact from
+    `funding-sources.md` → "INL engagement channels & vendor portal" (License /
+    CRADA / SPP / ACT / TAP / SBIR-STTR teaming / supplier procurement). Fold
+    live INL opportunities and their deadlines (e.g. Industry Days) into the
+    digest and, if the operator says to, WF1 board items. Never "express
+    interest" or submit on the portal on the operator's behalf — surface it and
+    let Riley click.
