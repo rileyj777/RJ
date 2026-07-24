@@ -247,6 +247,28 @@ lab/scientific hardware builds + technical/engineering services. Register in the
 **small.business@pnnl.gov** (PNNL targets small / disadvantaged / woman- / veteran-
 owned / HUBZone). Receiving warehouse: Richland, WA.
 
+**PNNL contacts (VERIFIED 2026-07-24):**
+- **Licensing / commercialization:** **Partnerships@PNNL.gov** (routes to a
+  Commercialization Manager by market area; PNNL does not publish per-area names),
+  per-technology inquiries **invention@pnnl.gov**. PNNL offers low-cost **exploratory
+  ("Technology Test Drive") licenses** — the option-license analog for de-risking
+  before a full license.
+- **Small Business Program Manager:** **small.business@pnnl.gov, 509-372-7735**
+  (PO Box 999, Richland WA 99352); current SBPM **Talia Ochoa**. DOE **Mentor-Protégé
+  Program** available for small-biz capability building. FY2025 small-biz goal: 49% of
+  awards to small business.
+- **Acquisition Team Managers by directorate** (route the Capability Statement / Line
+  Card; names per PNNL's 2021 acq-forecast deck, re-verify): Energy & Environment /
+  Phys & Comp Sci = **Jay Wertenberger** (JE's lane); Materials (lab/scientific
+  equipment, robotics, industrial) = **Kevin Grubbs**; Core/Construction (facilities,
+  GSL/ESC builds, A/E) = **Andrea Fernandez**; National Security = Kevin Heaton
+  (NSD-1) / Susan Turner (NSD-2); Contracts Manager = Sam Grover.
+- **JE-fit signal:** PNNL competitively procures FOAK design-fab, not just
+  off-the-shelf goods (e.g., a 2021 "Hybrid Research Vessel Design & Fabrication" RFP
+  for its Marine/Coastal lab). Watch PNNL's Solicitations website (competitive
+  solicitations >$250K posted externally, near-daily). Onsite work needs an
+  ASP-approved profile + SAM.gov registration.
+
 **Fraud watch (flag to Andy / AP):** fraudulent RFPs/POs impersonating Battelle/PNNL
 circulate. Legit PNNL email is **@pnnl.gov only**, never fax; real deliveries go to
 the Richland, WA warehouse; genuine POs carry standard Battelle/PNNL terms + Adobe
