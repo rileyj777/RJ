@@ -210,6 +210,48 @@ portal scan):
   replacement, entrance canopies, roll-up doors, fiber dial-room refurb, crane
   upgrades; small-business software publishing.
 
+## PNNL engagement channels & supplier portal (VERIFIED 2026-07-24)
+
+Same two-track model as INL, and PNNL is **regional**: Richland, WA, ~2 hr from JE
+(in-state, so WA state programs can stack). PNNL also **hosts VIPS** (the WF9 primary
+portal). Source: PNNL "How to Partner with Us" (pnnl.gov/industry/how-partner-us) +
+"Procurement" (pnnl.gov/procurement), Riley-provided 2026-07-24.
+
+**Ways to engage:**
+- **Collaborative Research / CRADA** — joint R&D with PNNL scientists + facilities
+  (materials, energy tech, AI). → **Partnerships@PNNL.gov**.
+- **Licensing** — patents, copyrights, software; exclusive + nonexclusive. Browse
+  **pnnl.gov/available-technologies** (hundreds of techs by industry), **VIPS**
+  (vips.pnnl.gov; 20+ DOE labs in one search), and the **Software Exchange** (code
+  packages). Disputes via the **Technology Partnership Ombuds**.
+- **User facilities (industry-accessible):**
+  - ⭐ **Grid Storage Launchpad (GSL)** — DOE Office of Electricity; battery-materials
+    analysis up to **100 kW-scale testing of commercial systems**. Bullseye for JE's
+    energy-storage/battery clients and the downstream test bed for the INL
+    battery-recovery play (recovered metals → cells → GSL scale test). PNNL publishes
+    an Energy-Storage partner flyer.
+  - **EMSL** (Environmental Molecular Sciences Lab) — DOE Office of Science (BER);
+    **free** access via competitive peer-reviewed proposal; molecular/bio/soils/
+    atmospheric + bioproducts (touches JE's biotech lane only lightly).
+  - **ARM** (Atmospheric Radiation Measurement) — atmospheric science; not JE-core.
+  - Others (pnnl.gov/facilities): Energy Sciences Center, Radiochemical Processing
+    Lab, Electricity Infrastructure Operations Center, Institute for Integrated
+    Catalysis.
+- **Access lab expertise / technical assistance** → Partnerships@PNNL.gov.
+
+**Supplier procurement** — three mechanisms: subcontracts, Purchasing Card, B2B.
+Typical buys: scientific/lab equipment, energy & efficiency resources, security,
+computational/IT, construction, facilities/infrastructure equipment. JE fit = custom
+lab/scientific hardware builds + technical/engineering services. Register in the
+**Acquisition Supplier Portal (ebs.pnnl.gov)**; small-business front door =
+**small.business@pnnl.gov** (PNNL targets small / disadvantaged / woman- / veteran-
+owned / HUBZone). Receiving warehouse: Richland, WA.
+
+**Fraud watch (flag to Andy / AP):** fraudulent RFPs/POs impersonating Battelle/PNNL
+circulate. Legit PNNL email is **@pnnl.gov only**, never fax; real deliveries go to
+the Richland, WA warehouse; genuine POs carry standard Battelle/PNNL terms + Adobe
+time-stamped signatures. Report suspected fakes to **1-888-375-7665** / ic3.gov.
+
 ## Account clusters → opportunity mapping
 
 - **Defense batteries → ExPEDitions/ExCAIPE**: Safire, Mana, 24M, Nugen,

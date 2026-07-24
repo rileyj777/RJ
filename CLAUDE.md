@@ -25,6 +25,25 @@ Key internal collaborator: **Andy Johnston, P.E.** — JE President and proposal
 - When a pricing instruction says "X% less," confirm which operation is meant before applying it
   (see Key Judgment Calls below) — this has been a repeated source of ambiguity.
 
+## Sourcing and citations (every deliverable)
+
+Cite sources on everything produced for Riley, for visible credibility with Andy, JE leadership,
+and funding partners. End every report, brief, memo, analysis, or proposal with a visible
+**Sources / References** section (web URLs with the date verified, internal files/PDFs, patent or
+PCT numbers, monday items, CRM records, notable tool outputs), and attribute specific facts,
+figures, and dates inline. Distinguish verified (source + date) from estimated, and flag anything
+unverified. Exception: outbound copy (cold emails, LinkedIn) carries credibility as named specifics
+inline, not a bibliography. Mirrors the funding skill's "every fact carries a date and a source"
+bar; see auto-memory `cite-sources-on-deliverables`.
+
+## Deadlines on opportunity deliverables
+
+Always surface deadlines prominently: a **Key dates** block near the top of any opportunity brief,
+one-pager, exec summary, or board item, never buried in prose. State each date with its year and
+whether it is upcoming or past (never let a bare "August 30" read as the current year), note what it
+gates (EOI, LOI, Notice of Opportunity, full proposal, Q&A) and any noon-ET cutoff, and distinguish
+confirmed (source + date) from expected/TBD. See auto-memory `always-surface-deadlines`.
+
 ## Company facts (for Background sections, outreach, etc.)
 
 Johnston Engineering (JE) — mechanical engineering firm, Spokane, WA, in operation since 2015.
@@ -165,7 +184,9 @@ Footer: *"Confidential and Proprietary to Johnston Engineering, PLLC | Page X of
   what came back (interested / objection / not-now / wrong-person / negative) or handles silence
   with new-angle bumps, then drafts the response and logs state (keeps the conversation alive).
 - `.claude/skills/funding-opportunities-pipeline/` — funding pipeline, CRM, and Strategic
-  Selling workflows on monday.com (v4.2; 11 workflows including the grant-pursuit brief).
+  Selling workflows on monday.com (v4.3; 14 workflows including the grant-pursuit brief, the
+  disqualify/kill + book-hygiene workflow, the proposal-kickoff handoff, and win/loss
+  calibration).
 - `context/` — live, deal-specific state (current engagements). Update or replace these as deals
   progress; keep this file (CLAUDE.md) for durable standards only.
 - `reference/templates/` — JE's own proposal templates and past proposal examples, for style and

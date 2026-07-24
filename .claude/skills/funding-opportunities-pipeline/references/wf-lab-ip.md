@@ -13,8 +13,14 @@ Ames→TdVib template in `references/funding-sources.md`). Hold JE's core-IP
 line the whole way: JE builds the hardware and systems around the science; the
 lab keeps the proprietary chemistry.
 
-1. Pick 1–2 lanes to scout (rotate; favor lanes tied to a live funding item or
-   an active account).
+1. **Pick 1–2 lanes/labs to scout, rotating so thin lanes and less-mined labs
+   get covered.** "Rotate" only rotates if a run remembers where the last one
+   left off — otherwise it drifts back to the familiar labs (INL/PNNL) and the
+   same core lanes. Before choosing, read the previous run's "labs/lanes to hit
+   next" from your per-operator memory (`wf9-lab-rotation`, the WF9 parallel to
+   WF7's `wf7-lane-rotation`) or the last digest; then favor a lane tied to a
+   live funding item or an active account. Record the labs/lanes covered and
+   the next under-scanned ones at the end (step 8).
 2. Search the portals for available technologies in the lane: cross-lab first.
    **VIPS (vips.pnnl.gov)** is the widest net — the DOE Office of Technology
    Transitions database, PNNL-hosted, federating 14,000+ patents and 6,200+
@@ -74,7 +80,10 @@ lab keeps the proprietary chemistry.
 8. Digest: techs surfaced, best 1–2 plays with their availability-check next
    step, any that map to an existing account or open solicitation, portals
    still unscanned this rotation, and which shortlist rows carry
-   "needs click-through" flags.
+   "needs click-through" flags. **Then record the rotation state:** write this
+   run's covered labs/lanes and the next under-scanned ones back to the
+   `wf9-lab-rotation` memory, so the next run rotates instead of re-mining the
+   same lab.
 
 ## Second track — do business with the lab directly (not just license its IP)
 
@@ -82,7 +91,9 @@ INL is a two-track counterparty: license its IP (steps 1–8) AND engage it as a
 supplier/teaming partner. Riley is registered on the INL vendor portal. On each
 INL-lane run (and any month INL is the scouted lab), also:
 
-9. Scan **procurement.inl.gov** current opportunities. Keep JE-fit rows
+9. Scan the scouted lab's supplier portal (INL **procurement.inl.gov**; PNNL
+   **ebs.pnnl.gov**, small-business desk small.business@pnnl.gov; others per
+   `funding-sources.md`) for current opportunities. Keep JE-fit rows
    (engineering/hardware/test-services, equipment, teaming/end-user calls like
    MARVEL); drop facilities/building-trades (HVAC, valves, doors, cranes) — log
    the dropped ones in the snapshot so the next scan doesn't re-surface them.

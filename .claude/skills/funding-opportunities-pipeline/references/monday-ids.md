@@ -84,7 +84,7 @@ ID IGEM `12511975006`, WV `12511979354`.
 | Column | ID | Notes |
 |---|---|---|
 | Owner | `multiple_person_mm1hxs7c` | filter `any_of ["person-<MY_USER_ID>"]` for your book |
-| Status | `color_mm1hq3s1` | indexes: Suspect=0, Prospect=14, Lead=103 |
+| Status | `color_mm1hq3s1` | **book / in-play:** Suspect=0, Prospect=14, Lead=103 (the book-pull filter). **Terminal / kill (drop from book pulls):** Dead=6, Unqualified=11, Bounced (SPAMED)=8. **Cooling, NOT a kill:** Cold=7. Other pipeline: Pending=1, Client=2, Active=4, Partner=9, Complete=3. (15 "Prospect In Contact" is deactivated.) Kill via WF12 recipe below. Verified 2026-07-24. |
 | Industry | `dropdown_mm1sga1v` | |
 | Capability fit tags | `dropdown_mm1h5y5v` | drives Industry Fit pre-score |
 | Location | `location_mm1hwpre` | drives state-program matching |
@@ -138,10 +138,13 @@ owned-elsewhere matches separately. A `contains_text` hit is a candidate,
 not proof — the filter over-matches, so a short or common finalist name (a
 3–4-char token or a dictionary word) collides with unrelated cards and would
 falsely drop a real net-new add. On a hit, re-pull that item with Owner +
-Industry/Location: enough to confirm it's the same company (not a namesake —
-cf. the Safire *Insurance* vs defense-battery Safire flag) and to read the
-Owner that step 4's owned-elsewhere clause and step 5's near-miss routing
-both need. `includeColumns:false` stays fine when nothing matches.
+Status + Industry/Location: enough to confirm it's the same company (not a
+namesake — cf. the Safire *Insurance* vs defense-battery Safire flag) and to
+read the Owner (step 4's owned-elsewhere clause, step 5's near-miss routing)
+**and the Status** — a hit already at a terminal status (Dead 6 / Unqualified
+11 / Bounced 8, set by WF12) is a **previously-disqualified** card: route it as
+"disqualified — {reason from its logged update}", never as a live advance-now
+near-miss. `includeColumns:false` stays fine when nothing matches.
 
 **New-suspect creation recipe (Workflow 7, only on the operator's go):**
 `create_item` / `create_items` on `7253021439` with columnValues:
@@ -154,6 +157,18 @@ invent tags on a shared board). Stamp provenance: put
 `"Added by Claude prospecting {date} — source: {where found}"` in the first
 update/comment on the item, and put the HQ city there too if you skip the
 location column (see landmine 8).
+
+**Kill / disqualify recipe (Workflow 12, only on the operator's go):** two
+writes to `7253021439` on your own account. (1) Status → the terminal label:
+`change_item_column_values` with `{"color_mm1hq3s1":{"label":"Dead"}}` (or
+`"Unqualified"` / `"Bounced (SPAMED)"`; `{"index":6}` / `11` / `8` is the
+unambiguous alternative for a color column, `createLabelsIfMissing:false` —
+these labels already exist). (2) `create_update` on the item:
+`"Disqualified {date} by {operator}: {status} — {reason}"`. The reason is
+mandatory (it's what stops WF7 re-litigating the card). Never delete. The
+terminal indexes 6/11/8 sit outside the book filter `[0,14,103]`, so the card
+auto-drops from WF2/WF6/WF10 with no other cleanup. Do **not** use this recipe
+for Cold (7) — cooling is a WF10 state, not a kill.
 
 ## API landmines (learned the hard way)
 

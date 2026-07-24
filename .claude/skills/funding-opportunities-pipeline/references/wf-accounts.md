@@ -103,36 +103,51 @@ Trigger: the operator uploads a conference/attendee/coalition list, or says
 
 Trigger: "rebuild the workbook", "update the scorecard", or after a big batch.
 
-1. `scripts/build_workbook.py` builds the whole workbook (READ ME, Account
-   Scorecard with live weighted ICP formulas, Buying Influences map, Blue
-   Sheet, Gap Analysis). **The account/contact data blocks inside it are
-   example data from a prior rebuild** — before rebuilding, refresh the `b2`/`b3`
-   account lists and the `contacts` list from fresh monday pulls (Workflows
-   2–3), and replace the transcript-parsing block with typed data if the
-   original transcript is unavailable. Those aren't the only frozen blocks in
-   the script: the funding-angle map, the zero-contact RED FLAGS list, and
-   the READ ME headline counts (180 accounts / 84 contacts / 21 pre-tagged)
-   are all July-12 snapshots too. Refresh the angle map from the current
-   pipeline board and compute the counts and red-flag list from the refreshed
-   data at build time — otherwise the finished workbook shows a stale angle
-   as a board-sourced fact and its READ ME contradicts its own sheets. The
-   angle-to-account match is a loose substring, so also confirm each angle
-   landed on the right account. Most rebuilds ("update the scorecard", "after
-   a big batch") have no conference lists to gap-analyze, yet the Gap Analysis
-   block reads fixed upload filenames without guards — one missing file
-   crashes the whole build before any tab is written. Guard those reads or
-   skip the Gap tab when no lists were uploaded, and gap-analyze only the
-   lists actually provided this session.
-2. The scoring model (keep exactly): five ICP criteria from the JE training —
-   Industry Fit, Company Size Fit, Compelling Event Present, Access to
-   Economic Buyer, Growth/Follow-On Work Potential — each 0–5, adjustable
-   weights in row 2, `SUMPRODUCT`-weighted %, `RANK`, A–D tier
-   (≥75/55/35%), `COUNTBLANK` completeness. Industry Fit is pre-scored from
-   CRM capability tags; the other four are the operator's judgment (yellow cells).
-3. **Mandatory:** run `python /mnt/skills/public/xlsx/scripts/recalc.py
+`scripts/build_workbook.py` is a **stable scaffold** — it bakes in no account,
+contact, angle, gap, or count data and no scoring taxonomy. Everything comes
+from disk at run time, so a rebuild is: pull live → write JSON inputs → run
+the builder. There are no frozen blocks to hand-edit and no hardcoded upload
+filenames to crash on.
+
+1. **Produce the JSON inputs from fresh pulls** (schemas are in the script's
+   header comment — write them next to the script or in your working dir):
+   - `book.json` — your accounts from the Workflow 2 pull
+     (`[{name,status,loc,ind,fit,id}, …]`; `name`+`status` required).
+   - `contacts.json` — contacts from the Workflow 3 pull
+     (`[{account,name,title,seniority,email,role,flag}, …]`; `role` blank
+     unless clearly Economic/Technical/User — never guess; `flag` carries a
+     data-quality warning and renders the row pink). Optional; omit and the
+     Buying Influences tab builds as an empty scaffold.
+   - `angle.json` — funding angle per account from the pipeline board /
+     account-clusters map (`{"Account": "angle text", …}`). Optional.
+   - `gap_candidates.json` — normalized gap-list companies, **only if lists
+     were uploaded this session** (run Workflow 4 to normalize them first):
+     `[{name,source,description,prequalified}, …]`, one object per
+     (company, list) appearance. Omit it and the Gap Analysis tab is skipped
+     entirely (not emitted empty). Do not gap-analyze lists that weren't
+     provided this run.
+2. **Run the builder:**
+   `python scripts/build_workbook.py --book book.json --contacts contacts.json
+   --angle angle.json --gap gap_candidates.json` (drop any flag whose file you
+   didn't create). It auto-loads `scripts/scoring_taxonomy.json` (the canonical
+   keyword tiers / junk filter / capability tags / ICP weights — keep it beside
+   the script). Counts, the zero-contact red-flag list, and the
+   no-Economic-Buyer red-flag list are **computed from the data**, so nothing
+   in the finished book is a stale snapshot. **Read the warnings it prints** —
+   funding-angle entries that matched no account (dropped; verify the names)
+   and angles matched by loose substring (confirm they landed on the right
+   account) are surfaced for exactly the review the old build couldn't do.
+3. The scoring model (unchanged; defined in `scoring_taxonomy.json`): five ICP
+   criteria from the JE training — Industry Fit, Company Size Fit, Compelling
+   Event Present, Access to Economic Buyer, Growth/Follow-On Work Potential —
+   each 0–5, adjustable weights in row 2 (Compelling Event 2.0, Access 1.5,
+   rest 1.0), `SUMPRODUCT`-weighted %, `RANK`, A–D tier (≥75/55/35%),
+   `COUNTBLANK` completeness. Industry Fit is pre-scored from CRM capability
+   tags; the other four are the operator's judgment (yellow cells).
+4. **Mandatory:** run `python /mnt/skills/public/xlsx/scripts/recalc.py
    <file>` and ship only on `"status": "success"` with zero errors. Spot-check
    2–3 computed cells against hand math before delivering.
-4. Deliver to outputs and close with the standard digest — and be honest
+5. Deliver to outputs and close with the standard digest — and be honest
    about the ranking's state: a fresh build has only Industry Fit prefilled,
    so every account sits at tier D and the ranks are provisional until the
    operator scores the other four criteria. Present it as a scaffold awaiting

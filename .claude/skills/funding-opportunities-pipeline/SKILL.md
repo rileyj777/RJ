@@ -24,7 +24,30 @@ URL-bearing, agency-grouped list of government data sites (all verified
 2026-07-24) — cross-agency master portals (SBIR.gov, Grants.gov,
 SAM.gov/FPDS, USAspending.gov, FedConnect) plus DoD/DoW, DOE, and every
 federal grant/SBIR sub-agency in a JE lane; also added the SBIR.gov award DB
-and USAspending.gov as structured Workflow-7 suspect sources._
+and USAspending.gov as structured Workflow-7 suspect sources.
+v4.3: (1) rebuilt Workflow 5's `build_workbook.py` into a data-free scaffold —
+account/contact/angle/gap data now come from live-pulled JSON, counts and the
+zero-contact / no-economic-buyer red-flag lists are computed at build time, and
+the scoring taxonomy (keyword tiers, junk filter, capability tags, ICP weights)
+moved to one canonical `scripts/scoring_taxonomy.json` the builder reads,
+ending its silent duplication with `funding-sources.md`; no frozen snapshot
+blocks and no hardcoded upload filenames remain. (2) Added a `wf9-lab-rotation`
+memory so National-Lab IP scouting rotates labs/lanes like WF7 does. (3)
+Reworked Workflow 10 around JE's actual stack — a monday-native last-touch
+signal (item update log + status history) plus HeyReach — after confirming JE
+runs no Salesflare or other connected sales-activity CRM; proposal stage is
+operator-supplied or unknown, never fabricated. (4) Added Workflow 12
+(disqualify/kill + book hygiene, `wf-hygiene.md`) and documented the full All
+Accounts Status label map in `monday-ids.md` — killing moves a card to a
+terminal status (Dead/Unqualified/Bounced) outside the book filter, so it drops
+from WF2/WF6/WF10 automatically and WF7 dedupe echoes it as disqualified.
+(5) Added Workflow 13 (proposal-kickoff handoff, `wf-proposal-kickoff.md`) —
+the bridge from a won WF11 pursuit to a scoped JE proposal skeleton; it defers
+to the root `CLAUDE.md` for the proposal standards and never prices (Riley owns
+pricing). (6) Added Workflow 14 (win/loss calibration, `wf-calibration.md`) — a
+periodic pass that feeds won/killed outcomes back into the ICP weights and
+keyword tiers, writing only through the canonical `scoring_taxonomy.json` →
+`funding-sources.md` sync path._
 
 Operating playbook for a sales engineer in Business Development at Johnston
 Engineering (JE). JE's mission: "Propel the commercialization of
@@ -101,7 +124,7 @@ schema, scoring, and sources are shared.
   to connect. A digest that implies full coverage when three portals were
   JS-blocked is worse than a smaller honest one.
 - **Cross-validate both directions.** When two sources of truth exist (the
-  board vs the reference deadline snapshot, monday vs Salesflare), check both
+  board vs the reference deadline snapshot, monday vs HeyReach), check both
   ways: items in one and missing from the other are findings, not noise.
 - **Every recommendation lands somewhere.** A shortlisted tech, opportunity,
   or suspect names the specific account, solicitation, or teammate it maps
@@ -125,6 +148,9 @@ schema, scoring, and sources are shared.
 | 5 | Rebuild Strategic Selling workbook | "rebuild the workbook", "update the scorecard" | `wf-accounts.md` |
 | 9 | National Lab IP scouting | "scout lab IP", "tech-transfer scan" | `wf-lab-ip.md` + `funding-sources.md` |
 | 11 | Grant-pursuit brief | "pursuit brief", "one-pager for {account} on {solicitation}", "how do we play X with Y" | `wf-grant-pursuit.md` + `funding-sources.md` |
+| 12 | Disqualify / kill + book hygiene | "kill/disqualify {account}", "mark dead", "book hygiene", "prune dead suspects", "clean up my book" | `wf-hygiene.md` |
+| 13 | Proposal-kickoff handoff | "proposal kickoff for {account}", "scope a proposal", "won {account} — start the proposal", "turn this pursuit into a proposal" | `wf-proposal-kickoff.md` (defers to root `CLAUDE.md`) |
+| 14 | Win/loss calibration | "calibrate the model", "win/loss review", "tune ICP from outcomes", "what's converting" | `wf-calibration.md` |
 
 All workflow files are in `references/`. Also read, when relevant:
 
@@ -139,9 +165,11 @@ All workflow files are in `references/`. Also read, when relevant:
   `je-outreach-seq1` skill — if that copy is edited, re-copy it here so the
   two don't drift.
 
-Workflows hand off to each other (8→1, 10→6→7, 2→5, 4→7, and 1/6/9→11
-whenever a deadline lines up with an account): when a handoff crosses files,
-read the target file at that point.
+Workflows hand off to each other (8→1, 10→6→7, 2→5, 4→7, 10→12 whenever a
+drop/park decision needs recording, 7↔12 so dedupe echoes disqualified cards,
+1/6/9→11 whenever a deadline lines up with an account, 11→13 when a pursuit
+converts to a proposal, and won/killed outcomes from 11/12 feed 14): when a
+handoff crosses files, read the target file at that point.
 
 ## Cadence
 
@@ -149,8 +177,10 @@ Friday: Workflow 1. Monday: Workflow 10 (relationship pulse), then Workflow 6
 (deadline brief), then Workflow 7 (new-suspect search) — the whole Monday
 cadence lives in `wf-monday-cadence.md`. Monthly: Workflow 8 (net-new
 sources), then Workflow 9 (lab IP, rotating lanes), plus Workflow 2 (+5 as
-needed). Workflows 4 and 11 are on-demand; 11 is **live chat only** — it
-produces outbound-facing material, so it is never scheduled.
+needed). Quarterly: Workflow 14 (win/loss calibration). Workflows 4, 11, 12,
+and 13 are on-demand; 11, 12, 13, and 14 are **live chat only** — they produce
+outbound-facing material (11, 13) or write shared state (12 disqualifications,
+14 the scoring model), so none is ever scheduled.
 
 In Cowork, each can be a scheduled task (`/schedule`); scheduled runs can't
 pause to ask questions, so keep judgment calls (Coach tags, kill decisions,

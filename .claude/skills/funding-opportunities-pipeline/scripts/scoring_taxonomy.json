@@ -1,0 +1,31 @@
+{
+  "_README": "CANONICAL scoring taxonomy for the JE funding pipeline skill. This file is the single source of truth for keyword tiers, the junk filter, ICP capability-tag scoring, and default ICP weights. It is consumed by scripts/build_workbook.py at build time, and mirrored for humans in references/funding-sources.md. If you change scoring, edit THIS file first, then reflect the change in funding-sources.md (which points here as canonical). Keyword-tier and junk entries are regex fragments (case-insensitive): e.g. 'electrolyz' matches electrolyzer/electrolysis; a trailing space ('gan ', 'sic ') forces a word end; '.' is any-char (kept from the original patterns). Junk terms are wrapped in \\b(...)\\b at load time so they match whole tokens, never substrings.",
+  "_version": "1.0 (extracted 2026-07-24 from build_workbook.py + funding-sources.md; drift between the two reconciled by union)",
+
+  "keyword_tiers": {
+    "5": ["critical mineral", "rare earth", "electrolyz", "battery recycl", "lithium extract", "battery manufactur", "solid.state batter", "hydrogen product", "fuel cell", "direct air capture", "pilot plant", "thermal management", "magnet recycl"],
+    "4": ["battery", "energy storage", "hydrogen", "geotherm", "nuclear", "reactor", "carbon capture", "co2", "electrochem", "recycling", "desalin", "water treat", "semiconductor", "power electron", "gan ", "sic ", "mining", "critical material", "heat exchang", "turbine", "propulsion", "biomanufactur", "bioreactor", "pyrolysis", "grid.scale", "microgrid", "long.duration"],
+    "3": ["solar", "wind", "clean energy", "renewable", "manufactur", "robotic", "aerospace", "defense", "drone", "sensor", "thermal", "cooling", "hvac", "materials", "3d print", "additive", "ev charg", "electric vehicle", "space", "satellite", "machin", "hardware", "automation", "storage"]
+  },
+
+  "junk_terms": ["association", "institute", "society", "network", "news", "media", "university", "college", "jobs", "magazine", "coalition", "consortium", "department", "administration", "summit", "conference", "expo", "journal", "academy", "council", "agency", "ministry", "foundation", "alliance", "committee", "bureau", "command", "office of", "club", "festival", "press", "review", "times", "weekly", "\\.gov", "air force", "navy", "army", "nsin", "clearedjobs", "advisor", "advisors", "partnership", "consulting", "consultants", "capital", "ventures", "fund", "investor", "millennial", "recruiting", "staffing", "marketing"],
+
+  "score_include_threshold": 3,
+  "prequalified_force_include": 4,
+
+  "bullseye_tags": ["custom machinery", "thermal analysis", "battery", "electrolyzer", "hydrogen", "critical mineral", "electrochemical", "chemical process", "energy storage", "containerized", "recycling", "fuel cell", "bioreactor", "power conversion", "nuclear", "pyrolysis", "structural", "fluid analysis"],
+  "adjacent_tags": ["electronics packaging", "dfm", "robotics", "semiconductor", "aerospace", "defense", "mining", "sensors", "cooling", "hvac", "custom system", "solar", "manufacturing", "test"],
+
+  "industry_fit_valid_industries": ["Energy", "Manufacturing", "Hardware", "Government and Military", "Natural Resources", "Science and Engineering", "Sustainability", "Biotechnology", "Transportation"],
+
+  "icp_weights": {
+    "Industry Fit": 1.0,
+    "Company Size Fit": 1.0,
+    "Compelling Event Present": 2.0,
+    "Access to Economic Buyer": 1.5,
+    "Growth/Follow-On Potential": 1.0
+  },
+
+  "normalize_suffix_terms": ["inc", "llc", "corp", "corporation", "ltd", "co", "company", "plc", "sa", "s.a.", "gmbh", "technologies", "technology", "tech", "systems", "solutions", "energy", "group", "holdings", "labs", "laboratories"],
+  "fuzzy_cutoff": 0.92
+}

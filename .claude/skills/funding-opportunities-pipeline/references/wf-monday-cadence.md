@@ -16,34 +16,45 @@ Suspects / Prospects / Leads by *relationship state* (recency of contact, how
 long they've been in play, whether a proposal is out), not by funding
 deadline. Your own book only (Owner == `MY_USER_ID`); read-only / propose-only.
 
-The three signals do not live on monday — the CRM board holds only who/stage/
-owner. Sources: **monday** (`7253021439`) = the book, stage label, and
-ownership scope; **Salesflare** = interaction recency (R), opportunity /
-proposal stage + date (P), and time-in-stage; **HeyReach** = LinkedIn touch +
-reply recency for outreach-stage leads not yet in Salesflare. Resolve the
-Salesflare/HeyReach tools via `tool_search` on first run. If either system
-is unreachable, say so in the brief's first line and state which signals are
-therefore missing — a pulse built from monday alone must never read as if it
-had checked engagement data.
+The relationship signals aren't stored as native date columns on the CRM board —
+it holds who/stage/owner. Sources JE actually has: **monday** (`7253021439`) =
+the book, stage label, ownership scope, and — via each item's **update log +
+status-change history** — a **last-touch recency (R)** and **relationship age
+(D)** proxy; **HeyReach** = LinkedIn outreach touch + reply recency (R) for
+outreach-stage leads. Resolve the HeyReach tools via `tool_search` on first
+run. **JE has no Salesflare or other connected sales-activity CRM**, so
+**proposal/quote stage (P) is not tracked in any connected system** — it's
+operator-supplied (or read from a monday note) or else unknown; never fabricate
+it. If HeyReach is unreachable, say so in the brief's first line and mark which
+signals are missing vs. estimated-from-monday — a pulse must never read as if
+it checked engagement data it could not reach.
 
 1. Scope the book: pull your accounts from monday with the your-book recipe in
    `references/monday-ids.md` (Owner `any_of [person-<MY_USER_ID>]`, Status
    `any_of [0,14,103]`). This is the authoritative "yours" list plus each
    account's stage.
-2. Pull engagement where the action is (not the whole book): from Salesflare,
-   your accounts/opportunities with recent activity, an open opportunity, or a
-   quiet/stalled timeline — capture R (last interaction), P (proposal/quote
-   stage + date), and days-in-stage. From HeyReach, your active campaigns'
-   leads with last message sent / reply received / no-reply — R for
-   outreach-stage suspects. Relationship age (D) = Salesflare opportunity or
-   account age, or the monday item's created-date + status-change history as a
-   fallback.
-3. Match to the book by company name (the book pull returns names, not a
-   domain column) for Salesflare↔monday and contact name/LinkedIn for
-   HeyReach↔monday; treat near-identical names as tentative, since a
-   look-alike ("Elements" vs "Infinite Elements", cf. landmine 9) binds a
-   signal to the wrong card — the core trust failure of this brief. Flag
-   unmatched signals, never guess. Treat absence with care: the step-2 pull
+2. Pull recency where the action is — the **candidate set only**, never the
+   whole book, or this stops being a 2-minute brief:
+   - **monday-native last-touch (R) + age (D):** for each candidate account
+     item read its most recent update/comment date (`get_updates`) and its
+     status-change history (`get_board_activity`). The JE skills log outreach
+     and "surfaced {date}" notes to item updates (WF7/WF10/WF11/WF12), so the
+     latest update approximates the last touch, and created-date + first status
+     change approximates relationship age. It only reflects touches logged to
+     monday, so present R/D as estimates — and let a card with no updates fall
+     to First-touch/overdue only after confirming (step 3's absence rule
+     applies).
+   - **HeyReach (R for outreach-stage suspects):** your active campaigns' leads
+     with last message sent / reply received / no-reply.
+   - **P (proposal/quote stage):** no connected source at JE — carry it only if
+     the operator supplies it or a monday note records it; otherwise mark it
+     unknown, never assume none.
+3. Match signals to the book by company name (the book pull returns names, not
+   a domain column) — HeyReach contact name/LinkedIn ↔ monday, and any
+   operator-supplied proposal note ↔ its account; treat near-identical names as
+   tentative, since a look-alike ("Elements" vs "Infinite Elements", cf.
+   landmine 9) binds a signal to the wrong card — the core trust failure of
+   this brief. Flag unmatched signals, never guess. Treat absence with care: the step-2 pull
    is scoped, so an account it didn't return isn't proven uncontacted — it
    may be a gone-quiet Cooling target; confirm its last-touch date before
    calling it First-touch/zero-interaction (and before dropping it from the
@@ -53,8 +64,8 @@ had checked engagement data.
    - **Proposal pending** — proposal/quote sent, no decision, ≥5–7 days quiet → follow up (top; money on the table).
    - **Warm, owe a next step** — inbound reply/meeting in the last few days, thread still open → advance now.
    - **Cooling** — was engaged, ≥14 days silent, no proposal yet → re-warm before it dies.
-   - **Stalled in stage** — long time-in-stage, no recent movement → decide: push or park.
-   - **First-touch overdue** — aging Suspect, ~zero interactions across both systems → contact or drop (an uncovered base, a Miller-Heiman red flag).
+   - **Stalled in stage** — long time-in-stage, no recent movement → decide: push or park (a park that's really a kill → WF12).
+   - **First-touch overdue** — aging Suspect, ~zero interactions in monday updates + HeyReach → contact or drop (an uncovered base, a Miller-Heiman red flag); a confirmed drop is a WF12 kill (status + reason), never a silent delete.
 5. Rank by urgency (Proposal pending → Warm → Cooling → Stalled → First-touch);
    tie-break by days waiting, longest first. Cap ~5–7; lead with the ≤3 that
    need action today.
@@ -151,8 +162,11 @@ just announced, not generic company lists.
 5. **Route the near-misses — they are half the value of the run.** Any
    qualified candidate that turned out to already be in the CRM is
    fresh-money intel, not waste: if it's your account, name the hook and the
-   advance move ("Accelsius raised a $24M Series A — worth advancing now");
-   if a teammate owns it, put a one-line heads-up in the digest addressed to
+   advance move ("Accelsius raised a $24M Series A — worth advancing now") —
+   **unless the card is already at a terminal status (Dead 6 / Unqualified 11 /
+   Bounced 8, set by WF12): then it's previously-disqualified, so report it as
+   "disqualified — {reason from its logged update}", not as advance-now**; if a
+   teammate owns it, put a one-line heads-up in the digest addressed to
    that owner (intel-only, never touch the card). Also report lane
    saturation honestly — "8 of 10 finalists were already tracked" is a
    signal to rotate lanes next run, and the digest should name which thin
