@@ -365,7 +365,7 @@ def main():
         sc.cell(row=r, column=CI['Tier'], value=f'=IF({WS}{r}>=0.75,"A",IF({WS}{r}>=0.55,"B",IF({WS}{r}>=0.35,"C",IF({WS}{r}>0,"D","-"))))').font = Fn(10, True)
         sc.cell(row=r, column=CI['Criteria left'], value=f'=COUNTBLANK({sr1}:{sr2})').font = Fn(9, c='808080')
         r += 1
-    widths = {'Account': 30, 'Status': 9, 'Industry': 17, 'Capability tags': 38, 'Location': 22, 'Funding angle (from pipeline board)': 40, 'Weighted Score %': 11, 'Rank': 6, 'Tier': 6, 'Criteria[...]': 10}
+    widths = {'Account': 30, 'Status': 9, 'Industry': 17, 'Capability tags': 38, 'Location': 22, 'Funding angle (from pipeline board)': 40, 'Weighted Score %': 11, 'Rank': 6, 'Tier': 6, 'Criteria left': 10}
     for h, wd in widths.items(): sc.column_dimensions[get_column_letter(CI[h])].width = wd
     for cname in crit: sc.column_dimensions[get_column_letter(CI[cname])].width = 10
     sc.freeze_panes = 'B4'
@@ -452,7 +452,7 @@ def main():
     for col, f1 in ((2, '=Lists!$A$2:$A$5'), (3, '=Lists!$B$2:$B$4'), (4, '=Lists!$C$2:$C$5'), (5, '=Lists!$D$2:$D$6')):
         dv = DataValidation(type='list', formula1=f1, allow_blank=True); bs.add_data_validation(dv)
         dv.add(f'{get_column_letter(col)}14:{get_column_letter(col)}23')
-    sect = [(25, 'STRENGTHS (differentiation; relevant to objective; diminish price)', '00B050'), (31, 'RED FLAGS (missing info - untested assumption - uncovered base - new player - reorg)', 'C00[...])']
+    sect = [(25, 'STRENGTHS (differentiation; relevant to objective; diminish price)', '00B050'), (31, 'RED FLAGS (missing info - untested assumption - uncovered base - new player - reorg)', 'C00000')]
     for row0, lab, color in sect:
         bs.cell(row=row0, column=1, value=lab).font = Fn(10, True, color)
         for rr in range(row0 + 1, row0 + 5):
