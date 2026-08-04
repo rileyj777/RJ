@@ -59,6 +59,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 from functools import lru_cache
+from collections import defaultdict
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -164,6 +165,14 @@ def main():
     # build normalized map once
     book_norm = {norm(n): n for n in book}
     book_norm_keys = list(book_norm.keys())
+
+    # Build a simple prefix index to reduce candidates for fuzzy matching
+    prefix_index = defaultdict(list)
+    for key in book_norm_keys:
+        # use prefixes of lengths 3..6 to bucket similar names
+        for L in range(3, min(7, len(key) + 1)):
+            prefix_index[key[:L]].append(key)
+
     print(f"Book: {len(book)} accounts")
 
     def in_book(name):
@@ -174,9 +183,17 @@ def main():
         for bk in book_norm_keys:
             if bk and n and (bk == n or (len(n) > 4 and len(bk) > 4 and (bk.startswith(n) or n.startswith(bk)))):
                 return book_norm[bk]
-        # only run the expensive fuzzy match as a last resort
-        close = difflib.get_close_matches(n, book_norm_keys, n=1, cutoff=FUZZY)
-        return book_norm[close[0]] if close else None
+        # build candidate set from prefix buckets (try longer prefixes first)
+        candidates = set()
+        for L in range(min(6, len(n)), 2, -1):
+            candidates.update(prefix_index.get(n[:L], []))
+            if candidates:
+                break
+        if candidates:
+            close = difflib.get_close_matches(n, list(candidates), n=1, cutoff=FUZZY)
+            return book_norm[close[0]] if close else None
+        # final fallback: no good prefix bucket, give up
+        return None
 
     # ---------- contacts ----------
     E, T, U = 'Economic Buyer', 'Technical Buyer', 'User Buyer'
