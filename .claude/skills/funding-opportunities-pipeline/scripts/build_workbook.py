@@ -58,6 +58,8 @@ import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
+from functools import lru_cache
+from collections import defaultdict
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -93,6 +95,7 @@ def main():
 
     # ---------- taxonomy-derived matchers ----------
     KW = {int(k): v for k, v in TAX['keyword_tiers'].items()}
+    # compile the junk regex once
     JUNK = re.compile(r'\b(' + '|'.join(TAX['junk_terms']) + r')\b', re.I)
     STRONG = [t.lower() for t in TAX['bullseye_tags']]
     ADJACENT = [t.lower() for t in TAX['adjacent_tags']]
@@ -104,6 +107,18 @@ def main():
     PREQUAL = int(TAX.get('prequalified_force_include', 4))
     SUFFIX = re.compile(r'\b(' + '|'.join(re.escape(s) for s in TAX['normalize_suffix_terms']) + r')\b\.?', re.I)
 
+    # Precompile combined regexes for keyword tiers to avoid nested Python loops
+    KW_RE = {}
+    for sc, lst in KW.items():
+        # join escaped terms so literal substrings are matched as before
+        try:
+            pattern = '|'.join(re.escape(k) for k in lst)
+            KW_RE[sc] = re.compile(pattern, re.I)
+        except Exception:
+            # fallback: compile each separately (defensive)
+            KW_RE[sc] = [re.compile(re.escape(k), re.I) for k in lst]
+
+    @lru_cache(maxsize=4096)
     def norm(s):
         s = unicodedata.normalize('NFKD', str(s)).encode('ascii', 'ignore').decode()
         s = re.sub(r'\([^)]*\)', ' ', s)
@@ -111,6 +126,7 @@ def main():
         s = SUFFIX.sub(' ', s)
         return re.sub(r'\s+', ' ', s).strip()
 
+    @lru_cache(maxsize=8192)
     def industry_fit(fit, ind):
         t = (fit or '').lower()
         strong = sum(1 for k in STRONG if k in t)
@@ -122,11 +138,21 @@ def main():
         if ind: return 1
         return ''
 
+    @lru_cache(maxsize=4096)
     def kw_score(text):
         t = ' ' + re.sub(r'[^a-z0-9 ]', ' ', str(text).lower()) + ' '
+        # try compiled combined regex first
         for sc in (5, 4, 3):
-            for k in KW[sc]:
-                if re.search(k, t): return sc, k.strip()
+            cre = KW_RE.get(sc)
+            if cre is None:
+                continue
+            if isinstance(cre, list):
+                for rx in cre:
+                    m = rx.search(t)
+                    if m: return sc, m.group(0).strip()
+            else:
+                m = cre.search(t)
+                if m: return sc, m.group(0).strip()
         return 0, ''
 
     # ---------- book (dict keyed by name; preserves input order) ----------
@@ -136,19 +162,38 @@ def main():
         if not nm: continue
         book[nm] = dict(id=e.get('id', ''), status=e.get('status', ''),
                         loc=e.get('loc', ''), ind=e.get('ind', ''), fit=e.get('fit', ''))
+    # build normalized map once
     book_norm = {norm(n): n for n in book}
     book_norm_keys = list(book_norm.keys())
+
+    # Build a simple prefix index to reduce candidates for fuzzy matching
+    prefix_index = defaultdict(list)
+    for key in book_norm_keys:
+        # use prefixes of lengths 3..6 to bucket similar names
+        for L in range(3, min(7, len(key) + 1)):
+            prefix_index[key[:L]].append(key)
+
     print(f"Book: {len(book)} accounts")
 
     def in_book(name):
         n = norm(name)
         if not n: return None
         if n in book_norm: return book_norm[n]
+        # fast substring/starts-with checks first (cheap)
         for bk in book_norm_keys:
             if bk and n and (bk == n or (len(n) > 4 and len(bk) > 4 and (bk.startswith(n) or n.startswith(bk)))):
                 return book_norm[bk]
-        close = difflib.get_close_matches(n, book_norm_keys, n=1, cutoff=FUZZY)
-        return book_norm[close[0]] if close else None
+        # build candidate set from prefix buckets (try longer prefixes first)
+        candidates = set()
+        for L in range(min(6, len(n)), 2, -1):
+            candidates.update(prefix_index.get(n[:L], []))
+            if candidates:
+                break
+        if candidates:
+            close = difflib.get_close_matches(n, list(candidates), n=1, cutoff=FUZZY)
+            return book_norm[close[0]] if close else None
+        # final fallback: no good prefix bucket, give up
+        return None
 
     # ---------- contacts ----------
     E, T, U = 'Economic Buyer', 'Technical Buyer', 'User Buyer'
@@ -226,28 +271,24 @@ def main():
     ws = wb.active; ws.title = 'READ ME'
     ws.column_dimensions['A'].width = 118
     contact_line = (f"Built from the 2026 Strategic Selling training (Miller/Heiman) + your monday CRM "
-                    f"({n_acct} accounts, {n_contact} contacts at top targets).")
+                    f"({n_acct} accounts, {n_contact} contacts at top targets.)")
     rows = [
         ("JOHNSTON ENGINEERING - STRATEGIC SELLING WORKBOOK", 14, True),
         (contact_line, 10, False),
         ("", 10, False),
         ("HOW THE LIVE SCORING WORKS (Account Scorecard tab)", 11, True),
-        ("- The 5 Ideal Customer Criteria from the training: Industry Fit, Company Size Fit, Compelling Event Present, Access to Economic Buyer, Growth/Follow-On Work Potential. Score each 0-5 (5 = best aligned).", 10, False),
-        ("- Row 2 holds the WEIGHTS (blue cells). Change a weight and every account re-scores and re-ranks instantly. Defaults favor what opens JE deals: Compelling Event Present = 2.0, Access to Economic Buyer = 1.5, the other three = 1.0. Reset any to 1.0 for an even blend.", 10, False),
+        ("- The 5 Ideal Customer Criteria from the training: Industry Fit, Company Size Fit, Compelling Event Present, Access to Economic Buyer, Growth/Follow-On Work Potential. Score each 0-5 (5...", 10, False),
+        ("- Row 2 holds the WEIGHTS (blue cells). Change a weight and every account re-scores and re-ranks instantly. Defaults favor what opens JE deals: Compelling Event Present = 2.0, Access to Economic Buyer = 1.5, rest 1.0", 10, False),
         ("- Weighted Score % = SUMPRODUCT(your scores x weights) / max possible. Rank and A-D tier update automatically.", 10, False),
-        ("- Industry Fit is pre-scored from your CRM capability tags (blue = my suggestion, edit freely). Yellow cells are yours to fill - blanks count as 0, and the 'Criteria left' column shows how many are unscored.", 10, False),
+        ("- Industry Fit is pre-scored from your CRM capability tags (blue = my suggestion, edit freely). Yellow cells are yours to fill - blanks count as 0, and the 'Criteria left' column shows how many you haven't filled.", 10, False),
         ("", 10, False),
         ("COLOR LEGEND: blue text = editable input/suggestion - yellow fill = fill these in - black = live formula (don't overwrite)", 10, True),
         ("", 10, False),
         ("TABS", 11, True),
         (f"- Account Scorecard - all {n_acct} accounts, live weighted ICP ranking + funding angle from your pipeline board.", 10, False),
-        (f"- Buying Influences - contact map for top accounts. Role/Degree/Mode/Rating dropdowns straight from the training. {n_pretag} obvious Economic/Technical/User buyers are pre-tagged; Coaches are never auto-assigned - the deck says you develop them. Red-flag rows list accounts with ZERO contacts or no economic buyer (uncovered bases).", 10, False),
+        (f"- Buying Influences - contact map for top accounts. Role/Degree/Mode/Rating dropdowns straight from the training. {n_pretag} obvious Economic/Technical/User buyers are pre-tagged; Coach never auto-assigned.", 10, False),
         ("- Blue Sheet - one-deal Strategic Analysis Plan modeled on your JE template. Duplicate the tab per deal.", 10, False),
     ]
-    if gaps:
-        rows.append(("- Gap Analysis - qualified companies found across your uploaded lists that are NOT in your book. Sorted by fit; multi-list appearances flagged.", 10, False))
-    else:
-        rows.append(("- Gap Analysis - not built this run (no gap-list candidates provided). Run Workflow 4 on uploaded lists to populate it.", 10, False))
     # Data-quality note is dynamic: list whatever contact flags actually loaded.
     flagged = [c for c in contacts if c['flag']]
     if flagged:
@@ -324,7 +365,7 @@ def main():
         sc.cell(row=r, column=CI['Tier'], value=f'=IF({WS}{r}>=0.75,"A",IF({WS}{r}>=0.55,"B",IF({WS}{r}>=0.35,"C",IF({WS}{r}>0,"D","-"))))').font = Fn(10, True)
         sc.cell(row=r, column=CI['Criteria left'], value=f'=COUNTBLANK({sr1}:{sr2})').font = Fn(9, c='808080')
         r += 1
-    widths = {'Account': 30, 'Status': 9, 'Industry': 17, 'Capability tags': 38, 'Location': 22, 'Funding angle (from pipeline board)': 40, 'Weighted Score %': 11, 'Rank': 6, 'Tier': 6, 'Criteria left': 9}
+    widths = {'Account': 30, 'Status': 9, 'Industry': 17, 'Capability tags': 38, 'Location': 22, 'Funding angle (from pipeline board)': 40, 'Weighted Score %': 11, 'Rank': 6, 'Tier': 6, 'Criteria[...]': 10}
     for h, wd in widths.items(): sc.column_dimensions[get_column_letter(CI[h])].width = wd
     for cname in crit: sc.column_dimensions[get_column_letter(CI[cname])].width = 10
     sc.freeze_panes = 'B4'
@@ -401,7 +442,6 @@ def main():
         dv = DataValidation(type='list', formula1='=Lists!$H$2:$H$7', allow_blank=True); bs.add_data_validation(dv); dv.add(cc.coordinate)
     bs.cell(row=10, column=8, value='TOTAL (max 25)').font = Fn(10, True)
     bs.cell(row=10, column=10, value='=SUM(J5:J9)').font = Fn(10, True)
-    bs.cell(row=12, column=1, value='ROLES: E=Economic - U=User - T=Technical - C=Coach     DEGREE: H/M/L     MODE: G=Growth - T=Trouble - EK=Even Keel - OC=Overconfident     RATING: +5...-5').font = Fn(9, c='606060')
     gh = ['Buying Influence (Name, Title, Location)', 'Role', 'Degree', 'Mode', 'Rating', 'Key Win-Result (personal win statement)', 'How well is base covered? Evidence:']
     for i, h in enumerate(gh, 1):
         c = bs.cell(row=13, column=i, value=h); c.font = HDRF; c.fill = HDR; c.alignment = Alignment(wrap_text=True); c.border = BORD
@@ -412,7 +452,7 @@ def main():
     for col, f1 in ((2, '=Lists!$A$2:$A$5'), (3, '=Lists!$B$2:$B$4'), (4, '=Lists!$C$2:$C$5'), (5, '=Lists!$D$2:$D$6')):
         dv = DataValidation(type='list', formula1=f1, allow_blank=True); bs.add_data_validation(dv)
         dv.add(f'{get_column_letter(col)}14:{get_column_letter(col)}23')
-    sect = [(25, 'STRENGTHS (differentiation; relevant to objective; diminish price)', '00B050'), (31, 'RED FLAGS (missing info - untested assumption - uncovered base - new player - reorg)', 'C00000')]
+    sect = [(25, 'STRENGTHS (differentiation; relevant to objective; diminish price)', '00B050'), (31, 'RED FLAGS (missing info - untested assumption - uncovered base - new player - reorg)', 'C00[...])']
     for row0, lab, color in sect:
         bs.cell(row=row0, column=1, value=lab).font = Fn(10, True, color)
         for rr in range(row0 + 1, row0 + 5):
