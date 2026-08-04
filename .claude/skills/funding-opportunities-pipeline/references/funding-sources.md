@@ -1,21 +1,24 @@
 # Funding sources, verify flags & qualification rules
 
-## Deadline snapshot (verified 2026-08-04; near-term rows re-verified 2026-08-04 — re-verify on every refresh)
+## Deadline snapshot
+
+_Last refreshed 2026-08-04. Rows carry their own verification date — a row
+without a 2026-08-04 stamp was **carried forward unverified** this pass, not
+re-confirmed. Re-verify on every refresh._
 
 | Date | What |
 |---|---|
-| 8/6 9:30 AM ET | **HORNIG** (DE-FOA-0003623, TRU fuels) full apps — JE compliance-gated (nuclear fuel-cycle), internal-only / route to Andy. NOT IGNIITE. Exact time now independently confirmed on arpa-e-foa.energy.gov (VERIFIED 2026-08-04). |
+| 8/6 9:30 AM ET | **HORNIG** (DE-FOA-0003623, TRU fuels) full apps — JE compliance-gated (nuclear fuel-cycle), internal-only / route to Andy. NOT IGNIITE. Exact time independently confirmed on the primary portal (VERIFIED 2026-08-04, arpa-e-foa.energy.gov). |
 | TBD (invitee-only) | ARPA-E **IGNIITE 2026** (DE-FOA-0003624) full apps — concept-paper gate closed 5/29, invite/decline notices out 7/14/26; full-app date still TBD on eXCHANGE (VERIFIED 2026-07-20, re-checked 2026-08-04, no change). Non-invitees cannot apply this cycle. Now has its own board item (was a cross-check gap through 7/29 — fixed 2026-08-04). |
-| 8/19 | DoD wave ⭐JE-prime candidate + DARPA ExPEDitions full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg). DARPA's separate End-User integration solicitation still NOT announced as of 2026-08-04 (DARPA FAQ: "in the upcoming months"). |
-| 8/28 | SOFWERX/PEO-SW Distributed Micro Sensors CE, Phase 2 window closes (VERIFIED 2026-08-04, sourced via cached search — primary sofwerx.org sub-page JS-blocked, re-check directly before relying on this date). |
-| 9/5 (rolling Project Pitch) → 9/8 (NIH), 11/4 (NSF full proposals) | NSF's Project Pitch gate is actually **rolling** (reopened 6/2/26, capped 2/company/year), not a fixed 9/5 date — corrected 2026-08-04 (nsf.gov, NSF 26-510 solicitation). NIH SBIR/STTR standard date 9/8 unchanged. NSF invited full proposals (both 26-510 general track and 26-511 instrumentation pilot) due 11/4/26. |
-| 9/8 | NIH Phase IIB **Strategic Breakthrough Award** (PA-27-101) first due date — first live implementation of the 2026 reauthorization's new $30M/48mo mechanism (VERIFIED 2026-08-04; expiration 4/6/2029, not 4/6/2027 as an earlier note had it). DOE/DoD versions not yet published. |
-| 9/23, 10/21 | DoD waves |
-| 9/30 | DARPA BTO office-wide BAA rolling close (HR001126S0003) |
-| ~mid-Sept (unconfirmed) | ONR Navy ManTech "Golden Fleet Initiative" BAA (N0001426SB002) white papers — published 7/16/26, Industry Day 8/20/26 Arlington VA, exact due date estimated ~60 days out but not independently confirmed (VERIFIED 2026-08-04, onr.navy.mil). Strong custom-machinery/DFM fit — best new find of the 2026-08-04 sweep. |
-| 11/1 | Wyoming Energy Authority Energy Matching Funds concept papers (reviewed 3x/yr: 3/1, 7/1, 11/1) — VERIFIED 2026-08-04, wyoenergy.org. |
-| 11/4 | NSF invited full proposals (Ph I / Fast-Track / Ph II) — see corrected 9/5 row above. |
-| Rolling | ARPA-E SCALEUP Ready ($50M+$50M, own timeline; **exclusive licensees of ARPA-E-funded patented IP are eligible** — the license-then-scale play). ISC Canada Testing Stream. DARPA office-wide BAAs. NY NYSERDA PON 6149 Grid Enhancing Technologies, up to $3M/project (VERIFIED 2026-08-04). |
+| 8/19 | DoD wave ⭐JE-prime candidate + DARPA ExPEDitions full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg). DARPA's separate End-User integration solicitation still NOT announced (VERIFIED 2026-08-04, DARPA FAQ: "in the upcoming months"). |
+| 8/28 | SOFWERX/PEO-SW Distributed Micro Sensors CE, Phase 2 window closes (VERIFIED 2026-08-04 — but sourced via cached search only; primary sofwerx.org sub-page was JS-blocked, so re-check directly before relying on this date). |
+| 9/8 | **NIH** — two things land on this date: (a) the standard SBIR/STTR parent due date, and (b) the first due date of the Phase IIB **Strategic Breakthrough Award** (PA-27-101), the first live implementation of the 2026 reauthorization's $30M/48mo mechanism. PA-27-101 opens 8/5/26 and expires 4/6/2029 — *not* 4/6/2027, which an earlier note had wrong. DOE/DoD equivalents not yet published. (VERIFIED 2026-08-04, PA-27-101 NOFO text.) |
+| ~mid-Sept (date NOT confirmed) | ONR Navy ManTech "Golden Fleet Initiative" BAA (N0001426SB002) white papers — BAA published 7/16/26, Industry Day 8/20/26 Arlington VA. Due date is an estimate (~60 days from publication), **not** confirmed on the primary page (VERIFIED 2026-08-04, onr.navy.mil — existence confirmed, date not). Strong custom-machinery/DFM fit. |
+| 9/23, 10/21 | DoD waves. *(Carried forward — not re-verified 2026-08-04; last confirmed on the board's Release 5/6 items.)* |
+| 9/30 | DARPA BTO office-wide BAA rolling close (HR001126S0003). *(Carried forward — not re-verified 2026-08-04.)* |
+| 11/1 | Wyoming Energy Authority Energy Matching Funds concept papers (reviewed 3x/yr: 3/1, 7/1, 11/1) (VERIFIED 2026-08-04, wyoenergy.org). |
+| 11/4 | **NSF** invited full proposals — both the 26-510 general/all-technology track and the narrower 26-511 Scientific Instrumentation pilot. Ph I ≤$305K under NSF's own cap. Reaching this date requires an accepted Project Pitch first (see Rolling row) (VERIFIED 2026-08-04, nsf.gov NSF 26-510 solicitation). |
+| Rolling | ARPA-E SCALEUP Ready ($50M+$50M, own timeline; **exclusive licensees of ARPA-E-funded patented IP are eligible** — the license-then-scale play). ISC Canada Testing Stream. DARPA office-wide BAAs. **NSF Project Pitch** — the gate for the 11/4 NSF deadline is *rolling*, reopened 6/2/26, capped 2/company/year; it is **not** a fixed 9/5 date as this snapshot previously stated (corrected VERIFIED 2026-08-04, nsf.gov). NY NYSERDA PON 6149 Grid Enhancing Technologies, up to $3M/project (VERIFIED 2026-08-04). |
 
 SBIR reauthorized through 2031 (S.3971, Apr 2026): Ph I ≤$323K, Ph II
 ≤$2.15M, new **Strategic Breakthrough Awards** ≤$30M/48 mo with 1:1 match,
