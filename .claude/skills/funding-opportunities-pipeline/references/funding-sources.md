@@ -5,6 +5,7 @@
 | Date | What |
 |---|---|
 | 8/6 9:30 AM ET | **HORNIG** (DE-FOA-0003623, TRU fuels) full apps — JE compliance-gated (nuclear fuel-cycle), internal-only / route to Andy. NOT IGNIITE. |
+| 8/12 12:00 PM ET | AFRL **EPIC** OTA IDV whitepapers (FA8750269R001) — broad all-technology-areas OTA vehicle, 120-mo ordering period; Areas of Interest live in an unread SOW attachment (Exhibit 1), fit provisional (VERIFIED 2026-08-04). |
 | TBD (invitee-only) | ARPA-E **IGNIITE 2026** (DE-FOA-0003624) full apps — concept-paper gate closed 5/29, invite/decline notices out 7/14/26; full-app date still TBD on eXCHANGE (VERIFIED 2026-07-20). Non-invitees cannot apply this cycle. |
 | 8/19 | DoD wave ⭐JE-prime candidate + DARPA ExPEDitions full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg) — **verify whether the full app is invitee-only (concept-paper/LOI gate) before treating 8/19 as open** |
 | 9/5 | NSF SBIR standard due date (Project Pitch first; Ph I ≤$305K) |
