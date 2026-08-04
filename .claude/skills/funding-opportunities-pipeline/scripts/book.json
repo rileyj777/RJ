@@ -1,5 +1,0 @@
-[
-  {"name": "Cool Amps Inc", "status": "Prospect", "loc": "Golden, CO", "ind": "Energy", "fit": "Battery, Recycling", "id": "12345"},
-  {"name": "Tesla Motors", "status": "Lead", "loc": "Palo Alto, CA", "ind": "Automotive", "fit": "Battery", "id": "12346"},
-  {"name": "Argonne Labs", "status": "Suspect", "loc": "Lemont, IL", "ind": "Research", "fit": "Materials", "id": "12347"}
-]
