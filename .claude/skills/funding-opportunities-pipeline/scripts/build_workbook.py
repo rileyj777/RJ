@@ -229,12 +229,19 @@ def main():
     gaps, multi = [], []
     if gap_raw:
         gap = {}
+        in_book_cache = {}  # cache in_book() results during gap loop (~1000 calls)
         for cand in gap_raw:
             name = str(cand.get('name', '')).strip()
             if not name or len(name) < 3 or name.lower() == 'nan': continue
             if JUNK.search(name): continue
             n = norm(name)
-            if not n or in_book(name): continue
+            if not n:
+                continue
+            # check cache first, then populate if not seen
+            if name not in in_book_cache:
+                in_book_cache[name] = in_book(name)
+            if in_book_cache[name]:
+                continue
             source = str(cand.get('source', 'list')).strip() or 'list'
             desc = str(cand.get('description', '') or '')[:160]
             prequal = bool(cand.get('prequalified', False))
@@ -261,6 +268,11 @@ def main():
     BLUE = Font(name=AR, size=10, color='0000FF'); YEL = PatternFill('solid', fgColor='FFFF00')
     HDR = PatternFill('solid', fgColor='1F3864'); HDRF = Font(name=AR, size=10, bold=True, color='FFFFFF')
     SUB = PatternFill('solid', fgColor='D9E1F2'); GOLD = PatternFill('solid', fgColor='FFC000')
+    # Pre-create all fill/font combinations used in loops to avoid constructor calls per row
+    PINK = PatternFill('solid', fgColor='FCE4EC')  # flagged contact rows
+    HIGHLIGHT_YELLOW = PatternFill('solid', fgColor='FFF2CC')  # multi-list gap candidates
+    RED_BOLD = Font(name=AR, size=10, bold=True, color='C00000')  # red flag headers
+    PURPLE_9 = Font(name=AR, size=9, color='7030A0')  # keyword highlight
     thin = Side(style='thin', color='BFBFBF'); BORD = Border(left=thin, right=thin, top=thin, bottom=thin)
 
     n_acct = len(book)
@@ -386,7 +398,7 @@ def main():
         rc.font = BLUE; rc.border = BORD
         if c['flag']:
             bi.cell(row=r, column=11, value=c['flag']).font = Fn(9, True, 'C00000')
-            for i in range(1, 12): bi.cell(row=r, column=i).fill = PatternFill('solid', fgColor='FCE4EC')
+            for i in range(1, 12): bi.cell(row=r, column=i).fill = PINK
         for col in (7, 8, 9):
             cc = bi.cell(row=r, column=col); cc.fill = YEL; cc.border = BORD; cc.font = BLUE
         bi.cell(row=r, column=10).fill = YEL
@@ -483,12 +495,12 @@ def main():
             ga.cell(row=r, column=3, value=len(g['sources'])).font = Fn()
             ga.cell(row=r, column=4, value=', '.join(sorted(g['sources']))).font = Fn(9)
             ga.cell(row=r, column=5, value=g['desc']).font = Fn(9)
-            ga.cell(row=r, column=6, value=g['kw']).font = Fn(9, c='7030A0')
+            ga.cell(row=r, column=6, value=g['kw']).font = PURPLE_9
             step = 'Add as Suspect + research' if g['score'] >= 4 else 'Quick qualify vs ICP'
             if len(g['sources']) > 1: step = 'PRIORITY: add as Suspect - multi-list signal'
             ga.cell(row=r, column=7, value=step).font = Fn(9)
             if len(g['sources']) > 1:
-                for i in range(1, 8): ga.cell(row=r, column=i).fill = PatternFill('solid', fgColor='FFF2CC')
+                for i in range(1, 8): ga.cell(row=r, column=i).fill = HIGHLIGHT_YELLOW
             r += 1
         for col, wd in zip('ABCDEFG', [34, 8, 8, 34, 60, 18, 34]): ga.column_dimensions[col].width = wd
         ga.freeze_panes = 'A3'
