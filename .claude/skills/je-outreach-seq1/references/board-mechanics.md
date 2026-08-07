@@ -98,6 +98,18 @@ becomes Disposition-only.)
   was 278 cards in July 2026 and **12 on 2026-08-07**, so the backlog is
   essentially worked through and a single page now covers the queue. Do not
   assume a long queue and do not loosen filters when it comes back short.
+- **Status filters take the numeric label INDEX, never the label string, and
+  a string silently returns zero rows.** Verified 2026-08-07:
+  `color_mm5830h5 any_of ["Drafted"]` returned 0 items on a board holding well
+  over 100 Drafted cards, while `any_of [1]` returned them all. There is no
+  error and no warning, just an empty page that reads exactly like a clean
+  result. This is dangerous in the QA sweep specifically, where an empty
+  response is interpreted as "nothing wrong": a label-string filter there
+  produces a false all-clear on a send-safety check. Always filter status
+  columns by index (Disposition: Hold 0, Drafted 1, Kill 2, Undecided 9,
+  Fit-miss 17, Park 106; Status: Suspect 0, Prospect 14, Lead 103), and
+  **sanity-check any zero-row result before believing it** by re-running
+  without the suspect condition and confirming the count changes.
 - **`long_text` values come back truncated at ~2,000 characters with a
   trailing `...`, in the response only. The full text is stored.** Verified
   2026-08-07: a fit-note reading back as `...SUPPLEMENTAL CAPAC...` still

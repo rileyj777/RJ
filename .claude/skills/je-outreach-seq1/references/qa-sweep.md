@@ -20,6 +20,14 @@ Everything else the sweep finds is cosmetic by comparison.
 
 ## Procedure
 
+**Filter status columns by numeric index, never by label string.** A string
+like `any_of ["Drafted"]` returns zero rows with no error (see
+`board-mechanics.md`), and in this sweep an empty result reads as "nothing
+wrong" — so the bug produces a false all-clear on a send-safety check. Use
+`any_of [1]` for Drafted. Treat every zero-row result as suspect until you
+have re-run the query without the condition under test and watched the count
+change.
+
 Pull Riley's Suspects and Prospects with a **non-empty** Disposition
 (`multiple_person_mm1hxs7c any_of ["person-95557556"]`,
 `color_mm1hq3s1 any_of [0, 14]`, `color_mm5830h5 is_not_empty`), requesting
