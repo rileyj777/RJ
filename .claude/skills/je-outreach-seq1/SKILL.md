@@ -41,6 +41,15 @@ hardware domestically and internationally.
   filters, Disposition semantics, API landmines, contact-pull recipe, write
   shapes, verify-after-write. A pure drafting request with no board touch can
   skip it.
+- `references/contact-discovery.md` — load **only when a card has an empty or
+  unusable `account_contact`.** Finds an engineering-tier contact, creates the
+  record on All Contacts `7253021389`, links it to the account card.
+- `references/qa-sweep.md` — load **only when running a pre-send QA pass** over
+  already-stamped cards. Read-only audit; never drafts.
+- `scripts/lint_draft.py` — deterministic checker for the mechanical editorial
+  rules (em dashes, greeting line, signature block, banned phrase, character
+  count, Title Case subject). Run it on every draft instead of eyeballing those
+  rules by hand. It is a linter, not an editor: it never rewrites copy.
 
 ---
 
@@ -150,11 +159,20 @@ placeholder, backfill needs an empty body) and sendable by hand.
   uncertainty rather than guessing "Dr." If the
   contact sits in HR, finance, legal, comms/PR, or supply chain rather than
   engineering or commercial, add a routing ask rather than pretending they are
-  the buyer. If the contact is unverifiable, clearly
-  role-mismatched, or entirely absent (empty account_contact), present options
-  to Riley rather than drafting. With no linked contact the greeting automation
-  has no name to prepend, so a card stamped Drafted would send as "Hi ," — do
-  not mark it send-ready.
+  the buyer. If the contact is unverifiable or clearly role-mismatched, present
+  options to Riley rather than drafting. With no linked contact the greeting
+  automation has no name to prepend, so a card stamped Drafted would send as
+  "Hi ," — do not mark it send-ready.
+- **Empty `account_contact` is the common case, not an edge case.** On a
+  freshly sourced batch most cards carry no linked contact at all (11 of 12 in
+  the 2026-08-07 crawl). Treat it as a step in the pass, not a reason to stop:
+  run the **contact-discovery workflow** in
+  `references/contact-discovery.md`, which finds an engineering-tier contact,
+  creates the record on All Contacts `7253021389`, and links it back. If
+  discovery fails, still draft (drafting is reversible and the research is the
+  expensive part), stamp `Hold`, and write `NO LINKED CONTACT — not enrollable,
+  greeting automation would send "Hi ,"` into fit-notes. Never stamp `Drafted`
+  on a card with no linked contact.
 - **Hook verification.** Verify the hook against a primary or credible source —
   the company's own announcement, an agency/DOE page, a filing, or a reputable
   outlet — not merely any web result; the opening fact is the most visible
@@ -172,6 +190,20 @@ placeholder, backfill needs an empty body) and sendable by hand.
   no fresh trigger is `Fit-miss`, not `Park`, because the fit problem is
   permanent while the trigger problem is temporal. Congratulations framing only for
   a raise or milestone inside ~6 months; omit funder names and dollar figures.
+- **When the source page will not load (fetch-blocked environments).** In a
+  sandboxed or proxied environment a direct fetch of the primary source often
+  fails outright: in the 2026-08-07 run, 5 of 6 fetches came back
+  `EGRESS_BLOCKED` (activate.org, news.mit.edu, prnewswire.com, apidaeforms.com,
+  houston.innovationmap.com). A blocked fetch is **not** a failed
+  verification, and it is not a licence to relax the bar either. The fallback
+  standard: the hook is verified when **two or more independent sources**
+  surface it with a **specific date** and the details agree across them, and at
+  least one is the primary announcement or a reputable outlet rather than an
+  aggregator. Record in fit-notes which domains were blocked and that
+  confirmation came from search-result content rather than a direct fetch, and
+  say so in the batch summary so the fact carries a known confidence level.
+  One undated source, or two that trace to the same press release with
+  conflicting details, is still no hook.
 
 **Hook hierarchy (use the highest available):** operational milestone
 (deployment, commissioning, pilot launch, first unit, production stand-up) >
@@ -298,9 +330,15 @@ pass. Reread the draft cold and check:
 4. **Register check.** Reread as the recipient: does a peer firm hear "you
    need help"? Does a public company hear a gap pitch instead of capacity?
    Wrong register kills better-researched emails than any other miss.
-5. **Mechanical sweep.** No em dashes, no greeting, no signature, no banned
-   phrase, no comma splices, subject in Title Case and unique, body under
-   ~2,000 characters, paragraphs separated by \n\n.
+5. **Mechanical sweep — run the linter, do not eyeball it.**
+   `python3 scripts/lint_draft.py --subject "..." --body-file <path>` checks em
+   dashes, greeting line, signature block, banned phrase, character count,
+   Title Case, and paragraph separation deterministically, and exits non-zero
+   on any failure. It is cheaper and more reliable than re-reading for
+   punctuation, and it frees your attention for checks 1 through 4 and 7, which
+   are the ones that actually need judgment. Two things the linter cannot
+   judge, so they stay manual: comma splices and whether the subject is
+   genuinely *tailored* rather than merely capitalized.
 6. **Fit-notes complete.** Hook + source + date, contact + title verified,
    every flag (PhD greeting, exec-tier linked, blast radius, borderline
    register call) written down — the notes are what makes the next run
@@ -323,6 +361,23 @@ clean, Riley-ownable draft** (no compliance flag, non-exec contact), set
 `Disposition` to `Drafted` so the card drops out of the crawl. A gated draft
 (defense/aerospace or exec-tier) gets `Hold` instead, per the compliance gate.
 Resolve the item ID live immediately before the write.
+
+---
+
+## Pre-send QA sweep (on request, or before Riley enrolls a batch)
+
+A read-only audit over already-stamped cards, run when Riley asks to check the
+book before sending or says some variant of "is this batch ready to go."
+Procedure is in `references/qa-sweep.md`. It exists because the two failures
+that actually reach a prospect are silent ones: a gated draft whose `Hold`
+never landed, and a `Drafted` card with no linked contact that sends as
+"Hi ,". Both are invisible to the drafting crawl, because any Disposition value
+drops a card out of it.
+
+The sweep never drafts, never sends, and never changes copy. It reports, and
+Riley decides. The one write it may make is correcting a Disposition that
+contradicts its own fit-notes (a note reading `HOLD for Andy` on a card stamped
+`Drafted`), and it names every such correction in the summary.
 
 ---
 
