@@ -50,6 +50,10 @@ hardware domestically and internationally.
   rules (em dashes, greeting line, signature block, banned phrase, character
   count, Title Case subject). Run it on every draft instead of eyeballing those
   rules by hand. It is a linter, not an editor: it never rewrites copy.
+  **Invoke it by absolute path.** The working directory is the user's project,
+  not this skill's folder, so a bare `scripts/lint_draft.py` will not resolve.
+  Build the path from the skill base directory announced when the skill loads
+  (`<skill-dir>/scripts/lint_draft.py`).
 
 ---
 
@@ -331,7 +335,8 @@ pass. Reread the draft cold and check:
    need help"? Does a public company hear a gap pitch instead of capacity?
    Wrong register kills better-researched emails than any other miss.
 5. **Mechanical sweep — run the linter, do not eyeball it.**
-   `python3 scripts/lint_draft.py --subject "..." --body-file <path>` checks em
+   `python3 <skill-dir>/scripts/lint_draft.py --subject "..." --body-file
+   <path>` checks em
    dashes, greeting line, signature block, banned phrase, character count,
    Title Case, and paragraph separation deterministically, and exits non-zero
    on any failure. It is cheaper and more reliable than re-reading for

@@ -39,8 +39,8 @@ Pull Riley's Suspects and Prospects with a **non-empty** Disposition
 - Disposition empty **and** the body holds a finished email → an earlier run
   drafted but never stamped. Stamp it from the fit-notes.
 
-**Content checks** (run `scripts/lint_draft.py` per card rather than reading
-for punctuation):
+**Content checks** (run `<skill-dir>/scripts/lint_draft.py` per card, by
+absolute path, rather than reading for punctuation):
 - em dash, greeting line, signature block, banned phrase, character count,
   Title Case subject, `\n\n` paragraph separation.
 - Subject still the retired `Johnston Engineering - Mechanical Engineering
