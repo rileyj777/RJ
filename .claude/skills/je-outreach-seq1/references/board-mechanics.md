@@ -7,12 +7,34 @@ compliance rules stay in SKILL.md; this file is the plumbing.
 ## Pre-flight (before any writing in a session)
 
 1. **Confirm the monday connection is live** and the board is reachable.
-2. **Read board structure live** with `get_board_items_page`
-   (`includeColumns: true`) and confirm the Seq. 1 columns still exist with
-   these IDs before you write to them:
+2. **Read the column metadata live** and confirm the Seq. 1 columns still exist
+   with these IDs before you write to them:
    - Subject → `text_mm1kyzgk`
    - Body → `long_text_mm1ka0r6`
    - Fit / flag notes → `long_text_mm1t32`
+
+   Use a **scoped GraphQL query through `all_api_read`**, which is the only
+   cheap way to get the status *label indices* the crawl filter needs:
+
+   ```graphql
+   query Cols($b: [ID!]) {
+     boards(ids: $b) {
+       columns(ids: ["color_mm1hq3s1","color_mm5830h5","text_mm1kyzgk",
+                     "long_text_mm1ka0r6","long_text_mm1t32"]) {
+         id title type settings_str
+       }
+     }
+   }
+   ```
+   variables: `{"b": ["7253021439"]}`
+
+   **Do not call `get_board_info` for this.** Measured 2026-08-07: it returned
+   81,516 characters, blew the tool's output limit, hard-failed to a dump file,
+   and needed two follow-up `jq` calls to extract the same indices. The scoped
+   query returns them in about 2,400 characters and one call, a ~97% reduction.
+   Also do not use `get_board_items_page` for it: that returns label *names*
+   ("Suspect"), never the numeric indices, so it cannot confirm the mapping the
+   next step depends on.
 3. **Crawl for cards that still need an email.** AND-filter,
    `filtersOperator: "and"`, `limit: 50`, `includeColumns: true`:
    - `multiple_person_mm1hxs7c any_of ["person-95557556"]`
@@ -71,9 +93,22 @@ becomes Disposition-only.)
 - Cursor pages after the first drop `column_values` (IDs and names only), so
   when column data matters, re-run the filtered query instead of paginating
   deep.
-- The filtered set can exceed a page (278 cards in July 2026): work from
-  page 1 in batches, since stamped cards fall out of the filter and the front
-  page refreshes itself.
+- The filtered set can exceed a page: work from page 1 in batches, since
+  stamped cards fall out of the filter and the front page refreshes itself. It
+  was 278 cards in July 2026 and **12 on 2026-08-07**, so the backlog is
+  essentially worked through and a single page now covers the queue. Do not
+  assume a long queue and do not loosen filters when it comes back short.
+- **`long_text` values come back truncated at ~2,000 characters with a
+  trailing `...`, in the response only. The full text is stored.** Verified
+  2026-08-07: a fit-note reading back as `...SUPPLEMENTAL CAPAC...` still
+  matched a `contains_text` filter on a phrase ~2,600 characters in, and the
+  truncation persists even through a raw `all_api_read` GraphQL query, so it is
+  the MCP response layer, not storage. **Never re-write a long_text column
+  because the read-back looks cut off** — you would be overwriting good data to
+  fix a display artifact. To confirm a long tail actually landed, filter the
+  board with `contains_text` on a distinctive phrase from the end of what you
+  wrote; a match proves storage. Note that `contains_text` can miss on strings
+  containing `$`, so pick a plain-text phrase for the probe.
 
 ## Contact pull (All Contacts board `7253021389`)
 
@@ -108,9 +143,20 @@ automation greet them "Dr. [Last name]".
   `change_item_column_values` stores cleanly; `change_simple_column_value`
   with the plain label string (e.g. `value: "Drafted"`) also works and is the
   fallback.
-- **Verify after writing.** Re-fetch every card written in the batch, not
-  just a sample — the aliased single-mutation batch path can partially apply
-  or map one card's copy onto another card's item. Confirm each card carries
-  its own intended subject and body (the hook you researched for that account,
-  not a neighbor's) and that its Disposition flipped to Drafted before
-  reporting the batch done; a quick scan for quoting artifacts still applies.
+- **Verify after writing — but match the method to the write path.**
+  - *Per-card `change_item_column_values` (the default):* its own response
+    already echoes the applied `column_values`, so **verify from the mutation
+    response and skip the re-fetch.** Confirm the subject, the body's opening
+    words, and the Disposition index in that response. A per-card write cannot
+    put one card's copy on another card's item, so the cross-contamination
+    check does not apply. Re-fetching here re-transmits every full email body
+    for nothing; on the 5-card 2026-08-07 batch that was roughly 7,000 wasted
+    characters.
+  - *Aliased single-mutation batch path:* **re-fetch every card**, not a
+    sample. That path can partially apply or map one card's copy onto another
+    card's item, so confirm each card carries the hook you researched for that
+    account and not a neighbor's.
+  - Either way, scan for quoting artifacts, and confirm the Disposition landed
+    on gated cards specifically — `Hold` failing to write is the one silent
+    error that leaves a defense or exec-tier draft sitting where it reads as
+    send-ready.
