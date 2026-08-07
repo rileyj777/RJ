@@ -107,16 +107,25 @@ def main():
     PREQUAL = int(TAX.get('prequalified_force_include', 4))
     SUFFIX = re.compile(r'\b(' + '|'.join(re.escape(s) for s in TAX['normalize_suffix_terms']) + r')\b\.?', re.I)
 
-    # Precompile combined regexes for keyword tiers to avoid nested Python loops
+    # Precompile combined regexes for keyword tiers to avoid nested Python loops.
+    # Tier entries are REGEX FRAGMENTS by contract (see scoring_taxonomy.json
+    # _README), so they must NOT be re.escape'd: '.' is an any-char wildcard
+    # ('solid.state batter' has to match "solid state batter" after kw_score
+    # normalizes punctuation to spaces), and a trailing space forces a word end.
+    # Escaping them silently demoted whole categories a tier - solid-state
+    # battery 5 -> 4, grid-scale 4 -> 3 - so validate each fragment instead and
+    # drop only the ones that genuinely will not compile.
     KW_RE = {}
     for sc, lst in KW.items():
-        # join escaped terms so literal substrings are matched as before
-        try:
-            pattern = '|'.join(re.escape(k) for k in lst)
-            KW_RE[sc] = re.compile(pattern, re.I)
-        except Exception:
-            # fallback: compile each separately (defensive)
-            KW_RE[sc] = [re.compile(re.escape(k), re.I) for k in lst]
+        good = []
+        for k in lst:
+            try:
+                re.compile(k)
+            except re.error as e:
+                print(f"  WARNING: tier {sc} pattern {k!r} is not valid regex ({e}) - skipped")
+                continue
+            good.append(k)
+        KW_RE[sc] = re.compile('|'.join(good), re.I) if good else None
 
     @lru_cache(maxsize=4096)
     def norm(s):

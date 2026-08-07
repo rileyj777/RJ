@@ -2,23 +2,54 @@
 
 ## Deadline snapshot
 
-_Last refreshed 2026-08-04. Rows carry their own verification date — a row
-without a 2026-08-04 stamp was **carried forward unverified** this pass, not
+_Last refreshed 2026-08-07. Rows carry their own verification date — a row
+without a 2026-08-07 stamp was **carried forward unverified** this pass, not
 re-confirmed. Re-verify on every refresh._
+
+**Rebuilt 2026-08-07:** the 8/04 snapshot had drifted well behind the board — it
+carried 11 rows while the board held ~30 live dated deadlines, and it was missing
+the single nearest one (AFRL EPIC, 8/12). Step 4c says dated deadlines added by
+Workflow 1 get written back here; that had lagged. Every live dated deadline on
+the board is now represented below, so the two-way cross-check has a real baseline.
 
 | Date | What |
 |---|---|
-| 8/6 9:30 AM ET | **HORNIG** (DE-FOA-0003623, TRU fuels) full apps — JE compliance-gated (nuclear fuel-cycle), internal-only / route to Andy. NOT IGNIITE. Exact time independently confirmed on the primary portal (VERIFIED 2026-08-04, arpa-e-foa.energy.gov). |
-| TBD (invitee-only) | ARPA-E **IGNIITE 2026** (DE-FOA-0003624) full apps — concept-paper gate closed 5/29, invite/decline notices out 7/14/26; full-app date still TBD on eXCHANGE (VERIFIED 2026-07-20, re-checked 2026-08-04, no change). Non-invitees cannot apply this cycle. Now has its own board item (was a cross-check gap through 7/29 — fixed 2026-08-04). |
-| 8/19 | DoD wave ⭐JE-prime candidate + DARPA ExPEDitions full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg). DARPA's separate End-User integration solicitation still NOT announced (VERIFIED 2026-08-04, DARPA FAQ: "in the upcoming months"). |
-| 8/28 | SOFWERX/PEO-SW Distributed Micro Sensors CE, Phase 2 window closes (VERIFIED 2026-08-04 — but sourced via cached search only; primary sofwerx.org sub-page was JS-blocked, so re-check directly before relying on this date). |
-| 9/8 | **NIH** — two things land on this date: (a) the standard SBIR/STTR parent due date, and (b) the first due date of the Phase IIB **Strategic Breakthrough Award** (PA-27-101), the first live implementation of the 2026 reauthorization's $30M/48mo mechanism. PA-27-101 opens 8/5/26 and expires 4/6/2029 — *not* 4/6/2027, which an earlier note had wrong. DOE/DoD equivalents not yet published. (VERIFIED 2026-08-04, PA-27-101 NOFO text.) |
-| ~mid-Sept (date NOT confirmed) | ONR Navy ManTech "Golden Fleet Initiative" BAA (N0001426SB002) white papers — BAA published 7/16/26, Industry Day 8/20/26 Arlington VA. Due date is an estimate (~60 days from publication), **not** confirmed on the primary page (VERIFIED 2026-08-04, onr.navy.mil — existence confirmed, date not). Strong custom-machinery/DFM fit. |
-| 9/23, 10/21 | DoD waves. *(Carried forward — not re-verified 2026-08-04; last confirmed on the board's Release 5/6 items.)* |
-| 9/30 | DARPA BTO office-wide BAA rolling close (HR001126S0003). *(Carried forward — not re-verified 2026-08-04.)* |
-| 11/1 | Wyoming Energy Authority Energy Matching Funds concept papers (reviewed 3x/yr: 3/1, 7/1, 11/1) (VERIFIED 2026-08-04, wyoenergy.org). |
-| 11/4 | **NSF** invited full proposals — both the 26-510 general/all-technology track and the narrower 26-511 Scientific Instrumentation pilot. Ph I ≤$305K under NSF's own cap. Reaching this date requires an accepted Project Pitch first (see Rolling row) (VERIFIED 2026-08-04, nsf.gov NSF 26-510 solicitation). |
-| Rolling | ARPA-E SCALEUP Ready ($50M+$50M, own timeline; **exclusive licensees of ARPA-E-funded patented IP are eligible** — the license-then-scale play). ISC Canada Testing Stream. DARPA office-wide BAAs. **NSF Project Pitch** — the gate for the 11/4 NSF deadline is *rolling*, reopened 6/2/26, capped 2/company/year; it is **not** a fixed 9/5 date as this snapshot previously stated (corrected VERIFIED 2026-08-04, nsf.gov). NY NYSERDA PON 6149 Grid Enhancing Technologies, up to $3M/project (VERIFIED 2026-08-04). |
+| 8/11 | **NASA SBIR Phase II-E** applications (the smaller sibling of CCRPP: matches up to $375K against up to $750K additional). Second-order date carried on the CCRPP board item, never its own row (VERIFIED 2026-07-28, sbir.nasa.gov post-Phase-II pages; **not** re-verified 2026-08-07 — confirm before relying on it, it is 4 days out). |
+| 8/12 12:00 PM ET | ⭐ **AFRL EPIC OTA IDV** (FA8750269R001) white papers, max 10 pp, e-mail submission. Unlimited-ceiling OTA, 120-month ordering period, requires significant nontraditional/small-business participation = JE's standing. **Nearest live deadline on the board** (RE-VERIFIED 2026-08-07, FA8750269R001 solicitation letter; sam.gov not directly reachable, so confirm no later amendment before submitting). |
+| 8/14 12:00 PM ET | **DoW CMMC reform RFI** comments (not funding — a positioning play). CMMC Phase II suspended 7/13/26; 60-day Reform Task Force reports ~9/13/26. Level 2 self-assessment, not a C3PAO audit, is what JE needs in this interim window (RE-VERIFIED 2026-08-07, multiple firm alerts + SBA Office of Advocacy notice of the 7/14/26 RFI). |
+| 8/19 12:00 noon ET | **DoD/DoW SBIR/STTR Release 4** (26.BZ/26.BX/26.TZ/26.TX, batch 04, 38 topics) ⭐JE-prime candidate, plus DARPA **ExPEDitions** full proposals (DARPA-PS-26-118, OTA, start Jan 2027, >2 kWh/kg — invitee-gated). DARPA's separate End-User integration solicitation still NOT announced (VERIFIED 2026-08-04, DARPA FAQ: "in the upcoming months"). **Q&A channel closed 8/5** — no TPOC questions possible before close (RE-VERIFIED 2026-08-07; DSIP itself egress-blocked, confirmed via AF/AFWERX + Army component schedules). |
+| 8/19 5:00 PM ET | **NASA SBIR/STTR CCRPP PY26** — investor-matched post-Phase-II, 1:1 up to $2.5M program funds ($5M combined), via ProSAMS. Gate: existing NASA Phase II + secured investor with Letter of Commitment. Subcontracting capped at 50% of effort, which bounds a JE scope (RE-VERIFIED 2026-08-07, NASA PY26 program hub). |
+| 8/19 11:59 PM PT | **CA CEC H2ONSITE** (GFO-25-308) distributed clean H2 production up to 5 t/day co-located with storage + end use. Submit via the new **ECAMS** portal. Q&A closed 6/23/26 — no clarifying questions left (VERIFIED 2026-08-07, energy.ca.gov solicitation page). |
+| ⚠ 8/19 clock warning | **Three different times share 8/19**: noon ET (DoD/DARPA), 5:00 PM ET (NASA CCRPP), 11:59 PM PT (CEC H2ONSITE). Do not plan them off one clock. |
+| 8/27 5:00 PM MT | **Colorado OEDIT** Advanced Industries Proof of Concept + Early-Stage, 2026 cycle 2 *(carried forward from the board — not re-verified 2026-08-07)*. |
+| 8/28 | **Army xTech | Phantum** (ARM26BX01-NP003), opens 8/10 *(carried forward — not re-verified 2026-08-07)*. |
+| 8/28 | **SOFWERX/PEO-SW** Distributed Micro Sensors CE, Phase 2 window closes (VERIFIED 2026-08-04 — cached search only; primary sofwerx.org sub-page was JS-blocked, so re-check directly before relying on this date). |
+| 9/3 | **Washington Clean Energy Fund** RD&D 2026 round *(carried forward — not re-verified 2026-08-07)*. In-state program; stacks with the PNNL/Richland regional play. |
+| 9/8 | **NIH** — two things land here: (a) the standard SBIR/STTR parent due date (PA-27-100; the nominal 9/5 standard date falls on a Saturday in 2026 and rolls to 9/8), and (b) the first due date of the Phase IIB **Strategic Breakthrough Award** (PA-27-101), the first live implementation of the 2026 reauthorization's $30M/48mo mechanism. PA-27-101 opens 8/5/26 and expires 4/6/2029 — *not* 4/6/2027, which an earlier note had wrong. DOE/DoD equivalents not yet published (VERIFIED 2026-08-04 from the NOFO text; 9/8 date RE-VERIFIED 2026-08-07). |
+| 9/8 5:00 PM ET | **DOE Improved Oil & Gas Recovery + Produced Water Management** (DE-FOA-0003627) *(carried forward — not re-verified 2026-08-07)*. |
+| 9/10 2:00 PM ET | **DOE Genesis Mission SBIR/STTR FY26 Phase I** (DE-FOA-0003612) **Pitch** deadline — 4-question pitch via the AMP portal (opens mid-Aug), invitation-only from there to a full Phase I application. ~40 awards, $10M. FOA number now first-party confirmed on science.osti.gov, upgraded from "probable" (VERIFIED 2026-08-07). |
+| 9/11 | **Army xTech | Inversion** (ARM26BX03-NP006), opens 8/24 *(carried forward — not re-verified 2026-08-07)*. |
+| 9/15 | **NAWI Industrial Water Reuse** RFP ($12M) **concept paper** — full proposal 11/24 *(carried forward — not re-verified 2026-08-07)*. |
+| ~mid-Sept (date NOT confirmed) | **ONR Navy ManTech "Golden Fleet Initiative"** BAA (N0001426SB002) white papers — BAA published 7/16/26, Industry Day 8/20/26 Arlington VA. Due date is an estimate (~60 days from publication), **not** confirmed on the primary page (VERIFIED 2026-08-04, onr.navy.mil — existence confirmed, date not). Strong custom-machinery/DFM fit. |
+| 9/21 | **DOE-EM Savannah River heavy-water RFI** responses — COMPLIANCE GATE (tritium), route to Andy *(carried forward — not re-verified 2026-08-07)*. |
+| 9/22 5:00 PM ET | **DOE Advancing Oil & Natural Gas Production and Delivery** (DE-FOA-0003634) *(carried forward — not re-verified 2026-08-07)*. |
+| 9/23 12:00 noon ET | **DoD/DoW SBIR/STTR Release 5** — topics pre-released 8/5, opens 8/26. Pre-release is the only TPOC-contact window, so topic review belongs now, not at open. Includes DARPA Hoboken SBIR XL (DPA26BZ04-DV018) and Navy STTR lightweight modular fuel cells for UAS (DON26TZ05-NV024). Also 9/23: DARPA **Perrseus** microscale UHV systems (DARPA-PS-26-127) (VERIFIED 2026-08-05, re-confirmed 2026-08-07). |
+| 9/25 12:00 PM ET | **DOE SBIR/STTR FY25 Phase II** (~$147M) via the ConnectWerx portal; opened 7/22/26. Open to firms that completed a DOE Phase I/II in FY24 or FY25; ≤$2.0M ($2.05M with TABA) (RE-VERIFIED 2026-08-07). |
+| 9/28 | **NYSERDA Non-Drop-In Alternative Fuels** (H2/NH3/fuel cells) *(carried forward — not re-verified 2026-08-07)*. |
+| 9/30 | **DARPA BTO** office-wide BAA rolling close (HR001126S0003) *(carried forward — not re-verified since 2026-07-12)*. |
+| 10/9 11:59 PM ET | **Greentown Go Make 2027: Advanced Carbon Materials** *(carried forward — not re-verified 2026-08-07)*. |
+| 10/21 12:00 noon ET | **DoD/DoW SBIR/STTR Release 6** — topics pre-release 9/2, opens 9/23 (VERIFIED 2026-08-05). |
+| 11/1 5:00 PM MT | **Wyoming Energy Authority** Energy Matching Funds concept papers (reviewed 3x/yr: 3/1, 7/1, 11/1) (VERIFIED 2026-08-04, wyoenergy.org). |
+| 11/4 | **NSF** invited full proposals — both the 26-510 general/all-technology track and the narrower 26-511 Scientific Instrumentation pilot. Ph I ≤$305K under NSF's own cap. Requires an accepted Project Pitch first (see Rolling row). **There is no 9/5 NSF date** — a long-standing error in this snapshot, corrected 2026-08-04 and re-confirmed 2026-08-07. |
+| 11/11–12 | **INL Industry Days** (in-person, Idaho Falls) — BD/relationship event, register in advance *(carried forward — not re-verified 2026-08-07)*. |
+| 11/24 | **NAWI Industrial Water Reuse** full proposal (concept paper gate 9/15). |
+| 11/30 | **DARPA ERIS Shopping Notice**: high-energy lasers, SWaP-constrained (DARPA-SN-26-82) *(carried forward — not re-verified 2026-08-07)*. |
+| 12/17 11:59 PM ET | **DOE Genesis Mission Phase II** applications arising from FY26 Phase I awards. Far end of the Genesis gate chain; newly surfaced (VERIFIED 2026-08-07). |
+| 12/31 | **DARPA ERIS Shopping Notice**: real-time cellular control / protein domains (DARPA-SN-26-89) *(carried forward — not re-verified 2026-08-07)*. |
+| 6/4/27 | **DARPA MXO** office-wide BAA (DARPA-PS-26-115), rolling close. |
+| 9/30/27 | **ARPA-H** Lineage BAA / UNI-PLAT (7599226SN106), rolling close, 7 open topics. |
+| TBD (invitee-only) | ARPA-E **IGNIITE 2026** (DE-FOA-0003624) full apps — concept-paper gate closed 5/29, invite/decline notices out 7/14/26; full-app date still TBD on eXCHANGE (VERIFIED 2026-07-20, re-checked 2026-08-04, no change). Non-invitees cannot apply this cycle. |
+| Rolling | ARPA-E SCALEUP Ready ($50M+$50M, own timeline; **exclusive licensees of ARPA-E-funded patented IP are eligible** — the license-then-scale play). ISC Canada Testing Stream. DARPA office-wide BAAs. **NSF Project Pitch** — the gate for the 11/4 NSF deadline is *rolling*, reopened 6/2/26, capped 2/company/year (VERIFIED 2026-08-04, nsf.gov). NY NYSERDA PON 6149 Grid Enhancing Technologies, up to $3M/project (VERIFIED 2026-08-04). AFWERX/SpaceWERX Open Topic + STRATFI/TACFI. |
 
 SBIR reauthorized through 2031 (S.3971, Apr 2026): Ph I ≤$323K, Ph II
 ≤$2.15M, new **Strategic Breakthrough Awards** ≤$30M/48 mo with 1:1 match,
@@ -29,10 +60,14 @@ first calls late 2026; mandatory foreign-risk screening on every application.
 1. DARPA **Smash** (element separation across the periodic table) —
    RESOLVED 2026-07-14, re-confirmed still Passed 2026-08-04: solicitation
    DARPA-PA-26-04, closed 4/24/26. Flag closed.
-2. **USDA** NIFA SBIR FY26 — still TBD; RE-CHECKED 2026-08-04
-   (nifa.usda.gov, page stamped "last updated July 1, 2025"): no FY26
-   RFA/NOFO posted. We are inside the typical June–August window now —
-   keep checking weekly, flag stays open.
+2. **USDA** NIFA SBIR FY26 — still TBD; RE-CHECKED 2026-08-07: no FY26 or
+   FY27 RFA/NOFO surfaced. **Caveat: nifa.usda.gov was egress-blocked from
+   the run environment this pass**, so this is an absence-of-evidence check
+   against indexed results, not a direct read of the primary page — weaker
+   than the 2026-08-04 check. We are now at the tail of the typical
+   June–August window with nothing posted, which is itself a signal the
+   FY26 cycle may be skipped. Keep checking weekly; flag stays open, and
+   re-check from an unblocked network.
 3. **State cycle dates** — large research pass completed 2026-08-04 across
    all 16 tracked states (see each state's board-item Notes for the
    per-state finding). Resolved/dated: CA (confirmed no open call), CO
@@ -55,9 +90,12 @@ first calls late 2026; mandatory foreign-risk screening on every application.
    via WF8. Flag closed.
 6. ARPA-E **Advanced Stimulation & Enhanced Recovery** (ASSIST) NOFO
    status — RESOLVED 2026-07-29, RE-CHECKED 2026-08-04 (arpa-e-foa.energy.gov
-   direct): still no DE-FOA number or deadline, "Spring 2026" language
-   unchanged and now clearly overdue. Flag effectively closed (nothing left
-   to resolve until ARPA-E posts the NOFO) — keep the board item on watchlist.
+   direct) and again 2026-08-07: still no DE-FOA number or deadline. Only the
+   teaming-partner-list RFI (RFI-0000095) and the 4/23/26 Houston Industry Day
+   exist; the "Spring 2026" language is now ~4 months overdue. Flag effectively
+   closed (nothing left to resolve until ARPA-E posts the NOFO) — keep the board
+   item on watchlist. *(2026-08-07 check was via indexed results; arpa-e-foa.energy.gov
+   was egress-blocked from the run environment this pass.)*
 7. **Strategic Breakthrough Awards** first solicitations (late 2026) —
    RESOLVED for NIH 2026-07-22, dates corrected 2026-08-04 (NIH's own
    PA-27-101 NOFO text): opens 8/5/26, first due 9/8/26, expiration
@@ -446,6 +484,12 @@ Still flagged to verify: {list}
 ## Archive (passed)
 
 Rows moved out of the live snapshot as their deadlines lapsed.
+
+Archived 2026-08-07:
+
+| Date | What | Outcome |
+|---|---|---|
+| 8/6/26 9:30 AM ET | ARPA-E **HORNIG** (DE-FOA-0003623, TRU nuclear fuels), $50M program | Closed. Was a full COMPLIANCE HOLD (fission / nuclear fuel cycle) — no JE action taken, no client accounts mapped, never routed to Andy because the hold stood. Board item 12608911965 set Stage=Passed, renamed, and moved to Watchlist on 2026-08-07. |
 
 Archived 2026-08-04 (board items already carried [PASSED]/Stage=Passed tags from earlier refreshes; copying into this table per step 4c, which had lagged since 2026-07-23):
 

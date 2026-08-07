@@ -1,0 +1,5 @@
+# Runtime dependency of .claude/skills/funding-opportunities-pipeline/scripts/build_workbook.py
+openpyxl>=3.1
+
+# Test tooling (CI installs pytest separately; pinned here so local runs match)
+pytest>=8.0
