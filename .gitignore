@@ -10,3 +10,10 @@ desktop.ini
 context/JE_fed-spend_playbook.md
 context/JE_teaming-sprint.md
 context/FUNDING_TRIAGE_*.md
+
+# Python test/build cruft
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
